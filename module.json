@@ -1,0 +1,56 @@
+{
+  "id": "renegados-libs",
+  "title": "Renegados Bibliotecas",
+  "version": "1.0.0",
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13"
+  },
+  "authors": [
+    {
+      "name": "Weslley Rocha",
+      "discord": "ueslu",
+      "flags": {}
+    }
+  ],
+  "flags": {
+    "canUpload": true
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
+    ],
+    "requires": [
+      {
+        "id": "socketlib",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "dae",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "midi-qol",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "times-up",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
+        "id": "lib-wrapper",
+        "type": "module",
+        "compatibility": {}
+      }
+    ]
+  },
+  "description": ""
+}
