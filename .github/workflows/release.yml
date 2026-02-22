@@ -67,3 +67,21 @@ jobs:
           artifacts: "./module.json, ./dist/module.zip"
           generateReleaseNotes: true
           tag: ${{ github.ref_name }}
+
+      - name: Publish to Foundry VTT Website
+        run: |
+          curl -X POST "https://api.foundryvtt.com/_api/packages/release_version/" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: ${{ secrets.FOUNDRY_RELEASE_TOKEN }}" \
+            -d '{
+              "id": "renegados-libs",
+              "release": {
+                "version": "${{ steps.get_version.outputs.version-without-v }}",
+                "manifest": "${{ env.latest_manifest_url }}",
+                "notes": "https://github.com/Renegados-RPG/renegados-libs/releases/tag/${{ github.ref_name }}",
+                "compatibility": {
+                  "minimum": "13",
+                  "verified": "13"
+                }
+              }
+            }'
