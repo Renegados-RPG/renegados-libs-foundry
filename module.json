@@ -14,8 +14,22 @@
     }
   ],
   "flags": {
-    "canUpload": true
+    "canUpload": false
   },
+  "languages": [
+    {
+      "lang": "pt-BR",
+      "name": "Português Brasileiro",
+      "path": "lang/pt-BR/pt-BR.json",
+      "flags": {}
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en/en.json",
+      "flags": {}
+    }
+  ],
   "relationships": {
     "systems": [
       {
