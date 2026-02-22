@@ -63,6 +63,11 @@
         "id": "lib-wrapper",
         "type": "module",
         "compatibility": {}
+      },
+      {
+        "id": "babele",
+        "type": "module",
+        "compatibility": {}
       }
     ]
   },
