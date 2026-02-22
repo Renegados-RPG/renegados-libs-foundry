@@ -1,9 +1,9 @@
 name: Create Module Files For GitHub Release
 
 env:
-  project_url: "https://github.com/Renegados-RPG/renegados-libs"
-  latest_manifest_url: "https://github.com/Renegados-RPG/renegados-libs/releases/latest/download/module.json"
-  release_module_url: "https://github.com/Renegados-RPG/renegados-libs/releases/download/${{github.ref_name}}/module.zip"
+  project_url: "https://github.com/Renegados-RPG/renegados-libs-foundry"
+  latest_manifest_url: "https://github.com/Renegados-RPG/renegados-libs-foundry/releases/latest/download/module.json"
+  release_module_url: "https://github.com/Renegados-RPG/renegados-libs-foundry/releases/download/${{github.ref_name}}/module.zip"
 
 on:
   push:
@@ -78,7 +78,7 @@ jobs:
               "release": {
                 "version": "${{ steps.get_version.outputs.version-without-v }}",
                 "manifest": "${{ env.latest_manifest_url }}",
-                "notes": "https://github.com/Renegados-RPG/renegados-libs/releases/tag/${{ github.ref_name }}",
+                "notes": "https://github.com/Renegados-RPG/renegados-libs-foundry/releases/tag/${{ github.ref_name }}",
                 "compatibility": {
                   "minimum": "13",
                   "verified": "13"
