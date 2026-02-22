@@ -1,4 +1,13 @@
 {
+  "DND5E.AbbreviationConc": "Conc.",
+  "DND5E.AbbreviationCR": "CR",
+  "DND5E.AbbreviationDC": "DC",
+  "DND5E.AbbreviationKg": "kg",
+  "DND5E.AbbreviationLbs": "lbs.",
+  "DND5E.AbbreviationLevel": "Lvl",
+  "DND5E.AbbreviationLR": "LR",
+  "DND5E.AbbreviationSR": "SR",
+  "DND5E.Abilities": "Abilities",
   "DND5E.ABILITY": {
     "Configure": {
       "CheckLabel": "{ability} Check",
@@ -7,39 +16,75 @@
     },
     "SECTIONS": {
       "Bonuses": {
-        "Label": "{ability} Bonuses",
-        "Hint": "These bonuses apply to checks & saves made with {ability}."
+        "Hint": "These bonuses apply to checks & saves made with {ability}.",
+        "Label": "{ability} Bonuses"
       },
       "Global": {
-        "Label": "Global Bonuses",
-        "Hint": "These bonuses apply to checks & saves made with any ability."
+        "Hint": "These bonuses apply to checks & saves made with any ability.",
+        "Label": "Global Bonuses"
       },
       "Score": "{ability} Score"
     }
   },
+  "DND5E.Ability": "Ability",
+  "DND5E.AbilityBonuses": "Ability Bonuses",
+  "DND5E.AbilityCha": "Charisma",
+  "DND5E.AbilityChaAbbr": "cha",
+  "DND5E.AbilityCheckBonus": "Check Bonus",
+  "DND5E.AbilityCheckConfigurationHint": "Configure check bonuses.",
+  "DND5E.AbilityCheckConfigure": "{ability} Ability Checks",
+  "DND5E.AbilityCheckGlobalBonusHint": "This bonus applies to all ability checks made by this actor.",
+  "DND5E.AbilityCon": "Constitution",
+  "DND5E.AbilityConAbbr": "con",
+  "DND5E.AbilityConfigurationHint": "Configure ability saving throw proficiency, saving throw bonuses, and check bonuses.",
+  "DND5E.AbilityConfigure": "Configure {ability}",
+  "DND5E.AbilityConfigureTitle": "Configure {ability} Saving Throws and Checks",
+  "DND5E.AbilityDex": "Dexterity",
+  "DND5E.AbilityDexAbbr": "dex",
+  "DND5E.AbilityHon": "Honor",
+  "DND5E.AbilityHonAbbr": "hon",
+  "DND5E.AbilityInt": "Intelligence",
+  "DND5E.AbilityIntAbbr": "int",
+  "DND5E.AbilityModifier": "Ability Modifier",
+  "DND5E.AbilityModifierShort": "Mod",
+  "DND5E.AbilityPromptText": "What type of {ability} check?",
+  "DND5E.AbilityPromptTitle": "{ability} Ability Check",
+  "DND5E.AbilitySan": "Sanity",
+  "DND5E.AbilitySanAbbr": "san",
+  "DND5E.AbilitySaveConfigure": "{ability} Saving Throws",
+  "DND5E.AbilityScore": "Ability Score",
+  "DND5E.AbilityScoreL": "{ability} Score",
+  "DND5E.AbilityScoreMax": "Maximum Ability Score",
+  "DND5E.AbilityScoreMaxShort": "Maximum",
+  "DND5E.AbilityScorePl": "Ability Scores",
+  "DND5E.AbilityScoreShort": "Score",
+  "DND5E.AbilityStr": "Strength",
+  "DND5E.AbilityStrAbbr": "str",
+  "DND5E.AbilityUseCast": "Cast Spell",
+  "DND5E.AbilityUseChargesLabel": "{value} Charges",
+  "DND5E.AbilityUseConfig": "Usage Configuration",
+  "DND5E.AbilityUseConsumableLabel": "{max} per {per}",
+  "DND5E.AbilityUseUse": "Use Ability",
+  "DND5E.AbilityWis": "Wisdom",
+  "DND5E.AbilityWisAbbr": "wis",
   "DND5E.AC": "AC",
+  "DND5E.Action": "Action",
+  "DND5E.ActionAbbr": "A",
+  "DND5E.ActionAbil": "Ability Check",
+  "DND5E.ActionEnch": "Enchant",
+  "DND5E.ActionHeal": "Heal",
+  "DND5E.ActionMSAK": "Melee Spell Attack",
+  "DND5E.ActionMWAK": "Melee Weapon Attack",
+  "DND5E.ActionOther": "Other",
+  "DND5E.ActionPl": "Actions",
+  "DND5E.ActionRSAK": "Ranged Spell Attack",
+  "DND5E.ActionRWAK": "Ranged Weapon Attack",
+  "DND5E.ActionSave": "Saving Throw",
+  "DND5E.ActionSumm": "Summon",
+  "DND5E.ActionUtil": "Utility",
+  "DND5E.ActionWarningNoItem": "The requested item {item} no longer exists on Actor {name}",
+  "DND5E.ActionWarningNoToken": "You must have one or more controlled Tokens in order to use this option.",
   "DND5E.ACTIVATION": {
-    "FIELDS": {
-      "activation": {
-        "label": "Activation",
-        "condition": {
-          "label": "Activation Condition",
-          "hint": "Condition required to activate this activity."
-        },
-        "override": {
-          "label": "Override Activation",
-          "hint": "Use these activation values instead of the item's when using this activity."
-        },
-        "type": {
-          "label": "Activation Cost",
-          "hint": "Activation type (e.g. action, legendary action, minutes)."
-        },
-        "value": {
-          "label": "Activation Value",
-          "hint": "Scalar value associated with the activation."
-        }
-      }
-    },
     "Category": {
       "Combat": "Combat",
       "Monster": "Monster",
@@ -47,6 +92,27 @@
       "Standard": "Standard",
       "Time": "Time",
       "Vehicle": "Vehicle"
+    },
+    "FIELDS": {
+      "activation": {
+        "condition": {
+          "hint": "Condition required to activate this activity.",
+          "label": "Activation Condition"
+        },
+        "label": "Activation",
+        "override": {
+          "hint": "Use these activation values instead of the item's when using this activity.",
+          "label": "Override Activation"
+        },
+        "type": {
+          "hint": "Activation type (e.g. action, legendary action, minutes).",
+          "label": "Activation Cost"
+        },
+        "value": {
+          "hint": "Scalar value associated with the activation.",
+          "label": "Activation Value"
+        }
+      }
     },
     "Type": {
       "Action": {
@@ -126,34 +192,31 @@
     "AttributeKeyTooltip": "For a list of common keys, see <a href=\"{url}\">the wiki</a>.",
     "FIELDS": {
       "statuses": {
-        "label": "Status Conditions",
-        "hint": "While affected by this Active Effect, the target will be treated as having these additional status conditions."
+        "hint": "While affected by this Active Effect, the target will be treated as having these additional status conditions.",
+        "label": "Status Conditions"
       }
     }
   },
+  "DND5E.ActiveEffectOverrideWarning": "This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.",
   "DND5E.ACTIVITY": {
     "Action": {
       "Create": "Create Activity",
       "Delete": "Delete Activity",
       "Edit": "Edit Activity"
     },
-    "Title": {
-      "one": "Activity",
-      "other": "Activities"
-    },
     "FIELDS": {
       "description": {
-        "label": "Description",
         "chatFlavor": {
-          "label": "Chat Flavor",
-          "hint": "Additional text displayed in the activation chat message."
-        }
+          "hint": "Additional text displayed in the activation chat message.",
+          "label": "Chat Flavor"
+        },
+        "label": "Description"
       },
       "effects": {
         "element": {
           "level": {
-            "label": "Level Limit",
             "hint": "Range of levels required to apply this effect.",
+            "label": "Level Limit",
             "max": {
               "label": "Maximum Level"
             },
@@ -207,6 +270,10 @@
       "Identity": "Identity",
       "Time": "Time"
     },
+    "Title": {
+      "one": "Activity",
+      "other": "Activities"
+    },
     "Warning": {
       "UsageNotAllowed": "Using this activity isn't currently possible."
     }
@@ -219,6 +286,11 @@
       "Singleton": "Only a single {itemType} can be added to a {actorType}."
     }
   },
+  "DND5E.Add": "Add",
+  "DND5E.AddEmbeddedItemPromptHint": "Do you want to add these items to your character sheet?",
+  "DND5E.AdditionalControls": "Additional Controls",
+  "DND5E.AdditionalSettings": "Additional Settings",
+  "DND5E.Advanced": "Advanced",
   "DND5E.ADVANCEMENT": {
     "AbilityScoreImprovement": {
       "Action": {
@@ -330,8 +402,6 @@
           "label": "Allow Drops"
         },
         "choices": {
-          "hint": "Specify how many choices are allowed at each level.",
-          "label": "Choices",
           "FIELDS": {
             "count": {
               "label": "Count"
@@ -339,7 +409,9 @@
             "replacement": {
               "label": "Allow Replacement"
             }
-          }
+          },
+          "hint": "Specify how many choices are allowed at each level.",
+          "label": "Choices"
         },
         "pool": {
           "label": "Item Options"
@@ -390,8 +462,8 @@
           "label": "Items"
         },
         "optional": {
-          "label": "Optional",
-          "hint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted."
+          "hint": "If the whole advancement is marked optional, players may opt out of any of the following items, otherwise all non-optional items are granted.",
+          "label": "Optional"
         }
       },
       "Hint": "Grant the character items (such as equipment, features, or spells) when they reach a certain level.",
@@ -519,10 +591,10 @@
     "SPELLCONFIG": {
       "FIELDS": {
         "spell": {
-          "label": "Spell Details",
           "ability": {
             "label": "Ability"
           },
+          "label": "Spell Details",
           "method": {
             "label": "Spellcasting Method"
           },
@@ -537,8 +609,8 @@
               "label": "Period"
             },
             "requireSlot": {
-              "label": "Require Slot",
-              "hint": "Require a spell slot to be spent when using the limited uses. If not checked then the uses will be additional free uses that don't consume a slot."
+              "hint": "Require a spell slot to be spent when using the limited uses. If not checked then the uses will be additional free uses that don't consume a slot.",
+              "label": "Require Slot"
             }
           }
         }
@@ -568,8 +640,6 @@
           "label": "Allow Replacements"
         },
         "choices": {
-          "hint": "The following traits will be presented as a choice to the player.",
-          "label": "Choices",
           "FIELDS": {
             "count": {
               "label": "Count"
@@ -577,7 +647,9 @@
             "pool": {
               "label": "Traits"
             }
-          }
+          },
+          "hint": "The following traits will be presented as a choice to the player.",
+          "label": "Choices"
         },
         "grants": {
           "hint": "The following traits will be granted to the character as long as they don't already possess that trait.",
@@ -610,173 +682,10 @@
           "Label": "Upgrade"
         }
       },
-      "TraitType": "Trait Type",
-      "Title": "Traits"
+      "Title": "Traits",
+      "TraitType": "Trait Type"
     }
   },
-  "DND5E.ATTACK": {
-    "Attack": {
-      "mwak": "Melee Attack",
-      "rwak": "Ranged Attack"
-    },
-    "Classification": {
-      "Spell": "Spell",
-      "Unarmed": "Unarmed",
-      "Weapon": "Weapon"
-    },
-    "FIELDS": {
-      "attack": {
-        "label": "Attack Details",
-        "ability": {
-          "label": "Attack Ability",
-          "hint": "Ability used for make the attack and determine damage. Available using @mod in formulas."
-        },
-        "bonus": {
-          "label": "To Hit Bonus",
-          "hint": "Bonus added to the to hit roll for the attack."
-        },
-        "critical": {
-          "threshold": {
-            "label": "Critical Threshold",
-            "hint": "Minimum value on the D20 needed to roll a critical hit."
-          }
-        },
-        "flat": {
-          "label": "Flat To Hit",
-          "hint": "Ignore the ability modifier, proficiency, and any other bonuses from the actor and only use the bonus defined by the activity when calculating to hit."
-        },
-        "type": {
-          "label": "Attack Type",
-          "value": {
-            "label": "Attack Type",
-            "hint": "Is this a melee or ranged attack?"
-          },
-          "classification": {
-            "label": "Attack Classification",
-            "hint": "Is this an unarmed, weapon, or spell attack?"
-          }
-        }
-      },
-      "damage": {
-        "label": "Attack Damage",
-        "critical": {
-          "bonus": {
-            "label": "Extra Critical Damage",
-            "hint": "Extra damage applied when a critical is rolled. Added to the base damage or first damage part."
-          }
-        },
-        "includeBase": {
-          "label": "Include Base Damage",
-          "hint": "Include the item's base damage with any additional damage parts."
-        },
-        "parts": {
-          "label": "Damage Parts",
-          "hint": "Individual damage parts to include with the roll."
-        }
-      }
-    },
-    "Formatted": {
-      "2014": "{type} {classification} Attack",
-      "2024": "{type} Attack Roll"
-    },
-    "Hint": "Make an attack roll and roll damage.",
-    "Mode": {
-      "Label": "Attack Mode",
-      "Offhand": "Offhand",
-      "OneHanded": "One-Handed",
-      "Ranged": "Ranged",
-      "Thrown": "Thrown",
-      "ThrownOffhand": "Offhand Throw",
-      "TwoHanded": "Two-Handed"
-    },
-    "Title": {
-      "one": "Attack",
-      "other": "Attacks"
-    },
-    "Type": {
-      "Melee": "Melee",
-      "Ranged": "Ranged"
-    },
-    "Warning": {
-      "NoQuantity": "Attempting to attack with a weapon with a quantity of zero."
-    },
-    "Weapon": {
-      "Melee": "Melee Weapon",
-      "Ranged": "Ranged Weapon"
-    }
-  },
-  "DND5E.AbbreviationCR": "CR",
-  "DND5E.AbbreviationConc": "Conc.",
-  "DND5E.AbbreviationDC": "DC",
-  "DND5E.AbbreviationKg": "kg",
-  "DND5E.AbbreviationLR": "LR",
-  "DND5E.AbbreviationLbs": "lbs.",
-  "DND5E.AbbreviationLevel": "Lvl",
-  "DND5E.AbbreviationSR": "SR",
-  "DND5E.Abilities": "Abilities",
-  "DND5E.Ability": "Ability",
-  "DND5E.AbilityBonuses": "Ability Bonuses",
-  "DND5E.AbilityCha": "Charisma",
-  "DND5E.AbilityChaAbbr": "cha",
-  "DND5E.AbilityCheckBonus": "Check Bonus",
-  "DND5E.AbilityCheckConfigurationHint": "Configure check bonuses.",
-  "DND5E.AbilityCheckConfigure": "{ability} Ability Checks",
-  "DND5E.AbilityCheckGlobalBonusHint": "This bonus applies to all ability checks made by this actor.",
-  "DND5E.AbilityCon": "Constitution",
-  "DND5E.AbilityConAbbr": "con",
-  "DND5E.AbilityConfigurationHint": "Configure ability saving throw proficiency, saving throw bonuses, and check bonuses.",
-  "DND5E.AbilityConfigure": "Configure {ability}",
-  "DND5E.AbilityConfigureTitle": "Configure {ability} Saving Throws and Checks",
-  "DND5E.AbilityDex": "Dexterity",
-  "DND5E.AbilityDexAbbr": "dex",
-  "DND5E.AbilityHon": "Honor",
-  "DND5E.AbilityHonAbbr": "hon",
-  "DND5E.AbilityInt": "Intelligence",
-  "DND5E.AbilityIntAbbr": "int",
-  "DND5E.AbilityModifier": "Ability Modifier",
-  "DND5E.AbilityModifierShort": "Mod",
-  "DND5E.AbilityPromptText": "What type of {ability} check?",
-  "DND5E.AbilityPromptTitle": "{ability} Ability Check",
-  "DND5E.AbilitySan": "Sanity",
-  "DND5E.AbilitySanAbbr": "san",
-  "DND5E.AbilitySaveConfigure": "{ability} Saving Throws",
-  "DND5E.AbilityScore": "Ability Score",
-  "DND5E.AbilityScoreL": "{ability} Score",
-  "DND5E.AbilityScoreMax": "Maximum Ability Score",
-  "DND5E.AbilityScoreMaxShort": "Maximum",
-  "DND5E.AbilityScorePl": "Ability Scores",
-  "DND5E.AbilityScoreShort": "Score",
-  "DND5E.AbilityStr": "Strength",
-  "DND5E.AbilityStrAbbr": "str",
-  "DND5E.AbilityUseCast": "Cast Spell",
-  "DND5E.AbilityUseChargesLabel": "{value} Charges",
-  "DND5E.AbilityUseConfig": "Usage Configuration",
-  "DND5E.AbilityUseConsumableLabel": "{max} per {per}",
-  "DND5E.AbilityUseUse": "Use Ability",
-  "DND5E.AbilityWis": "Wisdom",
-  "DND5E.AbilityWisAbbr": "wis",
-  "DND5E.Action": "Action",
-  "DND5E.ActionAbbr": "A",
-  "DND5E.ActionAbil": "Ability Check",
-  "DND5E.ActionEnch": "Enchant",
-  "DND5E.ActionHeal": "Heal",
-  "DND5E.ActionMSAK": "Melee Spell Attack",
-  "DND5E.ActionMWAK": "Melee Weapon Attack",
-  "DND5E.ActionOther": "Other",
-  "DND5E.ActionPl": "Actions",
-  "DND5E.ActionRSAK": "Ranged Spell Attack",
-  "DND5E.ActionRWAK": "Ranged Weapon Attack",
-  "DND5E.ActionSave": "Saving Throw",
-  "DND5E.ActionSumm": "Summon",
-  "DND5E.ActionUtil": "Utility",
-  "DND5E.ActionWarningNoItem": "The requested item {item} no longer exists on Actor {name}",
-  "DND5E.ActionWarningNoToken": "You must have one or more controlled Tokens in order to use this option.",
-  "DND5E.ActiveEffectOverrideWarning": "This value is being modified by an Active Effect and cannot be edited. Disable the effect to edit it.",
-  "DND5E.Add": "Add",
-  "DND5E.AddEmbeddedItemPromptHint": "Do you want to add these items to your character sheet?",
-  "DND5E.AdditionalControls": "Additional Controls",
-  "DND5E.AdditionalSettings": "Additional Settings",
-  "DND5E.Advanced": "Advanced",
   "DND5E.AdvancementChoices": "choices",
   "DND5E.AdvancementClassRestriction": "Class Restriction",
   "DND5E.AdvancementClassRestrictionNone": "All Classes",
@@ -788,10 +697,10 @@
   "DND5E.AdvancementConfigurationModeEnabled": "Configuration Enabled",
   "DND5E.AdvancementConfigureAllowDrops": "Allow Drops",
   "DND5E.AdvancementConfigureAllowDropsHint": "Should players be able to drop their own choices into this advancement?",
-  "DND5E.AdvancementConfigureDropAreaHint": "Drop Items here to add them to the pool from which a player can choose.",
-  "DND5E.AdvancementConfigureTitle": "Configure {item} Advancement",
   "DND5E.AdvancementConfiguredComplete": "Fully Configured",
   "DND5E.AdvancementConfiguredIncomplete": "Not Configured",
+  "DND5E.AdvancementConfigureDropAreaHint": "Drop Items here to add them to the pool from which a player can choose.",
+  "DND5E.AdvancementConfigureTitle": "Configure {item} Advancement",
   "DND5E.AdvancementCustomIcon": "Custom Icon",
   "DND5E.AdvancementCustomTitle": "Custom Title",
   "DND5E.AdvancementDeleteConfirmationLabel": "Remove advancement changes",
@@ -840,8 +749,8 @@
     },
     "Label": "Area of Effect",
     "Size": {
-      "Label": "Size",
       "Height": "Height",
+      "Label": "Size",
       "Length": "Length",
       "Radius": "Radius",
       "Thickness": "Thickness",
@@ -869,6 +778,97 @@
   "DND5E.ArmorLightProficiency": "Light",
   "DND5E.ArmorMediumProficiency": "Medium",
   "DND5E.ArmorValue": "Armor Value",
+  "DND5E.ATTACK": {
+    "Attack": {
+      "mwak": "Melee Attack",
+      "rwak": "Ranged Attack"
+    },
+    "Classification": {
+      "Spell": "Spell",
+      "Unarmed": "Unarmed",
+      "Weapon": "Weapon"
+    },
+    "FIELDS": {
+      "attack": {
+        "ability": {
+          "hint": "Ability used for make the attack and determine damage. Available using @mod in formulas.",
+          "label": "Attack Ability"
+        },
+        "bonus": {
+          "hint": "Bonus added to the to hit roll for the attack.",
+          "label": "To Hit Bonus"
+        },
+        "critical": {
+          "threshold": {
+            "hint": "Minimum value on the D20 needed to roll a critical hit.",
+            "label": "Critical Threshold"
+          }
+        },
+        "flat": {
+          "hint": "Ignore the ability modifier, proficiency, and any other bonuses from the actor and only use the bonus defined by the activity when calculating to hit.",
+          "label": "Flat To Hit"
+        },
+        "label": "Attack Details",
+        "type": {
+          "classification": {
+            "hint": "Is this an unarmed, weapon, or spell attack?",
+            "label": "Attack Classification"
+          },
+          "label": "Attack Type",
+          "value": {
+            "hint": "Is this a melee or ranged attack?",
+            "label": "Attack Type"
+          }
+        }
+      },
+      "damage": {
+        "critical": {
+          "bonus": {
+            "hint": "Extra damage applied when a critical is rolled. Added to the base damage or first damage part.",
+            "label": "Extra Critical Damage"
+          }
+        },
+        "includeBase": {
+          "hint": "Include the item's base damage with any additional damage parts.",
+          "label": "Include Base Damage"
+        },
+        "label": "Attack Damage",
+        "parts": {
+          "hint": "Individual damage parts to include with the roll.",
+          "label": "Damage Parts"
+        }
+      }
+    },
+    "Formatted": {
+      "2014": "{type} {classification} Attack",
+      "2024": "{type} Attack Roll"
+    },
+    "Hint": "Make an attack roll and roll damage.",
+    "Mode": {
+      "Label": "Attack Mode",
+      "Offhand": "Offhand",
+      "OneHanded": "One-Handed",
+      "Ranged": "Ranged",
+      "Thrown": "Thrown",
+      "ThrownOffhand": "Offhand Throw",
+      "TwoHanded": "Two-Handed"
+    },
+    "Title": {
+      "one": "Attack",
+      "other": "Attacks"
+    },
+    "Type": {
+      "Melee": "Melee",
+      "Ranged": "Ranged"
+    },
+    "Warning": {
+      "NoQuantity": "Attempting to attack with a weapon with a quantity of zero."
+    },
+    "Weapon": {
+      "Melee": "Melee Weapon",
+      "Ranged": "Ranged Weapon"
+    }
+  },
   "DND5E.Attack": "Attack",
   "DND5E.AttackPl": "Attacks",
   "DND5E.AttackRoll": "Attack Roll",
@@ -886,80 +886,19 @@
   "DND5E.AttunementRequired": "Attunement Required",
   "DND5E.Automatic": "Automatic",
   "DND5E.AutomaticValue": "Automatic ({value})",
+  "DND5E.available": "available",
   "DND5E.Award": {
-    "Title": "Distribute Award",
     "Action": "Award",
     "Distribution": {
-      "Split": "Split",
-      "Each": "Each"
+      "Each": "Each",
+      "Split": "Split"
     },
     "Message": "{name} has been awarded {award}.",
     "NoDestinations": "No Destinations Available",
     "NoPrimaryParty": "No primary party set, displaying characters assigned to players instead.",
     "NotGMError": "The /award command is only available to GMs.",
+    "Title": "Distribute Award",
     "UnrecognizedWarning": "Unable to parse {commands}. The /award command should be used with XP & currencies values such as '/award 10gp 50xp'."
-  },
-  "DND5E.BONUSES": {
-    "FIELDS": {
-      "bonuses": {
-        "label": "Global Bonuses",
-        "hint": "Global bonuses as formulas which are added to certain rolls.",
-        "abilities": {
-          "label": "Global Ability Bonuses",
-          "check": {
-            "label": "Global Ability Check Bonus"
-          },
-          "save": {
-            "label": "Global Saving Throw Bonus"
-          },
-          "skill": {
-            "label": "Global Skill Check Bonus"
-          }
-        },
-        "msak": {
-          "label": "Melee Spell Bonuses",
-          "attack": {
-            "label": "Melee Spell Attack Bonus"
-          },
-          "damage": {
-            "label": "Melee Spell Damage Bonus"
-          }
-        },
-        "mwak": {
-          "label": "Melee Weapon Bonuses",
-          "attack": {
-            "label": "Melee Weapon Attack Bonus"
-          },
-          "damage": {
-            "label": "Melee Weapon Damage Bonus"
-          }
-        },
-        "rsak": {
-          "label": "Ranged Spell Bonuses",
-          "attack": {
-            "label": "Ranged Spell Attack Bonus"
-          },
-          "damage": {
-            "label": "Ranged Spell Damage Bonus"
-          }
-        },
-        "rwak": {
-          "label": "Ranged Weapon Bonuses",
-          "attack": {
-            "label": "Ranged Weapon Attack Bonus"
-          },
-          "damage": {
-            "label": "Ranged Weapon Damage Bonus"
-          }
-        },
-        "spell": {
-          "label": "Global Spell Bonuses",
-          "dc": {
-            "label": "Global Spell DC Bonus"
-          }
-        }
-      }
-    }
   },
   "DND5E.Background": "Background",
   "DND5E.BackgroundAdd": "Add Background",
@@ -985,21 +924,21 @@
       "Title": "Bastion Attack"
     },
     "Button": {
-      "Label": "Show Bastion Turn Button",
-      "Hint": "Display a button for advancing bastion turns in the main game interface."
+      "Hint": "Display a button for advancing bastion turns in the main game interface.",
+      "Label": "Show Bastion Turn Button"
     },
     "Configuration": {
-      "Name": "Bastions",
+      "Hint": "Various configuration options for the Bastion system as presented in the DMG 2024.",
       "Label": "Configure Bastions",
-      "Hint": "Various configuration options for the Bastion system as presented in the DMG 2024."
+      "Name": "Bastions"
     },
     "Confirm": "Advance one bastion turn?",
     "Duration": {
       "Label": "Bastion Turn Duration (days)"
     },
     "Enabled": {
-      "Label": "Enable Bastion Functionality",
-      "Hint": "When enabled, player characters will have access to a new Bastion tab on their character sheets when reaching level 5, and will be able to build facilities and issue orders to them."
+      "Hint": "When enabled, player characters will have access to a new Bastion tab on their character sheets when reaching level 5, and will be able to build facilities and issue orders to them.",
+      "Label": "Enable Bastion Functionality"
     },
     "Gold": {
       "Claim": "Claim Income",
@@ -1027,6 +966,68 @@
   "DND5E.BonusActionAbbr": "BA",
   "DND5E.BonusAttack": "Attack Bonus",
   "DND5E.BonusDamage": "Damage Bonus",
+  "DND5E.BONUSES": {
+    "FIELDS": {
+      "bonuses": {
+        "abilities": {
+          "check": {
+            "label": "Global Ability Check Bonus"
+          },
+          "label": "Global Ability Bonuses",
+          "save": {
+            "label": "Global Saving Throw Bonus"
+          },
+          "skill": {
+            "label": "Global Skill Check Bonus"
+          }
+        },
+        "hint": "Global bonuses as formulas which are added to certain rolls.",
+        "label": "Global Bonuses",
+        "msak": {
+          "attack": {
+            "label": "Melee Spell Attack Bonus"
+          },
+          "damage": {
+            "label": "Melee Spell Damage Bonus"
+          },
+          "label": "Melee Spell Bonuses"
+        },
+        "mwak": {
+          "attack": {
+            "label": "Melee Weapon Attack Bonus"
+          },
+          "damage": {
+            "label": "Melee Weapon Damage Bonus"
+          },
+          "label": "Melee Weapon Bonuses"
+        },
+        "rsak": {
+          "attack": {
+            "label": "Ranged Spell Attack Bonus"
+          },
+          "damage": {
+            "label": "Ranged Spell Damage Bonus"
+          },
+          "label": "Ranged Spell Bonuses"
+        },
+        "rwak": {
+          "attack": {
+            "label": "Ranged Weapon Attack Bonus"
+          },
+          "damage": {
+            "label": "Ranged Weapon Damage Bonus"
+          },
+          "label": "Ranged Weapon Bonuses"
+        },
+        "spell": {
+          "dc": {
+            "label": "Global Spell DC Bonus"
+          },
+          "label": "Global Spell Bonuses"
+        }
+      }
+    }
+  },
   "DND5E.BonusSaveForm": "Update Bonuses",
   "DND5E.BonusTitle": "Configure Actor Bonuses",
   "DND5E.CALENDAR": {
@@ -1072,7 +1073,6 @@
       }
     },
     "Formatters": {
-      "Date": "Date Formatters",
       "ApproximateDate": {
         "EarlySeason": "Early {season}",
         "Label": "Approximate Date",
@@ -1092,6 +1092,7 @@
         "Sunrise": "Sunrise",
         "Sunset": "Sunset"
       },
+      "Date": "Date Formatters",
       "HoursMinutes": {
         "Format": "{H}:{M}",
         "Label": "Hours & Minutes"
@@ -1113,66 +1114,66 @@
     "Gregorian": "Gregorian Calendar",
     "Greyhawk": {
       "Day": {
+        "Earthday": "Earthday",
+        "Freeday": "Freeday",
+        "Godsday": "Godsday",
+        "Moonday": "Moonday",
         "Starday": "Starday",
         "Sunday": "Sunday",
-        "Moonday": "Moonday",
-        "Godsday": "Godsday",
-        "Waterday": "Waterday",
-        "Earthday": "Earthday",
-        "Freeday": "Freeday"
+        "Waterday": "Waterday"
       },
       "Festival": {
-        "Needfest": "Needfest",
+        "Brewfest": "Brewfest",
         "Growfest": "Growfest",
-        "Richfest": "Richfest",
-        "Brewfest": "Brewfest"
+        "Needfest": "Needfest",
+        "Richfest": "Richfest"
       },
       "Formatters": {
         "MonthDay": "{B} {d}",
         "MonthDayYear": "{B} {d}, {y}"
       },
       "Month": {
-        "Fireseek": "Fireseek",
-        "Readying": "Readying",
         "Coldeven": "Coldeven",
-        "Planting": "Planting",
+        "Fireseek": "Fireseek",
         "Flocktime": "Flocktime",
-        "Wealsun": "Wealsun",
-        "Reaping": "Reaping",
         "Godmonth": "Godmonth",
         "Harvester": "Harvester",
         "Patchwall": "Patchwall",
+        "Planting": "Planting",
+        "Readying": "Readying",
         "Readyreat": "Ready’reat",
-        "Sunsebb": "Sunsebb"
+        "Reaping": "Reaping",
+        "Sunsebb": "Sunsebb",
+        "Wealsun": "Wealsun"
       },
       "Name": "Calendar of Greyhawk",
       "Season": {
+        "Fall": "Fall",
         "Spring": "Spring",
         "Summer": "Summer",
-        "Fall": "Fall",
         "Winter": "Winter"
       }
     },
     "Harptos": {
       "Day": {
-        "One": "one-day",
-        "Two": "two-day",
-        "Three": "three-day",
-        "Four": "four-day",
-        "Five": "five-day",
-        "Six": "six-day",
-        "Seven": "seven-day",
         "Eight": "eight-day",
+        "Five": "five-day",
+        "Four": "four-day",
         "Nine": "nine-day",
-        "Ten": "ten-day"
+        "One": "one-day",
+        "Seven": "seven-day",
+        "Six": "six-day",
+        "Ten": "ten-day",
+        "Three": "three-day",
+        "Two": "two-day"
       },
       "Festival": {
-        "Midwinter": "Midwinter",
+        "FeastOfTheMoon": "The Feast of the Moon",
         "Greengrass": "Greengrass",
-        "Midsummer": "Midsummer",
-        "Shieldmeet": "Shieldmeet",
         "Highharvestide": "Highharvestide",
-        "FeastOfTheMoon": "The Feast of the Moon"
+        "Midsummer": "Midsummer",
+        "Midwinter": "Midwinter",
+        "Shieldmeet": "Shieldmeet"
       },
       "Formatters": {
         "DayMonth": "{d} {B}",
@@ -1180,72 +1181,72 @@
         "FestivalDayYear": "{day}, {y} DR"
       },
       "Month": {
-        "Hammer": "Hammer",
-        "HammerCommon": "Deepwinter",
         "Alturiak": "Alturiak",
         "AlturiakCommon": "The Claw of Winter",
         "Ches": "Ches",
         "ChesCommon": "The Claw of the Sunsets",
-        "Tarsakh": "Tarsakh",
-        "TarsakhCommon": "The Claw of the Storms",
-        "Mirtul": "Mirtul",
-        "MirtulCommon": "The Melting",
-        "Kythorn": "Kythorn",
-        "KythornCommon": "The Time of Flowers",
-        "Flamerule": "Flamerule",
-        "FlameruleCommon": "Summertide",
         "Eleasis": "Eleasis",
         "EleasisCommon": "Highsun",
         "Eleint": "Eleint",
         "EleintCommon": "The Fading",
+        "Flamerule": "Flamerule",
+        "FlameruleCommon": "Summertide",
+        "Hammer": "Hammer",
+        "HammerCommon": "Deepwinter",
+        "Kythorn": "Kythorn",
+        "KythornCommon": "The Time of Flowers",
         "Marpenoth": "Marpenoth",
         "MarpenothCommon": "Leaffall",
-        "Uktar": "Uktar",
-        "UktarCommon": "The Rotting",
+        "Mirtul": "Mirtul",
+        "MirtulCommon": "The Melting",
         "Nightal": "Nightal",
-        "NightalCommon": "The Drawing Down"
+        "NightalCommon": "The Drawing Down",
+        "Tarsakh": "Tarsakh",
+        "TarsakhCommon": "The Claw of the Storms",
+        "Uktar": "Uktar",
+        "UktarCommon": "The Rotting"
       },
       "Name": "Calendar of Harptos (Forgotten Realms)",
       "Season": {
+        "Fall": "Fall",
         "Spring": "Spring",
         "Summer": "Summer",
-        "Fall": "Fall",
         "Winter": "Winter"
       }
     },
     "Khorvaire": {
       "Day": {
-        "Sul": "Sul",
-        "Mol": "Mol",
-        "Zol": "Zol",
-        "Wir": "Wir",
-        "Zor": "Zor",
         "Far": "Far",
-        "Sar": "Sar"
+        "Mol": "Mol",
+        "Sar": "Sar",
+        "Sul": "Sul",
+        "Wir": "Wir",
+        "Zol": "Zol",
+        "Zor": "Zor"
       },
       "Formatters": {
         "DayMonth": "{d} {B}",
         "DayMonthYear": "{d} {B} {y} YK"
       },
       "Month": {
-        "Zarantyr": "Zarantyr",
-        "Olarune": "Olarune",
-        "Therendor": "Therendor",
-        "Eyre": "Eyre",
-        "Dravago": "Dravago",
-        "Nymm": "Nymm",
-        "Lharvion": "Lharvion",
+        "Aryth": "Aryth",
         "Barrakas": "Barrakas",
+        "Dravago": "Dravago",
+        "Eyre": "Eyre",
+        "Lharvion": "Lharvion",
+        "Nymm": "Nymm",
+        "Olarune": "Olarune",
         "Rhaan": "Rhaan",
         "Sypheros": "Sypheros",
-        "Aryth": "Aryth",
-        "Vult": "Vult"
+        "Therendor": "Therendor",
+        "Vult": "Vult",
+        "Zarantyr": "Zarantyr"
       },
       "Name": "Calendar of Khorvaire (Eberron)",
       "Season": {
+        "Autumn": "Autumn",
         "Spring": "Spring",
         "Summer": "Summer",
-        "Autumn": "Autumn",
         "Winter": "Winter"
       }
     }
@@ -1259,36 +1260,36 @@
     },
     "FIELDS": {
       "spell": {
-        "label": "Casting Details",
         "ability": {
-          "label": "Casting Ability",
-          "hint": "Ability to override the creature's normal spellcasting ability."
+          "hint": "Ability to override the creature's normal spellcasting ability.",
+          "label": "Casting Ability"
         },
         "challenge": {
           "attack": {
-            "label": "Attack Bonus",
-            "hint": "Flat to hit bonus in place of the spell's normal attack bonus."
-          },
-          "save": {
-            "label": "Save DC",
-            "hint": "Flat DC to use in place of the spell's normal save DC."
+            "hint": "Flat to hit bonus in place of the spell's normal attack bonus.",
+            "label": "Attack Bonus"
           },
           "override": {
-            "label": "Override Values",
-            "hint": "Override the spell's normal attack bonus & DC when casting."
+            "hint": "Override the spell's normal attack bonus & DC when casting.",
+            "label": "Override Values"
+          },
+          "save": {
+            "hint": "Flat DC to use in place of the spell's normal save DC.",
+            "label": "Save DC"
           }
         },
+        "label": "Casting Details",
         "level": {
-          "label": "Casting Level",
-          "hint": "Base level to cast the spell, if different than the spell's level."
+          "hint": "Base level to cast the spell, if different than the spell's level.",
+          "label": "Casting Level"
         },
         "properties": {
-          "label": "Ignored Properties",
-          "hint": "Spell components & tags to ignore while casting."
+          "hint": "Spell components & tags to ignore while casting.",
+          "label": "Ignored Properties"
         },
         "spellbook": {
-          "label": "Display in Spellbook",
-          "hint": "Display spell in the Spells tab of the character sheet."
+          "hint": "Display spell in the Spells tab of the character sheet.",
+          "label": "Display in Spellbook"
         },
         "uuid": {
           "label": "Spell to Cast"
@@ -1302,6 +1303,19 @@
     },
     "Title": "Cast"
   },
+  "DND5E.Casting": "Casting",
+  "DND5E.Challenge": "Challenge",
+  "DND5E.ChallengeRating": "Challenge Rating",
+  "DND5E.Charged": "Charged",
+  "DND5E.Charges": "Charges",
+  "DND5E.ChatContextDamage": "Apply As Damage",
+  "DND5E.ChatContextDoubleDamage": "Apply Double As Damage",
+  "DND5E.ChatContextHalfDamage": "Apply Half As Damage",
+  "DND5E.ChatContextHealing": "Apply As Healing",
+  "DND5E.ChatContextSelectHit": "Select Hit Targets",
+  "DND5E.ChatContextSelectMiss": "Select Missed Targets",
+  "DND5E.ChatContextTempHP": "Apply As Temporary HP",
+  "DND5E.ChatFlavor": "Chat Message Flavor",
   "DND5E.CHATMESSAGE": {
     "Activities": "Activities",
     "Deltas": {
@@ -1323,43 +1337,41 @@
   "DND5E.CHECK": {
     "FIELDS": {
       "check": {
-        "label": "Check Details",
         "ability": {
-          "label": "Check Ability",
-          "hint": "Ability to use when making the check."
+          "hint": "Ability to use when making the check.",
+          "label": "Check Ability"
         },
         "associated": {
-          "label": "Associated Skills or Tools",
-          "hint": "Present ability checks using proficiency and bonuses with these skills or tools."
+          "hint": "Present ability checks using proficiency and bonuses with these skills or tools.",
+          "label": "Associated Skills or Tools"
         },
         "dc": {
-          "label": "Difficulty Class",
           "calculation": {
-            "label": "DC Calculation",
-            "hint": "Method or ability used to calculate the difficulty class."
+            "hint": "Method or ability used to calculate the difficulty class.",
+            "label": "DC Calculation"
           },
           "formula": {
-            "label": "DC Formula",
-            "hint": "Custom formula or flat value for defining the check DC."
-          }
-        }
+            "hint": "Custom formula or flat value for defining the check DC.",
+            "label": "DC Formula"
+          },
+          "label": "Difficulty Class"
+        },
+        "label": "Check Details"
       }
     },
     "Hint": "Request an ability check possibly assisted by a skill or tool.",
     "ThisTool": "This Tool",
     "Title": "Check"
   },
+  "DND5E.CheckBonus": "Check Bonus",
   "DND5E.CLASS": {
-    "Multiclass": {
-      "Title": "Multiclassing"
-    },
     "FIELDS": {
       "hd": {
-        "label": "Hit Point Die",
         "additional": {
-          "label": "Additional Hit Dice",
-          "hint": "Formula for hit dice that are available for this class beyond the normal amount."
+          "hint": "Formula for hit dice that are available for this class beyond the normal amount.",
+          "label": "Additional Hit Dice"
         },
+        "label": "Hit Point Die",
         "spent": {
           "label": "Spent Hit Dice"
         }
@@ -1369,19 +1381,31 @@
       },
       "primaryAbility": {
         "all": {
-          "label": "Require All",
-          "hint": "Require all primary abilities to meet the minimum in order to multi-class."
+          "hint": "Require all primary abilities to meet the minimum in order to multi-class.",
+          "label": "Require All"
         },
         "value": {
-          "label": "Primary Ability",
-          "hint": "Abilities used most by this class. Used to determine multi-classing restrictions."
+          "hint": "Abilities used most by this class. Used to determine multi-classing restrictions.",
+          "label": "Primary Ability"
         }
       },
       "properties": {
         "label": "Class Properties"
       }
+    },
+    "Multiclass": {
+      "Title": "Multiclassing"
     }
   },
+  "DND5E.ClassAdd": "Add Class",
+  "DND5E.ClassIdentifier": "Class Identifier",
+  "DND5E.ClassIdentifierHint": "This class's data will be accessible using <strong>@classes.{identifier}</strong> in roll formulas.",
+  "DND5E.ClassLevels": "Class Levels",
+  "DND5E.ClassMakeOriginal": "Original Class",
+  "DND5E.ClassMakeOriginalHint": "First class taken by character used to determine certain class traits when multiclassing.",
+  "DND5E.ClassName": "Class Name",
+  "DND5E.ClassOriginal": "Original Class",
+  "DND5E.ClassSaves": "Saving Throws",
   "DND5E.COMBAT": {
     "Group": {
       "ActiveCount": "{current} of {combatants}",
@@ -1394,19 +1418,118 @@
       "other": "{number} combatants"
     }
   },
-  "DND5E.CONDITIONS": {
-    "RiderConditions": {
-      "label": "Separate Status Conditions",
-      "hint": "When this Active Effect is applied, these additional status conditions will be applied separately."
+  "DND5E.CompendiumBrowser": {
+    "Action": {
+      "Open": "Open Compendium Browser"
+    },
+    "Column": {
+      "Icon": "Icon",
+      "Name": "Name",
+      "Results": "Results",
+      "Source": "Source"
+    },
+    "Filters": {
+      "Grouped": "{type} ({group})",
+      "HasDarkvision": "Has Darkvision",
+      "HasSpellcasting": "Has Spellcasting",
+      "Label": "Filters",
+      "SearchResults": "Search results"
+    },
+    "Locked": "Locked",
+    "Selection": {
+      "Label": "Selected: {summary}",
+      "Select": "Select",
+      "Summary": {
+        "Max": "<span class=\"value\">{value}</span> of up to {max}",
+        "Min": "<span class=\"value\">{value}</span> of at least {min}",
+        "Range": "<span class=\"value\">{value}</span> of {min} to {max}",
+        "Single": "<span class=\"value\">{value}</span> of {max}"
+      },
+      "Warning": {
+        "Document": {
+          "one": "document",
+          "other": "documents"
+        },
+        "Max": "Must select at most {max} {document}, {value} selected.",
+        "Min": "Must select at least {min} {document}, {value} selected.",
+        "Range": "Must select between {min} and {max} documents, {value} selected.",
+        "Single": "Must select {max} {document}, {value} selected."
+      }
+    },
+    "Sources": {
+      "FilterPackages": "Filter Packages",
+      "Hint": "Configure which compendium packs have their content available in the compendium browser.",
+      "Label": "Configure Sources",
+      "Name": "Compendium Browser Sources"
+    },
+    "Tabs": {
+      "Feat.other": "Feats",
+      "Item.other": "Items",
+      "Monster.other": "Monsters"
+    },
+    "Title": "Compendium Browser",
+    "Types": {
+      "Label": "Types"
     }
   },
+  "DND5E.ComponentMaterial": "Material",
+  "DND5E.ComponentMaterialAbbr": "M",
+  "DND5E.Components": "Components",
+  "DND5E.ComponentSomatic": "Somatic",
+  "DND5E.ComponentSomaticAbbr": "S",
+  "DND5E.ComponentVerbal": "Verbal",
+  "DND5E.ComponentVerbalAbbr": "V",
+  "DND5E.ConBlinded": "Blinded",
+  "DND5E.ConcentratingEnd": "End Concentration",
+  "DND5E.ConcentratingEndChoice": "You are concentrating on effects from more than one source. Pick which effect to end.",
+  "DND5E.ConcentratingItemless": "Concentration With No Source",
+  "DND5E.ConcentratingLimited": "You are not able to begin concentrating on an additional effect.",
+  "DND5E.ConcentratingMissingItem": "The effect that is concentrated on and to be replaced does not exist.",
+  "DND5E.ConcentratingOn": "You are maintaining concentration on the effects of the '{name}' {type}.",
+  "DND5E.ConcentratingWarnLimit": "You cannot maintain concentration on more effects!",
+  "DND5E.ConcentratingWarnLimitOptional": "You may end concentration on one of your maintained effects to use this item.",
+  "DND5E.ConcentratingWarnLimitZero": "You are not able to maintain concentration on any effects!",
+  "DND5E.Concentration": "Concentration",
+  "DND5E.ConcentrationAbbr": "C",
+  "DND5E.ConcentrationBonus": "Concentration Bonus",
+  "DND5E.ConcentrationBreak": "Break Concentration",
+  "DND5E.ConcentrationBreakWarning": "Breaking concentration on an effect that is active on other creatures requires an active GM to be present.",
+  "DND5E.ConcentrationConfigurationHint": "Configure concentration modifiers and bonuses which apply to this creature.",
+  "DND5E.ConcentrationDuration": "Concentration, up to {duration}",
+  "DND5E.ConcentrationLimit": "Concentration Limit",
+  "DND5E.ConCharmed": "Charmed",
+  "DND5E.ConDeafened": "Deafened",
+  "DND5E.ConDiseased": "Diseased",
+  "DND5E.CONDITIONS": {
+    "RiderConditions": {
+      "hint": "When this Active Effect is applied, these additional status conditions will be applied separately.",
+      "label": "Separate Status Conditions"
+    }
+  },
+  "DND5E.Conditions": "Conditions",
+  "DND5E.ConExhaustion": "Exhaustion",
+  "DND5E.Confirm": "Confirm",
+  "DND5E.ConFrightened": "Frightened",
+  "DND5E.ConGrappled": "Grappled",
+  "DND5E.ConImm": "Condition Immunities",
+  "DND5E.ConIncapacitated": "Incapacitated",
+  "DND5E.ConInvisible": "Invisible",
+  "DND5E.ConParalyzed": "Paralyzed",
+  "DND5E.ConPetrified": "Petrified",
+  "DND5E.ConPoisoned": "Poisoned",
+  "DND5E.ConProne": "Prone",
+  "DND5E.ConRestrained": "Restrained",
+  "DND5E.ConStunned": "Stunned",
   "DND5E.CONSUMABLE": {
+    "Category": {
+      "Poison": "Poison"
+    },
     "FIELDS": {
       "damage": {
         "label": "Ammunition Damage",
         "replace": {
-          "label": "Replace Weapon Damage",
-          "hint": "Replace base weapon damage with this damage rather than augmenting it."
+          "hint": "Replace base weapon damage with this damage rather than augmenting it.",
+          "label": "Replace Weapon Damage"
         }
       },
       "magicalBonus": {
@@ -1417,33 +1540,30 @@
       },
       "uses": {
         "autoDestroy": {
-          "label": "Destroy on Empty",
-          "hint": "Reduce the item's quantity by 1 whenever all of its limited uses are expended."
+          "hint": "Reduce the item's quantity by 1 whenever all of its limited uses are expended.",
+          "label": "Destroy on Empty"
         }
       }
     },
-    "Category": {
-      "Poison": "Poison"
-    },
     "Type": {
       "Ammunition": {
-        "Label": "Ammunition",
         "Arrow": "Arrow",
         "Bolt": "Bolt",
         "BulletFirearm": "Bullet, Firearm",
         "BulletSling": "Bullet, Sling",
         "EnergyCell": "Energy Cell",
+        "Label": "Ammunition",
         "Needle": "Needle"
       },
       "Food": {
         "Label": "Food"
       },
       "Poison": {
-        "Label": "Poison",
         "Contact": "Contact",
         "Ingested": "Ingested",
         "Inhaled": "Inhaled",
-        "Injury": "Injury"
+        "Injury": "Injury",
+        "Label": "Poison"
       },
       "Potion": {
         "Label": "Potion"
@@ -1465,62 +1585,90 @@
       }
     }
   },
+  "DND5E.ConsumableLastChargeWarn": "This is the last charge of this unit and consuming it will also reduce the item's quantity by 1",
+  "DND5E.ConsumableUnitWarn": "units remaining",
+  "DND5E.ConsumableUseWarnEnd": "of the current unit",
+  "DND5E.ConsumableUseWarnStart": "This consumable has",
+  "DND5E.ConsumableWithoutCharges": "available units to use",
+  "DND5E.ConsumeAmmunition": "Ammunition",
+  "DND5E.ConsumeAmount": "Consumption Amount",
+  "DND5E.ConsumeAttribute": "Attribute",
+  "DND5E.ConsumeCharges": "Item Uses",
+  "DND5E.Consumed": "Consumed",
+  "DND5E.ConsumeHint": {
+    "Attribute": "Attribute to consume (e.g. currency.gp)",
+    "Item": "UUID of target in compendium"
+  },
+  "DND5E.ConsumeHitDice": "Hit Dice",
+  "DND5E.ConsumeHitDiceLargest": "Largest Available",
+  "DND5E.ConsumeHitDiceLargestLong": "Largest Hit Dice Available",
+  "DND5E.ConsumeHitDiceSmallest": "Smallest Available",
+  "DND5E.ConsumeHitDiceSmallestLong": "Smallest Hit Dice Available",
+  "DND5E.ConsumeMaterial": "Material",
+  "DND5E.ConsumeRecharge": "Consume Recharge?",
+  "DND5E.ConsumeResource": "Consume Resource?",
+  "DND5E.ConsumeScaling": "Resource Scaling",
+  "DND5E.ConsumeScalingLabel": "Use Resources",
+  "DND5E.ConsumeScalingTooltip": "If checked, consuming additional resources will increase the level the spell is cast at.",
+  "DND5E.ConsumeTarget": "Consumption Target",
+  "DND5E.ConsumeTitle": "Resource Consumption",
+  "DND5E.ConsumeType": "Consumption Category",
   "DND5E.CONSUMPTION": {
-    "FIELDS": {
-      "consumption": {
-        "label": "Consumption",
-        "scaling": {
-          "abbr": "Scaling",
-          "label": "Consumption Scaling",
-          "allowed": {
-            "label": "Allow Scaling",
-            "hint": "Can an activity not on a spell be activated at higher levels?"
-          },
-          "max": {
-            "label": "Max Scaling",
-            "hint": "Maximum number of scaling levels for this item, including the base level."
-          }
-        },
-        "spellSlot": {
-          "label": "Consume Spell Slot",
-          "hint": "Should using this activity consume a slot for this spell?"
-        },
-        "targets": {
-          "label": "Consumption Targets",
-          "hint": "Targets of possible consumption when this activity is activated.",
-          "FIELDS": {
-            "type": {
-              "label": "Consumption Type",
-              "hint": "Type of consumption target."
-            },
-            "target": {
-              "label": "Consumption Target",
-              "hint": "Specific target to be consumed."
-            },
-            "value": {
-              "label": "Consumption Amount",
-              "hint": "Enter a negative value to restore rather than consume."
-            },
-            "scaling": {
-              "label": "Consumption Scaling",
-              "mode": {
-                "label": "Scaling Mode",
-                "hint": "How consumption should be scaled."
-              },
-              "formula": {
-                "label": "Scaling Formula",
-                "hint": "Custom scaling of consumption amount per level."
-              }
-            }
-          }
-        }
-      }
-    },
     "Action": {
       "ConsumeResource": "Consume Resource",
       "Create": "Create Consumption Target",
       "Delete": "Delete Consumption Target",
       "RefundResource": "Refund Resource"
+    },
+    "FIELDS": {
+      "consumption": {
+        "label": "Consumption",
+        "scaling": {
+          "abbr": "Scaling",
+          "allowed": {
+            "hint": "Can an activity not on a spell be activated at higher levels?",
+            "label": "Allow Scaling"
+          },
+          "label": "Consumption Scaling",
+          "max": {
+            "hint": "Maximum number of scaling levels for this item, including the base level.",
+            "label": "Max Scaling"
+          }
+        },
+        "spellSlot": {
+          "hint": "Should using this activity consume a slot for this spell?",
+          "label": "Consume Spell Slot"
+        },
+        "targets": {
+          "FIELDS": {
+            "scaling": {
+              "formula": {
+                "hint": "Custom scaling of consumption amount per level.",
+                "label": "Scaling Formula"
+              },
+              "label": "Consumption Scaling",
+              "mode": {
+                "hint": "How consumption should be scaled.",
+                "label": "Scaling Mode"
+              }
+            },
+            "target": {
+              "hint": "Specific target to be consumed.",
+              "label": "Consumption Target"
+            },
+            "type": {
+              "hint": "Type of consumption target.",
+              "label": "Consumption Type"
+            },
+            "value": {
+              "hint": "Enter a negative value to restore rather than consume.",
+              "label": "Consumption Amount"
+            }
+          },
+          "hint": "Targets of possible consumption when this activity is activated.",
+          "label": "Consumption Targets"
+        }
+      }
     },
     "Scaling": {
       "Amount": "Amount",
@@ -1540,26 +1688,26 @@
       "ActivityUses": {
         "Label": "Activity Uses",
         "PromptDecrease": "Consume Activity Use?",
-        "PromptIncrease": "Restore Activity Use?",
         "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of this activity ({available} {availableUse} available).",
         "PromptHintIncrease": "Recover <strong>{cost}</strong> {use} of this activity.",
+        "PromptIncrease": "Restore Activity Use?",
         "Warning": "uses on {item}'s activity {activity}"
       },
       "Attribute": {
         "Label": "Attribute",
         "NonEmbeddedHint": "Path of the attribute to consume (e.g. attributes.exhaustion, spells.pact.value).",
         "PromptDecrease": "Consume Attribute?",
-        "PromptIncrease": "Restore Attribute?",
         "PromptHintDecrease": "Decrease <code>{attribute}</code> by <strong>{cost}</strong> (currently {current}).",
         "PromptHintIncrease": "Increase <code>{attribute}</code> by <strong>{cost}</strong> (currently {current}).",
+        "PromptIncrease": "Restore Attribute?",
         "Warning": "{attribute} amount"
       },
       "HitDice": {
         "Label": "Hit Dice",
         "PromptDecrease": "Consume Hit Die?",
-        "PromptIncrease": "Restore Hit Die?",
         "PromptHintDecrease": "Spend <strong>{cost}</strong> {denomination} {die} ({available} remaining).",
         "PromptHintIncrease": "Recover <strong>{cost}</strong> {denomination} {die}.",
+        "PromptIncrease": "Restore Hit Die?",
         "Warning": "{denomination} hit dice"
       },
       "HitDie": {
@@ -1570,18 +1718,18 @@
         "Label": "Item Uses",
         "NonEmbeddedHint": "Item identifier or UUID of item in compendium that will be linked automatically to matching item on sheet.",
         "PromptDecrease": "Consume Item Use?",
-        "PromptIncrease": "Restore Item Use?",
         "PromptHintDecrease": "Spend <strong>{cost}</strong> {use} of {item} ({available} {availableUse} available).",
         "PromptHintIncrease": "Recover <strong>{cost}</strong> {use} of {item}.",
+        "PromptIncrease": "Restore Item Use?",
         "Warning": "uses on {name}"
       },
       "Material": {
         "Label": "Material",
         "NonEmbeddedHint": "Item identifier or UUID of item in compendium that will be linked automatically to matching item on sheet.",
         "PromptDecrease": "Consume Material?",
-        "PromptIncrease": "Restore Material?",
         "PromptHintDecrease": "Reduce quantity of {item} by <strong>{cost}</strong> ({quantity} remaining).",
         "PromptHintIncrease": "Increase quantity of {item} by <strong>{cost}</strong>.",
+        "PromptIncrease": "Restore Material?",
         "Warning": "of {name}"
       },
       "SpellSlot": {
@@ -1591,9 +1739,9 @@
       "SpellSlots": {
         "Label": "Spell Slots",
         "PromptDecrease": "Consume Spell Slot?",
-        "PromptIncrease": "Restore Spell Slot?",
         "PromptHintDecrease": "Spend <strong>{cost}</strong> {slot} ({available} remaining).",
         "PromptHintIncrease": "Recover <strong>{cost}</strong> {slot}.",
+        "PromptIncrease": "Restore Spell Slot?",
         "Warning": "{level} slots"
       },
       "Use": {
@@ -1615,10 +1763,10 @@
     "Details": "Container Details",
     "FIELDS": {
       "capacity": {
-        "label": "Capacity",
         "count": {
           "label": "Item Count"
         },
+        "label": "Capacity",
         "volume": {
           "label": "Volume Capacity",
           "units": {
@@ -1643,155 +1791,6 @@
       }
     }
   },
-  "DND5E.CRLabel": "CR {cr}",
-  "DND5E.Casting": "Casting",
-  "DND5E.Challenge": "Challenge",
-  "DND5E.ChallengeRating": "Challenge Rating",
-  "DND5E.Charged": "Charged",
-  "DND5E.Charges": "Charges",
-  "DND5E.ChatContextDamage": "Apply As Damage",
-  "DND5E.ChatContextDoubleDamage": "Apply Double As Damage",
-  "DND5E.ChatContextHalfDamage": "Apply Half As Damage",
-  "DND5E.ChatContextHealing": "Apply As Healing",
-  "DND5E.ChatContextSelectHit": "Select Hit Targets",
-  "DND5E.ChatContextSelectMiss": "Select Missed Targets",
-  "DND5E.ChatContextTempHP": "Apply As Temporary HP",
-  "DND5E.ChatFlavor": "Chat Message Flavor",
-  "DND5E.CheckBonus": "Check Bonus",
-  "DND5E.ClassAdd": "Add Class",
-  "DND5E.ClassIdentifier": "Class Identifier",
-  "DND5E.ClassIdentifierHint": "This class's data will be accessible using <strong>@classes.{identifier}</strong> in roll formulas.",
-  "DND5E.ClassLevels": "Class Levels",
-  "DND5E.ClassMakeOriginal": "Original Class",
-  "DND5E.ClassMakeOriginalHint": "First class taken by character used to determine certain class traits when multiclassing.",
-  "DND5E.ClassName": "Class Name",
-  "DND5E.ClassOriginal": "Original Class",
-  "DND5E.ClassSaves": "Saving Throws",
-  "DND5E.CompendiumBrowser": {
-    "Title": "Compendium Browser",
-    "Action": {
-      "Open": "Open Compendium Browser"
-    },
-    "Column": {
-      "Icon": "Icon",
-      "Name": "Name",
-      "Results": "Results",
-      "Source": "Source"
-    },
-    "Filters": {
-      "Label": "Filters",
-      "Grouped": "{type} ({group})",
-      "HasDarkvision": "Has Darkvision",
-      "HasSpellcasting": "Has Spellcasting",
-      "SearchResults": "Search results"
-    },
-    "Selection": {
-      "Label": "Selected: {summary}",
-      "Select": "Select",
-      "Summary": {
-        "Max": "<span class=\"value\">{value}</span> of up to {max}",
-        "Min": "<span class=\"value\">{value}</span> of at least {min}",
-        "Range": "<span class=\"value\">{value}</span> of {min} to {max}",
-        "Single": "<span class=\"value\">{value}</span> of {max}"
-      },
-      "Warning": {
-        "Document": {
-          "one": "document",
-          "other": "documents"
-        },
-        "Max": "Must select at most {max} {document}, {value} selected.",
-        "Min": "Must select at least {min} {document}, {value} selected.",
-        "Range": "Must select between {min} and {max} documents, {value} selected.",
-        "Single": "Must select {max} {document}, {value} selected."
-      }
-    },
-    "Sources": {
-      "Name": "Compendium Browser Sources",
-      "Label": "Configure Sources",
-      "FilterPackages": "Filter Packages",
-      "Hint": "Configure which compendium packs have their content available in the compendium browser."
-    },
-    "Tabs": {
-      "Feat.other": "Feats",
-      "Item.other": "Items",
-      "Monster.other": "Monsters"
-    },
-    "Types": {
-      "Label": "Types"
-    },
-    "Locked": "Locked"
-  },
-  "DND5E.ComponentMaterial": "Material",
-  "DND5E.ComponentMaterialAbbr": "M",
-  "DND5E.ComponentSomatic": "Somatic",
-  "DND5E.ComponentSomaticAbbr": "S",
-  "DND5E.ComponentVerbal": "Verbal",
-  "DND5E.ComponentVerbalAbbr": "V",
-  "DND5E.Components": "Components",
-  "DND5E.ConBlinded": "Blinded",
-  "DND5E.ConCharmed": "Charmed",
-  "DND5E.ConDeafened": "Deafened",
-  "DND5E.ConDiseased": "Diseased",
-  "DND5E.ConExhaustion": "Exhaustion",
-  "DND5E.ConFrightened": "Frightened",
-  "DND5E.ConGrappled": "Grappled",
-  "DND5E.ConImm": "Condition Immunities",
-  "DND5E.ConIncapacitated": "Incapacitated",
-  "DND5E.ConInvisible": "Invisible",
-  "DND5E.ConParalyzed": "Paralyzed",
-  "DND5E.ConPetrified": "Petrified",
-  "DND5E.ConPoisoned": "Poisoned",
-  "DND5E.ConProne": "Prone",
-  "DND5E.ConRestrained": "Restrained",
-  "DND5E.ConStunned": "Stunned",
-  "DND5E.ConUnconscious": "Unconscious",
-  "DND5E.ConcentratingEnd": "End Concentration",
-  "DND5E.ConcentratingEndChoice": "You are concentrating on effects from more than one source. Pick which effect to end.",
-  "DND5E.ConcentratingItemless": "Concentration With No Source",
-  "DND5E.ConcentratingLimited": "You are not able to begin concentrating on an additional effect.",
-  "DND5E.ConcentratingMissingItem": "The effect that is concentrated on and to be replaced does not exist.",
-  "DND5E.ConcentratingOn": "You are maintaining concentration on the effects of the '{name}' {type}.",
-  "DND5E.ConcentratingWarnLimit": "You cannot maintain concentration on more effects!",
-  "DND5E.ConcentratingWarnLimitOptional": "You may end concentration on one of your maintained effects to use this item.",
-  "DND5E.ConcentratingWarnLimitZero": "You are not able to maintain concentration on any effects!",
-  "DND5E.Concentration": "Concentration",
-  "DND5E.ConcentrationAbbr": "C",
-  "DND5E.ConcentrationBonus": "Concentration Bonus",
-  "DND5E.ConcentrationBreak": "Break Concentration",
-  "DND5E.ConcentrationBreakWarning": "Breaking concentration on an effect that is active on other creatures requires an active GM to be present.",
-  "DND5E.ConcentrationConfigurationHint": "Configure concentration modifiers and bonuses which apply to this creature.",
-  "DND5E.ConcentrationDuration": "Concentration, up to {duration}",
-  "DND5E.ConcentrationLimit": "Concentration Limit",
-  "DND5E.Conditions": "Conditions",
-  "DND5E.Confirm": "Confirm",
-  "DND5E.ConsumableLastChargeWarn": "This is the last charge of this unit and consuming it will also reduce the item's quantity by 1",
-  "DND5E.ConsumableUnitWarn": "units remaining",
-  "DND5E.ConsumableUseWarnEnd": "of the current unit",
-  "DND5E.ConsumableUseWarnStart": "This consumable has",
-  "DND5E.ConsumableWithoutCharges": "available units to use",
-  "DND5E.ConsumeAmmunition": "Ammunition",
-  "DND5E.ConsumeAmount": "Consumption Amount",
-  "DND5E.ConsumeAttribute": "Attribute",
-  "DND5E.ConsumeCharges": "Item Uses",
-  "DND5E.ConsumeHint": {
-    "Attribute": "Attribute to consume (e.g. currency.gp)",
-    "Item": "UUID of target in compendium"
-  },
-  "DND5E.ConsumeHitDice": "Hit Dice",
-  "DND5E.ConsumeHitDiceLargest": "Largest Available",
-  "DND5E.ConsumeHitDiceLargestLong": "Largest Hit Dice Available",
-  "DND5E.ConsumeHitDiceSmallest": "Smallest Available",
-  "DND5E.ConsumeHitDiceSmallestLong": "Smallest Hit Dice Available",
-  "DND5E.ConsumeMaterial": "Material",
-  "DND5E.ConsumeRecharge": "Consume Recharge?",
-  "DND5E.ConsumeResource": "Consume Resource?",
-  "DND5E.ConsumeScaling": "Resource Scaling",
-  "DND5E.ConsumeScalingLabel": "Use Resources",
-  "DND5E.ConsumeScalingTooltip": "If checked, consuming additional resources will increase the level the spell is cast at.",
-  "DND5E.ConsumeTarget": "Consumption Target",
-  "DND5E.ConsumeTitle": "Resource Consumption",
-  "DND5E.ConsumeType": "Consumption Category",
-  "DND5E.Consumed": "Consumed",
   "DND5E.Container": "Container",
   "DND5E.ContainerDeleteContents": "Also delete all items within the container.",
   "DND5E.ContainerDeleteMessage": "This container will be permanently deleted and cannot be recovered and the {count} items contained within will be moved out.",
@@ -1814,15 +1813,16 @@
   "DND5E.ContextMenuActionView": "View",
   "DND5E.Contiguous": "Contiguous",
   "DND5E.Controls": {
+    "Activity": {
+      "FastForwardHint": "<kbd>Shift</kbd> + <left-click> the item to skip this dialog"
+    },
     "Hint": "Enable various hints throughout the UI for certain mouse and keyboard controls.",
     "LeftClick": "Left Click",
     "LockHint": "Middle-click to lock",
     "MiddleClick": "Middle Click",
-    "Name": "Enable Control Hints",
-    "Activity": {
-      "FastForwardHint": "<kbd>Shift</kbd> + <left-click> the item to skip this dialog"
-    }
+    "Name": "Enable Control Hints"
   },
+  "DND5E.ConUnconscious": "Unconscious",
   "DND5E.Copied": "Copied {value}",
   "DND5E.Copy": "Copy Text",
   "DND5E.Cost": "Cost",
@@ -1871,6 +1871,7 @@
   "DND5E.Crewed": "Crewed",
   "DND5E.Critical": "Critical",
   "DND5E.CriticalHit": "Critical Hit",
+  "DND5E.CRLabel": "CR {cr}",
   "DND5E.Currency": "Currency",
   "DND5E.CurrencyAbbrCP": "cp",
   "DND5E.CurrencyAbbrEP": "ep",
@@ -1881,20 +1882,20 @@
   "DND5E.CurrencyEP": "Electrum",
   "DND5E.CurrencyGP": "Gold",
   "DND5E.CurrencyManager": {
-    "Title": "Manage Currency",
     "Convert": {
-      "Label": "Convert",
       "Action": "Convert All Currency",
-      "Hint": "Convert all carried currency to the highest possible denomination to reduce the amount of coinage carried by the character. Be wary, this action cannot be undone."
+      "Hint": "Convert all carried currency to the highest possible denomination to reduce the amount of coinage carried by the character. Be wary, this action cannot be undone.",
+      "Label": "Convert"
     },
     "Error": {
       "InsufficientFunds": "Failed to deduct {amount}{denomination} from {name}. Insufficient funds."
     },
+    "Title": "Manage Currency",
     "Transfer": {
-      "Label": "Transfer",
       "Action": "Transfer Selected",
       "All": "All",
-      "Half": "Half"
+      "Half": "Half",
+      "Label": "Transfer"
     }
   },
   "DND5E.CurrencyPP": "Platinum",
@@ -1903,67 +1904,67 @@
   "DND5E.DAMAGE": {
     "FIELDS": {
       "damage": {
-        "label": "Damage",
         "critical": {
           "allow": {
-            "label": "Allow Critical",
-            "hint": "Should the creature be able to roll critical damage?"
+            "hint": "Should the creature be able to roll critical damage?",
+            "label": "Allow Critical"
           },
           "bonus": {
-            "label": "Extra Critical Damage",
-            "hint": "Extra damage applied to the first damage part when a critical is rolled."
+            "hint": "Extra damage applied to the first damage part when a critical is rolled.",
+            "label": "Extra Critical Damage"
           }
         },
+        "label": "Damage",
         "parts": {
-          "label": "Damage Parts",
-          "hint": "Individual damage parts to include with the roll.",
           "FIELDS": {
             "bonus": {
-              "label": "Damage Bonus",
-              "hint": "Bonus added to the damage roll."
+              "hint": "Bonus added to the damage roll.",
+              "label": "Damage Bonus"
             },
             "custom": {
-              "label": "Custom Damage Formula",
               "enabled": {
-                "label": "Enable Custom Formula",
-                "hint": "Use a custom formula rather than the default dice."
+                "hint": "Use a custom formula rather than the default dice.",
+                "label": "Enable Custom Formula"
               },
               "formula": {
-                "label": "Damage Formula",
-                "hint": "Custom damage formula."
-              }
+                "hint": "Custom damage formula.",
+                "label": "Damage Formula"
+              },
+              "label": "Custom Damage Formula"
             },
             "denomination": {
-              "label": "Die Denomination",
-              "hint": "Denomination of the dice to roll."
+              "hint": "Denomination of the dice to roll.",
+              "label": "Die Denomination"
             },
             "number": {
-              "label": "Die Number",
-              "hint": "Number of dice to roll."
+              "hint": "Number of dice to roll.",
+              "label": "Die Number"
             },
             "scaling": {
-              "label": "Damage Scaling",
               "abbr": "Scaling",
+              "formula": {
+                "hint": "Arbitrary scaling formula that will be multiplied for each scaling step and added to the original formula.",
+                "label": "Scaling Formula"
+              },
+              "label": "Damage Scaling",
               "mode": {
-                "label": "Scaling Mode",
                 "abbr": "Mode",
-                "hint": "Method by which the scaling increase is calculated."
+                "hint": "Method by which the scaling increase is calculated.",
+                "label": "Scaling Mode"
               },
               "number": {
-                "label": "Dice Scaling",
                 "abbr": "Dice",
-                "hint": "Number of dice to increase for each scaling step. Will be applied to the first die found in the damage formula if more than one is present."
-              },
-              "formula": {
-                "label": "Scaling Formula",
-                "hint": "Arbitrary scaling formula that will be multiplied for each scaling step and added to the original formula."
+                "hint": "Number of dice to increase for each scaling step. Will be applied to the first die found in the damage formula if more than one is present.",
+                "label": "Dice Scaling"
               }
             },
             "types": {
-              "label": "Damage Types",
-              "hint": "Type of damage inflicted or multiple for the user to select from."
+              "hint": "Type of damage inflicted or multiple for the user to select from.",
+              "label": "Damage Types"
             }
-          }
+          },
+          "hint": "Individual damage parts to include with the roll.",
+          "label": "Damage Parts"
         }
       }
     },
@@ -1983,44 +1984,13 @@
     },
     "Title": "Damage"
   },
-  "DND5E.DURATION": {
-    "FIELDS": {
-      "duration": {
-        "label": "Duration",
-        "concentration": {
-          "label": "Concentration",
-          "hint": "Creature must maintain concentration while active."
-        },
-        "override": {
-          "label": "Override Duration",
-          "hint": "Use these duration values instead of the item's when using this activity."
-        },
-        "special": {
-          "label": "Special Duration",
-          "hint": "Description of any special duration details."
-        },
-        "units": {
-          "label": "Duration Units",
-          "hint": "Units used to measure duration."
-        },
-        "value": {
-          "label": "Duration Value",
-          "hint": "Value of the duration in the specified units, if applicable."
-        }
-      }
-    }
-  },
-  "DND5E.DamImm": "Damage Immunities",
-  "DND5E.DamMod": "Damage Modification",
-  "DND5E.DamRes": "Damage Resistances",
-  "DND5E.DamVuln": "Damage Vulnerabilities",
   "DND5E.Damage": "Damage",
   "DND5E.DamageAcid": "Acid",
   "DND5E.DamageAll": "All Damage",
   "DND5E.DamageApplication": {
     "Change": {
-      "Modification": "{type} Modification",
       "Immunity": "{type} Immunity",
+      "Modification": "{type} Modification",
       "Resistance": "{type} Resistance",
       "Threshold": "Damage Threshold",
       "Vulnerability": "{type} Vulnerability"
@@ -2034,16 +2004,16 @@
   "DND5E.DamageForce": "Force",
   "DND5E.DamageLightning": "Lightning",
   "DND5E.DamageModification": {
-    "Label": "Damage Modification",
+    "BypassHint": "These weapon properties will bypass damage modification for physical damage.",
     "Hint": "Formulas for amounts that will be added to typed damage applied to this actor. Negative values will reduce the damage taken.",
-    "BypassHint": "These weapon properties will bypass damage modification for physical damage."
+    "Label": "Damage Modification"
   },
   "DND5E.DamageNecrotic": "Necrotic",
   "DND5E.DamagePhysical": "Non-Magical Physical",
   "DND5E.DamagePhysicalBypass": "Physical Bypasses",
-  "DND5E.DamagePhysicalBypassHint": "These weapon properties will bypass damage resistance for physical damage.",
   "DND5E.DamagePhysicalBypasses": "{damageTypes} from attacks that are not {bypassTypes}",
   "DND5E.DamagePhysicalBypassesShort": "Bypassed by {type} Sources",
+  "DND5E.DamagePhysicalBypassHint": "These weapon properties will bypass damage resistance for physical damage.",
   "DND5E.DamagePiercing": "Piercing",
   "DND5E.DamagePoison": "Poison",
   "DND5E.DamagePsychic": "Psychic",
@@ -2054,6 +2024,10 @@
   "DND5E.DamageThunder": "Thunder",
   "DND5E.DamageType": "Damage Type",
   "DND5E.DamageTypes": "Damage Types",
+  "DND5E.DamImm": "Damage Immunities",
+  "DND5E.DamMod": "Damage Modification",
+  "DND5E.DamRes": "Damage Resistances",
+  "DND5E.DamVuln": "Damage Vulnerabilities",
   "DND5E.Dawn": "Dawn",
   "DND5E.Day": "Day",
   "DND5E.DeathSave": "Death Saves",
@@ -2070,11 +2044,11 @@
   "DND5E.DeathSaveRoll": "Roll a Death Saving Throw",
   "DND5E.DeathSaveShow": "Show Death Saves",
   "DND5E.DeathSaveSuccess": "{name} has survived with 3 death save successes and is now stable!",
+  "DND5E.DeathSaveSuccesses": "Successes",
   "DND5E.DeathSaveSuccessLabel": "Death Save Success",
   "DND5E.DeathSaveSuccessLabelN.few": "3rd death save success",
   "DND5E.DeathSaveSuccessLabelN.one": "1st death save success",
   "DND5E.DeathSaveSuccessLabelN.two": "2nd death save success",
-  "DND5E.DeathSaveSuccesses": "Successes",
   "DND5E.DeathSaveUnnecessary": "You do not need to roll death saves because you have a positive number of hit points or have already reached 3 successes or failures.",
   "DND5E.DeathSavingThrow": "Death Saving Throw",
   "DND5E.Default": "Default",
@@ -2082,6 +2056,7 @@
   "DND5E.DefaultSpecific": "Default ({default})",
   "DND5E.Denomination": "Denomination",
   "DND5E.Description": "Description",
+  "DND5E.description": "A system for playing the fifth edition of the worlds most popular roleplaying game in the Foundry Virtual Tabletop environment.",
   "DND5E.DescriptionChat": "Chat Description",
   "DND5E.DescriptionEdit": "Edit {description}",
   "DND5E.DescriptionSummary": "Summary Description",
@@ -2107,6 +2082,33 @@
   "DND5E.DistTouch": "Touch",
   "DND5E.DocumentUseWarn": "You lack permission to use an item on this document.",
   "DND5E.DocumentViewWarn": "You lack permission to view this document.",
+  "DND5E.DURATION": {
+    "FIELDS": {
+      "duration": {
+        "concentration": {
+          "hint": "Creature must maintain concentration while active.",
+          "label": "Concentration"
+        },
+        "label": "Duration",
+        "override": {
+          "hint": "Use these duration values instead of the item's when using this activity.",
+          "label": "Override Duration"
+        },
+        "special": {
+          "hint": "Description of any special duration details.",
+          "label": "Special Duration"
+        },
+        "units": {
+          "hint": "Units used to measure duration.",
+          "label": "Duration Units"
+        },
+        "value": {
+          "hint": "Value of the duration in the specified units, if applicable.",
+          "label": "Duration Value"
+        }
+      }
+    }
+  },
   "DND5E.Duration": "Duration",
   "DND5E.DurationPermanent": "Permanent",
   "DND5E.DurationTime": "Time",
@@ -2127,68 +2129,31 @@
       "Effect": "Enchantment Rider Effect"
     }
   },
+  "DND5E.Effect": "Effect",
+  "DND5E.EffectApplyWarningConcentration": "Applying an effect that is being concentrated on by another character requires GM permissions.",
+  "DND5E.EffectApplyWarningOwnership": "Effects cannot be applied to tokens you are not the owner of.",
+  "DND5E.EffectCreate": "Create Effect",
+  "DND5E.EffectDelete": "Delete Effect",
+  "DND5E.EffectDisable": "Disable Effect",
+  "DND5E.EffectEdit": "Edit Effect",
+  "DND5E.EffectEnable": "Enable Effect",
+  "DND5E.EffectInactive": "Inactive Effects",
+  "DND5E.EffectNew": "New Effect",
+  "DND5E.EffectPassive": "Passive Effects",
+  "DND5E.Effects": "Effects",
+  "DND5E.EffectsApplyTokens": "Apply to selected tokens",
+  "DND5E.EffectsSearch": "Search effects",
+  "DND5E.EffectTemporary": "Temporary Effects",
+  "DND5E.EffectToggle": "Toggle Effect",
+  "DND5E.EffectType": {
+    "Inactive": "Inactive",
+    "Passive": "Passive",
+    "Temporary": "Temporary",
+    "Unavailable": "Unavailable"
+  },
+  "DND5E.EffectUnavailable": "Unavailable Effects",
+  "DND5E.EffectUnavailableInfo": "Source item must be equipped or attuned to activate these",
   "DND5E.ENCHANT": {
-    "FIELDS": {
-      "effects.element": {
-        "level": {
-          "label": "Level Limit",
-          "hint": "Range of levels required to use this enchantment.",
-          "max": {
-            "label": "Maximum Level"
-          },
-          "min": {
-            "label": "Minimum Level"
-          }
-        },
-        "riders": {
-          "label": "Attached",
-          "activity": {
-            "label": "Additional Activities",
-            "hint": "These additional activities will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed."
-          },
-          "effect": {
-            "label": "Additional Effects",
-            "hint": "These additional effects will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed."
-          },
-          "item": {
-            "label": "Additional Items",
-            "hint": "These additional items will be added to the creature when one of its items is enchanted, and will be removed if the enchantment is ever removed."
-          }
-        }
-      },
-      "enchant": {
-        "label": "Enchantment Configuration",
-        "identifier": {
-          "label": "Class Identifier",
-          "hint": "Identifier used to determine whether the character level or a specific class level should be used for enchantment level limits."
-        },
-        "self": {
-          "label": "Automatically Enchant Self",
-          "hint": "Automatically apply selected enchantment to the item containing this activity when it is used, and remove it when the activity is used again."
-        }
-      },
-      "restrictions": {
-        "label": "Restrictions",
-        "hint": "Restrictions on the type of item to which this enchantment can be applied.",
-        "allowMagical": {
-          "label": "Allow Magical",
-          "hint": "Allow physical items that are already magical to be enchanted."
-        },
-        "categories": {
-          "label": "Valid Categories",
-          "hint": "Specific item categories to which this enchantment can be applied."
-        },
-        "properties": {
-          "label": "Valid Properties",
-          "hint": "Specific item properties which must be present for this enchantment to be applied."
-        },
-        "type": {
-          "label": "Item Type",
-          "hint": "Type of item to which this enchantment can be applied.",
-          "Any": "Any Enchantable Type"
-        }
-      }
-    },
     "DropArea": "Place item here to enchant it…",
     "Enchanted": "{current} &sol; {max} enchanted",
     "Enchantment": {
@@ -2198,6 +2163,67 @@
       },
       "Active": "{name} (active)",
       "Empty": "No associated enchantments. Use the <i class=\"fas fa-plus\"></i> button above to create one, or select an existing enchantment from the drop-down."
+    },
+    "FIELDS": {
+      "effects.element": {
+        "level": {
+          "hint": "Range of levels required to use this enchantment.",
+          "label": "Level Limit",
+          "max": {
+            "label": "Maximum Level"
+          },
+          "min": {
+            "label": "Minimum Level"
+          }
+        },
+        "riders": {
+          "activity": {
+            "hint": "These additional activities will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed.",
+            "label": "Additional Activities"
+          },
+          "effect": {
+            "hint": "These additional effects will be added to the enchanted item when this enchantment is applied, and removed when the enchantment is removed.",
+            "label": "Additional Effects"
+          },
+          "item": {
+            "hint": "These additional items will be added to the creature when one of its items is enchanted, and will be removed if the enchantment is ever removed.",
+            "label": "Additional Items"
+          },
+          "label": "Attached"
+        }
+      },
+      "enchant": {
+        "identifier": {
+          "hint": "Identifier used to determine whether the character level or a specific class level should be used for enchantment level limits.",
+          "label": "Class Identifier"
+        },
+        "label": "Enchantment Configuration",
+        "self": {
+          "hint": "Automatically apply selected enchantment to the item containing this activity when it is used, and remove it when the activity is used again.",
+          "label": "Automatically Enchant Self"
+        }
+      },
+      "restrictions": {
+        "allowMagical": {
+          "hint": "Allow physical items that are already magical to be enchanted.",
+          "label": "Allow Magical"
+        },
+        "categories": {
+          "hint": "Specific item categories to which this enchantment can be applied.",
+          "label": "Valid Categories"
+        },
+        "hint": "Restrictions on the type of item to which this enchantment can be applied.",
+        "label": "Restrictions",
+        "properties": {
+          "hint": "Specific item properties which must be present for this enchantment to be applied.",
+          "label": "Valid Properties"
+        },
+        "type": {
+          "Any": "Any Enchantable Type",
+          "hint": "Type of item to which this enchantment can be applied.",
+          "label": "Item Type"
+        }
+      }
     },
     "Hint": "Apply an enchantment to an item that modifies its stats or functionality.",
     "SECTIONS": {
@@ -2210,8 +2236,8 @@
       "ConcentrationEnded": "Cannot apply this enchantment because concentration has ended.",
       "MissingProperty": "Item must have one of these properties to be enchanted: {validProperties}.",
       "NoMagicalItems": "Items that are already magical cannot be enchanted.",
-      "NoTargetActor": "Enchanting from a compendium requires an assigned character or selected token.",
       "NoSubtype": "Only {allowedType} items can be enchanted by this enchantment, but this item doesn't have a sub-type.",
+      "NoTargetActor": "Enchanting from a compendium requires an assigned character or selected token.",
       "WrongType": "{incorrectType} items cannot be enchanted by this enchantment, only {allowedType} items are allowed."
     }
   },
@@ -2230,17 +2256,17 @@
     },
     "FIELDS": {
       "enchantment": {
-        "label": "Enchantment Configuration",
         "items": {
           "max": {
-            "label": "Item Limit",
-            "hint": "Formula for the maximum number of enchantments of this type that can be active at a time."
+            "hint": "Formula for the maximum number of enchantments of this type that can be active at a time.",
+            "label": "Item Limit"
           },
           "period": {
-            "label": "Replacement Period",
-            "hint": "How frequently the enchantments of this type can be re-bound to different items."
+            "hint": "How frequently the enchantments of this type can be re-bound to different items.",
+            "label": "Replacement Period"
           }
-        }
+        },
+        "label": "Enchantment Configuration"
       }
     },
     "Items": {
@@ -2274,6 +2300,8 @@
       "Members": "Members"
     }
   },
+  "DND5E.Encumbrance": "Encumbrance",
+  "DND5E.Environment": "Environment",
   "DND5E.EQUIPMENT": {
     "Type": {
       "Clothing": {
@@ -2299,32 +2327,6 @@
       }
     }
   },
-  "DND5E.Effect": "Effect",
-  "DND5E.EffectApplyWarningConcentration": "Applying an effect that is being concentrated on by another character requires GM permissions.",
-  "DND5E.EffectApplyWarningOwnership": "Effects cannot be applied to tokens you are not the owner of.",
-  "DND5E.EffectCreate": "Create Effect",
-  "DND5E.EffectDelete": "Delete Effect",
-  "DND5E.EffectDisable": "Disable Effect",
-  "DND5E.EffectEdit": "Edit Effect",
-  "DND5E.EffectEnable": "Enable Effect",
-  "DND5E.EffectInactive": "Inactive Effects",
-  "DND5E.EffectNew": "New Effect",
-  "DND5E.EffectPassive": "Passive Effects",
-  "DND5E.EffectTemporary": "Temporary Effects",
-  "DND5E.EffectToggle": "Toggle Effect",
-  "DND5E.EffectType": {
-    "Inactive": "Inactive",
-    "Passive": "Passive",
-    "Temporary": "Temporary",
-    "Unavailable": "Unavailable"
-  },
-  "DND5E.EffectUnavailable": "Unavailable Effects",
-  "DND5E.EffectUnavailableInfo": "Source item must be equipped or attuned to activate these",
-  "DND5E.Effects": "Effects",
-  "DND5E.EffectsApplyTokens": "Apply to selected tokens",
-  "DND5E.EffectsSearch": "Search effects",
-  "DND5E.Encumbrance": "Encumbrance",
-  "DND5E.Environment": "Environment",
   "DND5E.EquipmentBonus": "Magical Bonus",
   "DND5E.EquipmentHeavy": "Heavy Armor",
   "DND5E.EquipmentLight": "Light Armor",
@@ -2347,8 +2349,8 @@
     "Pool": "XP Pool",
     "Progress": "Progress to next Level",
     "StatBlock": {
-      "Standard": "XP {value}",
-      "Lair": "XP {value}, or {lair} in lair"
+      "Lair": "XP {value}, or {lair} in lair",
+      "Standard": "XP {value}"
     },
     "Value": "XP Value"
   },
@@ -2382,8 +2384,8 @@
     },
     "Craft": {
       "BaseItem": {
-        "Label": "Purchase Base Item",
-        "Hint": "If checked, the base item will be purchased at full price instead of crafted."
+        "Hint": "If checked, the base item will be purchased at full price instead of crafted.",
+        "Label": "Purchase Base Item"
       },
       "Hint": "The items that this facility is currently in the process of crafting or harvesting, if any."
     },
@@ -2391,8 +2393,8 @@
     "FIELDS": {
       "building": {
         "built": {
-          "label": "Built",
-          "hint": "Basic facilities must be built first before they can be used."
+          "hint": "Basic facilities must be built first before they can be used.",
+          "label": "Built"
         }
       },
       "defenders": {
@@ -2447,15 +2449,15 @@
           "label": "Profit Factor"
         },
         "stock": {
+          "max": {
+            "label": "Max"
+          },
           "stocked": {
             "hint": "Appropriate for facilities that do not store a variable value of goods, but are instead considered either stocked or empty.",
             "label": "Stocked"
           },
           "value": {
             "label": "Value"
-          },
-          "max": {
-            "label": "Max"
           }
         }
       },
@@ -2476,7 +2478,6 @@
       "Issue": "Issue Order: {order}"
     },
     "Orders": {
-      "Label": "Orders",
       "build": {
         "inf": "Build",
         "present": "Building"
@@ -2501,6 +2502,7 @@
         "inf": "Harvest",
         "present": "Harvesting"
       },
+      "Label": "Orders",
       "maintain": {
         "inf": "Maintain",
         "present": "Maintaining"
@@ -2538,8 +2540,8 @@
         "Buy": "Drop animals that you wish to purchase into the slots above, and update the cost appropriately below."
       },
       "Price": {
-        "Label": "Base Price",
-        "Hint": "Select which stock to sell, and input the base price above."
+        "Hint": "Select which stock to sell, and input the base price above.",
+        "Label": "Base Price"
       },
       "Sell": {
         "Label": "Sell Stock",
@@ -2550,68 +2552,74 @@
         "Sell": "Selling"
       },
       "Stocked": {
-        "Label": "Fully Stock",
-        "Hint": "Input the required cost to fully stock this facility below."
+        "Hint": "Input the required cost to fully stock this facility below.",
+        "Label": "Fully Stock"
       }
     },
     "Types": {
       "Basic": {
+        "Bedroom": "Bedroom",
+        "Courtyard": "Courtyard",
+        "DiningRoom": "Dining Room",
+        "Kitchen": "Kitchen",
         "Label": {
           "one": "Basic Facility",
           "other": "Basic Facilities"
         },
-        "Bedroom": "Bedroom",
-        "DiningRoom": "Dining Room",
         "Parlor": "Parlor",
-        "Courtyard": "Courtyard",
-        "Kitchen": "Kitchen",
         "Storage": "Storage"
       },
       "Special": {
+        "ArcaneStudy": "Arcane Study",
+        "Archive": "Archive",
+        "Armory": "Armory",
+        "Barrack": "Barrack",
+        "Demiplane": "Demiplane",
+        "GamingHall": "Gaming Hall",
+        "Garden": "Garden",
+        "Greenhouse": "Greenhouse",
+        "Guildhall": "Guildhall",
         "Label": {
           "one": "Special Facility",
           "other": "Special Facilities"
         },
-        "ArcaneStudy": "Arcane Study",
-        "Armory": "Armory",
-        "Barrack": "Barrack",
-        "Garden": "Garden",
-        "Library": "Library",
-        "Sanctuary": "Sanctuary",
-        "Smithy": "Smithy",
-        "Storehouse": "Storehouse",
-        "Workshop": "Workshop",
-        "GamingHall": "Gaming Hall",
-        "Greenhouse": "Greenhouse",
         "Laboratory": "Laboratory",
-        "Sacristy": "Sacristy",
-        "Scriptorium": "Scriptorium",
-        "Stable": "Stable",
-        "TeleportationCircle": "Teleportation Circle",
-        "Theater": "Theater",
-        "TrainingArea": "Training Area",
-        "TrophyRoom": "Trophy Room",
-        "Archive": "Archive",
+        "Library": "Library",
         "MeditationChamber": "Meditation Chamber",
         "Menagerie": "Menagerie",
         "Observatory": "Observatory",
         "Pub": "Pub",
         "Reliquary": "Reliquary",
-        "Demiplane": "Demiplane",
-        "Guildhall": "Guildhall",
+        "Sacristy": "Sacristy",
+        "Sanctuary": "Sanctuary",
         "Sanctum": "Sanctum",
-        "WarRoom": "War Room"
+        "Scriptorium": "Scriptorium",
+        "Smithy": "Smithy",
+        "Stable": "Stable",
+        "Storehouse": "Storehouse",
+        "TeleportationCircle": "Teleportation Circle",
+        "Theater": "Theater",
+        "TrainingArea": "Training Area",
+        "TrophyRoom": "Trophy Room",
+        "WarRoom": "War Room",
+        "Workshop": "Workshop"
       }
     },
     "Use": {
       "Description": "Issued the <strong>{order}</strong> order to their {link} {facilityType}."
     }
   },
+  "DND5E.Faith": "Faith",
+  "DND5E.Favorite": "Favorite",
+  "DND5E.FavoriteDrop": "Drop Favorite",
+  "DND5E.FavoriteRemove": "Remove Favorite",
+  "DND5E.Favorites": "Favorites",
+  "DND5E.Feats": "Feats",
   "DND5E.FEATURE": {
     "FIELDS": {
       "cover": {
-        "label": "Cover",
-        "hint": "Cover provided to crew by this vehicle feature."
+        "hint": "Cover provided to crew by this vehicle feature.",
+        "label": "Cover"
       },
       "properties": {
         "label": "Feature Properties"
@@ -2624,34 +2632,9 @@
       }
     }
   },
-  "DND5E.FLAGS": {
-    "EnhancedDualWielding": {
-      "Name": "Enhanced Dual Wielding",
-      "Hint": "Allow bonus action extra attacks using any melee weapon without the Two-Handed property."
-    }
-  },
-  "DND5E.FORWARD": {
-    "FIELDS": {
-      "activity": {
-        "label": "Triggered Activity"
-      }
-    },
-    "Hint": "Trigger another activity on this item with different consumption & scaling details.",
-    "Title": "Forward",
-    "Warning": {
-      "NoActivity": "Linked activity must be configured before Forward activity can be used."
-    }
-  },
-  "DND5E.Faith": "Faith",
-  "DND5E.Favorite": "Favorite",
-  "DND5E.FavoriteDrop": "Drop Favorite",
-  "DND5E.FavoriteRemove": "Remove Favorite",
-  "DND5E.Favorites": "Favorites",
-  "DND5E.Feats": "Feats",
   "DND5E.Feature": {
     "Background": "Background Feature",
     "Class": {
-      "Label": "Class Feature",
       "ArcaneShot": "Arcane Shot",
       "ArtificerInfusion": "Artificer Infusion",
       "ArtificerPlan": "Artificer Plan",
@@ -2662,6 +2645,7 @@
       "FightingStyle": "Fighting Style",
       "HuntersPrey": "Hunter's Prey",
       "Ki": "Ki Ability",
+      "Label": "Class Feature",
       "Maneuver": "Maneuver",
       "Metamagic": "Metamagic Option",
       "Multiattack": "Multiattack",
@@ -2671,20 +2655,20 @@
       "SuperiorHuntersDefense": "Superior Hunter's Defense"
     },
     "Feat": {
-      "Label": "Feat",
       "EpicBoon": "Epic Boon Feat",
       "FightingStyle": "Fighting Style Feat",
       "General": "General Feat",
+      "Label": "Feat",
       "Origin": "Origin Feat"
     },
     "Monster": "Monster Feature",
     "Species": "Species Feature",
     "SpeciesLegacy": "Race Feature",
     "SupernaturalGift": {
-      "Label": "Supernatural Gift",
       "Blessing": "Blessing",
       "Charm": "Charm",
-      "EpicBoon": "Epic Boon"
+      "EpicBoon": "Epic Boon",
+      "Label": "Supernatural Gift"
     },
     "Vehicle": {
       "Label": "Vehicle Feature"
@@ -2697,12 +2681,12 @@
   "DND5E.FeaturePassive": "Passive Abilities",
   "DND5E.FeatureRechargeOn": "Recharge On",
   "DND5E.FeatureRechargeResult": "1d6 Result",
-  "DND5E.FeatureSearch": "Search features",
-  "DND5E.FeatureUsage": "Feature Usage",
   "DND5E.Features": "Features",
   "DND5E.FeaturesBackground": "Background Features",
   "DND5E.FeaturesClass": "{class} Features",
+  "DND5E.FeatureSearch": "Search features",
   "DND5E.FeaturesOther": "Other Features",
+  "DND5E.FeatureUsage": "Feature Usage",
   "DND5E.FeetAbbr": "ft.",
   "DND5E.Filter": "Filter",
   "DND5E.FilterClear": "Clear Filters",
@@ -2710,6 +2694,12 @@
   "DND5E.FilterGroupCategory": "Group by Category",
   "DND5E.FilterGroupOrigin": "Group by Origin",
   "DND5E.FilterNoSpells": "No spells found for this set of filters.",
+  "DND5E.FLAGS": {
+    "EnhancedDualWielding": {
+      "Hint": "Allow bonus action extra attacks using any melee weapon without the Two-Handed property.",
+      "Name": "Enhanced Dual Wielding"
+    }
+  },
   "DND5E.FlagsAlert": "Alert Feat",
   "DND5E.FlagsAlertHint": "Proficient in Initiative rolls.",
   "DND5E.FlagsAlertHintLegacy": "Provides +5 to Initiative.",
@@ -2747,15 +2737,27 @@
   "DND5E.Flat": "Flat",
   "DND5E.Flaws": "Flaws",
   "DND5E.Focus": {
-    "Label": "Spellcasting Focus",
     "Arcane": "Arcane Focus",
     "Druidic": "Druidic Focus",
-    "Holy": "Holy Focus"
+    "Holy": "Holy Focus",
+    "Label": "Spellcasting Focus"
   },
   "DND5E.Formula": "Formula",
   "DND5E.FormulaCannotContainDiceError": "{name} formula cannot contain dice expressions.",
   "DND5E.FormulaMalformedError": "Problem preparing the {property} formula within {name}.",
   "DND5E.FormulaMissingReferenceWarn": "The {property} formula within {name} has references to missing data: {references}",
+  "DND5E.FORWARD": {
+    "FIELDS": {
+      "activity": {
+        "label": "Triggered Activity"
+      }
+    },
+    "Hint": "Trigger another activity on this item with different consumption & scaling details.",
+    "Title": "Forward",
+    "Warning": {
+      "NoActivity": "Linked activity must be configured before Forward activity can be used."
+    }
+  },
   "DND5E.Gear": "Gear",
   "DND5E.Gender": "Gender",
   "DND5E.GlobalBonus": "Global Bonus",
@@ -2772,6 +2774,7 @@
       "UnsetPrimaryVehicle": "Unset Primary Vehicle",
       "View": "View Member"
     },
+    "Challenge": "Challenge",
     "Config": {
       "Art": {
         "Label": "Member Art",
@@ -2780,7 +2783,6 @@
       },
       "Legend": "Group Sheet Options"
     },
-    "Challenge": "Challenge",
     "Distribute": {
       "noxp": "Distribute pooled currency",
       "xp": "Distribute pooled XP & currency"
@@ -2817,86 +2819,6 @@
   "DND5E.GroupInventory": "Inventory",
   "DND5E.GroupSummary": "A group of {members}",
   "DND5E.GroupSummaryEmpty": "Empty group",
-  "DND5E.HEAL": {
-    "FIELDS": {
-      "healing": {
-        "label": "Healing",
-        "bonus": {
-          "label": "Healing Bonus",
-          "hint": "Bonus added to the healing roll."
-        },
-        "custom": {
-          "label": "Custom Healing Formula",
-          "enabled": {
-            "label": "Enable Custom Formula",
-            "hint": "Should the custom formula be used rather than the default dice."
-          },
-          "formula": {
-            "label": "Healing Formula",
-            "hint": "Custom healing formula."
-          }
-        },
-        "denomination": {
-          "label": "Die Denomination",
-          "hint": "Denomination of the dice to roll."
-        },
-        "number": {
-          "label": "Die Number",
-          "hint": "Number of dice to roll."
-        },
-        "scaling": {
-          "label": "Healing Scaling",
-          "mode": {
-            "label": "Scaling Mode",
-            "hint": "Method by which the scaling increase is calculated."
-          },
-          "number": {
-            "label": "Dice Scaling",
-            "hint": "Number of dice to increase for each scaling step. Will be applied to the first die found in the healing formula if more than one is present."
-          },
-          "formula": {
-            "label": "Scaling Formula",
-            "hint": "Arbitrary scaling formula that will be multiplied for each scaling step and added to the original formula."
-          }
-        },
-        "types": {
-          "label": "Healing Types",
-          "hint": "Type of healing inflicted or multiple for the user to select from."
-        }
-      }
-    },
-    "Hint": "Heal a creature",
-    "Title": "Heal"
-  },
-  "DND5E.HITDICE": {
-    "Abbreviation": "HD",
-    "Action": {
-      "Decrease": "Decrease",
-      "Increase": "Increase"
-    },
-    "Available": "{number} available",
-    "Config": "Adjust Hit Dice",
-    "Counted": {
-      "one": "{number} hit die",
-      "other": "{number} hit dice"
-    }
-  },
-  "DND5E.HITPOINTS": {
-    "Counted": {
-      "one": "{number} hit point",
-      "other": "{number} hit points"
-    },
-    "DT": {
-      "abbr": "DT"
-    },
-    "Other": {
-      "label": "Other Options"
-    }
-  },
-  "DND5E.HP": "HP",
-  "DND5E.HPFormula": "Health Formula",
-  "DND5E.HPFormulaError": "The provided hit point formula could not be evaluated.",
-  "DND5E.HPFormulaRollMessage": "Roll Hit Point Formula",
   "DND5E.Habitat": {
     "Categories": {
       "Any": "Any",
@@ -2924,10 +2846,74 @@
   },
   "DND5E.Hair": "Hair",
   "DND5E.HalfProficient": "Half Proficient",
+  "DND5E.HEAL": {
+    "FIELDS": {
+      "healing": {
+        "bonus": {
+          "hint": "Bonus added to the healing roll.",
+          "label": "Healing Bonus"
+        },
+        "custom": {
+          "enabled": {
+            "hint": "Should the custom formula be used rather than the default dice.",
+            "label": "Enable Custom Formula"
+          },
+          "formula": {
+            "hint": "Custom healing formula.",
+            "label": "Healing Formula"
+          },
+          "label": "Custom Healing Formula"
+        },
+        "denomination": {
+          "hint": "Denomination of the dice to roll.",
+          "label": "Die Denomination"
+        },
+        "label": "Healing",
+        "number": {
+          "hint": "Number of dice to roll.",
+          "label": "Die Number"
+        },
+        "scaling": {
+          "formula": {
+            "hint": "Arbitrary scaling formula that will be multiplied for each scaling step and added to the original formula.",
+            "label": "Scaling Formula"
+          },
+          "label": "Healing Scaling",
+          "mode": {
+            "hint": "Method by which the scaling increase is calculated.",
+            "label": "Scaling Mode"
+          },
+          "number": {
+            "hint": "Number of dice to increase for each scaling step. Will be applied to the first die found in the healing formula if more than one is present.",
+            "label": "Dice Scaling"
+          }
+        },
+        "types": {
+          "hint": "Type of healing inflicted or multiple for the user to select from.",
+          "label": "Healing Types"
+        }
+      }
+    },
+    "Hint": "Heal a creature",
+    "Title": "Heal"
+  },
   "DND5E.Healing": "Healing",
   "DND5E.HealingRoll": "Healing Roll",
   "DND5E.HealingTemp": "Temporary Hit Points",
   "DND5E.Height": "Height",
+  "DND5E.HITDICE": {
+    "Abbreviation": "HD",
+    "Action": {
+      "Decrease": "Decrease",
+      "Increase": "Increase"
+    },
+    "Available": "{number} available",
+    "Config": "Adjust Hit Dice",
+    "Counted": {
+      "one": "{number} hit die",
+      "other": "{number} hit dice"
+    }
+  },
   "DND5E.HitDice": "Hit Dice",
   "DND5E.HitDiceConfig": "Adjust Hit Dice",
   "DND5E.HitDiceConfigHint": "Adjust remaining hit dice levels for each class.",
@@ -2937,6 +2923,18 @@
   "DND5E.HitDiceRoll": "Roll Hit Dice",
   "DND5E.HitDiceWarn": "{name} has no available {formula} Hit Dice remaining!",
   "DND5E.HitDie": "Hit Die",
+  "DND5E.HITPOINTS": {
+    "Counted": {
+      "one": "{number} hit point",
+      "other": "{number} hit points"
+    },
+    "DT": {
+      "abbr": "DT"
+    },
+    "Other": {
+      "label": "Other Options"
+    }
+  },
   "DND5E.HitPoints": "Hit Points",
   "DND5E.HitPointsBonusLevel": "Per Level Bonus",
   "DND5E.HitPointsBonusOverall": "Overall Bonus",
@@ -2951,48 +2949,10 @@
   "DND5E.HitPointsTempMaxHint": "Temporary change to the maximum HP.",
   "DND5E.HitPointsTempMaxShort": "Temp Max HP",
   "DND5E.HitPointsTempShort": "Temporary HP",
-  "DND5E.ITEM": {
-    "Category": {
-      "Label": "Category",
-      "Physical": "Physical"
-    },
-    "Property": {
-      "Adamantine": "Adamantine",
-      "Ammunition": "Ammunition",
-      "Concentration": "Concentration",
-      "Finesse": "Finesse",
-      "Firearm": "Firearm",
-      "Focus": "Focus",
-      "Heavy": "Heavy",
-      "Light": "Light",
-      "Loading": "Loading",
-      "Material": "Material",
-      "Magical": "Magical",
-      "Reach": "Reach",
-      "Reload": "Reload",
-      "Returning": "Returning",
-      "Ritual": "Ritual",
-      "Sidekick": "Sidekick",
-      "Silvered": "Silvered",
-      "Somatic": "Somatic",
-      "Special": "Special",
-      "StealthDisadvantage": "Stealth Disadvantage",
-      "Thrown": "Thrown",
-      "Trait": "Passive Trait",
-      "TwoHanded": "Two-Handed",
-      "Versatile": "Versatile",
-      "Verbal": "Verbal",
-      "WeightlessContents": "Weightless Contents"
-    },
-    "SECTIONS": {
-      "Activities": "Activities",
-      "Advancement": "Advancement",
-      "Contents": "Contents",
-      "Description": "Description",
-      "Details": "Details",
-      "Effects": "Effects"
-    }
-  },
+  "DND5E.HP": "HP",
+  "DND5E.HPFormula": "Health Formula",
+  "DND5E.HPFormulaError": "The provided hit point formula could not be evaluated.",
+  "DND5E.HPFormulaRollMessage": "Roll Hit Point Formula",
   "DND5E.Ideals": "Ideals",
   "DND5E.Identified": "Identified",
   "DND5E.Identifier": "Identifier",
@@ -3009,6 +2969,48 @@
   "DND5E.Inventory": "Inventory",
   "DND5E.InventorySearch": "Search inventory",
   "DND5E.Issues": "Issues",
+  "DND5E.ITEM": {
+    "Category": {
+      "Label": "Category",
+      "Physical": "Physical"
+    },
+    "Property": {
+      "Adamantine": "Adamantine",
+      "Ammunition": "Ammunition",
+      "Concentration": "Concentration",
+      "Finesse": "Finesse",
+      "Firearm": "Firearm",
+      "Focus": "Focus",
+      "Heavy": "Heavy",
+      "Light": "Light",
+      "Loading": "Loading",
+      "Magical": "Magical",
+      "Material": "Material",
+      "Reach": "Reach",
+      "Reload": "Reload",
+      "Returning": "Returning",
+      "Ritual": "Ritual",
+      "Sidekick": "Sidekick",
+      "Silvered": "Silvered",
+      "Somatic": "Somatic",
+      "Special": "Special",
+      "StealthDisadvantage": "Stealth Disadvantage",
+      "Thrown": "Thrown",
+      "Trait": "Passive Trait",
+      "TwoHanded": "Two-Handed",
+      "Verbal": "Verbal",
+      "Versatile": "Versatile",
+      "WeightlessContents": "Weightless Contents"
+    },
+    "SECTIONS": {
+      "Activities": "Activities",
+      "Advancement": "Advancement",
+      "Contents": "Contents",
+      "Description": "Description",
+      "Details": "Details",
+      "Effects": "Effects"
+    }
+  },
   "DND5E.ItemActionType": "Action Type",
   "DND5E.ItemActivation": "Activation",
   "DND5E.ItemActivationCondition": "Activation Condition",
@@ -3068,6 +3070,7 @@
   "DND5E.ItemRecoveryRoll": "{name} recovers {count} charges",
   "DND5E.ItemRecoveryRollMax": "{name} recovers all charges",
   "DND5E.ItemRequiredStr": "Required Strength",
+  "DND5E.Items": "Items",
   "DND5E.ItemSiegeProperties": "Siege Properties",
   "DND5E.ItemSpeciesDetails": "Species Details",
   "DND5E.ItemSpeciesDetailsLegacy": "Race Details",
@@ -3089,7 +3092,7 @@
   "DND5E.ItemWeaponStatus": "Weapon Status",
   "DND5E.ItemWeaponType": "Weapon Type",
   "DND5E.ItemWeaponUsage": "Weapon Usage",
-  "DND5E.Items": "Items",
+  "DND5E.JackOfAllTrades": "Jack of all Trades",
   "DND5E.JOURNALENTRY": {
     "Action": {
       "ConfigureNavigation": "Configure Navigation"
@@ -3101,20 +3104,18 @@
       "Up": "Up"
     }
   },
-  "DND5E.JackOfAllTrades": "Jack of all Trades",
   "DND5E.LAIR": {
-    "Label": "Lair",
     "Action": {
-      "Label": "Lair Action",
       "Initiative": "Lair Action Initiative Count",
+      "Label": "Lair Action",
       "Uses": "Uses Lair Action"
     },
     "HasLair": "Has Lair",
-    "Inside": "Inside Lair"
+    "Inside": "Inside Lair",
+    "Label": "Lair"
   },
   "DND5E.Language": {
     "All": "All Languages",
-    "Label": "Language",
     "Category": {
       "Exotic": "Exotic Languages",
       "Rare": "Rare Languages",
@@ -3124,6 +3125,7 @@
       "Label": "Ranged Communication",
       "Telepathy": "Telepathy"
     },
+    "Label": "Language",
     "Language": {
       "Aarakocra": "Aarakocra",
       "Abyssal": "Abyssal",
@@ -3162,10 +3164,10 @@
     "LairUses": "{normal} ({lair} in Lair)",
     "Max": "Maximum Legendary Actions",
     "Ordinal": {
-      "one": "{n}st Legendary Action",
-      "two": "{n}nd Legendary Action",
       "few": "{n}rd Legendary Action",
-      "other": "{n}th Legendary Action"
+      "one": "{n}st Legendary Action",
+      "other": "{n}th Legendary Action",
+      "two": "{n}nd Legendary Action"
     },
     "Remaining": "Remaining Legendary Actions",
     "Spent": "Spent Legendary Actions"
@@ -3179,10 +3181,10 @@
     "LairUses": "{normal}/Day, or {lair}/Day in Lair",
     "Max": "Maximum Legendary Resistances",
     "Ordinal": {
-      "one": "{n}st Legendary Resistance",
-      "two": "{n}nd Legendary Resistance",
       "few": "{n}rd Legendary Resistance",
-      "other": "{n}th Legendary Resistance"
+      "one": "{n}st Legendary Resistance",
+      "other": "{n}th Legendary Resistance",
+      "two": "{n}nd Legendary Resistance"
     },
     "Remaining": "Remaining Legendary Resistances",
     "Resisted": "Used Legendary Resistance",
@@ -3217,6 +3219,24 @@
   "DND5E.Loot.Trade": "Trade Good",
   "DND5E.Loot.Treasure": "Treasure",
   "DND5E.Loyalty": "Loyalty",
+  "DND5E.MagicalBonus": "Magical Bonus",
+  "DND5E.Materials": "Materials",
+  "DND5E.Max": "Max",
+  "DND5E.MaxCharacterLevelExceededWarn": "Character cannot be advanced past level {max}.",
+  "DND5E.MaxClassLevelExceededWarn": "Class cannot be advanced past level {max}.",
+  "DND5E.MaxClassLevelMinimumWarn": "Class must have at least one level.",
+  "DND5E.Maximum": "Maximum",
+  "DND5E.Method": "Method",
+  "DND5E.Minimum": "Minimum",
+  "DND5E.Modifier": "Modifier",
+  "DND5E.ModuleArtConfigH": "Configure which module-provided art should be used.",
+  "DND5E.ModuleArtConfigL": "Configure Art",
+  "DND5E.ModuleArtConfigN": "Module-provided Art",
+  "DND5E.ModuleArtConfigPortraits": "Portraits",
+  "DND5E.ModuleArtConfigTokens": "Tokens",
+  "DND5E.ModuleArtPriorityDecrease": "Decrease Priority",
+  "DND5E.ModuleArtPriorityHint": "Use the arrows to adjust the priority of the art sources. When a single Actor has art provided from multiple sources, the one with the highest priority will be used.",
+  "DND5E.ModuleArtPriorityIncrease": "Increase Priority",
   "DND5E.MOVEMENT": {
     "Action": {
       "Configure": "Configure Movement Speed"
@@ -3249,28 +3269,19 @@
       "Walk": "Walk"
     }
   },
-  "DND5E.MagicalBonus": "Magical Bonus",
-  "DND5E.Materials": "Materials",
-  "DND5E.Max": "Max",
-  "DND5E.MaxCharacterLevelExceededWarn": "Character cannot be advanced past level {max}.",
-  "DND5E.MaxClassLevelExceededWarn": "Class cannot be advanced past level {max}.",
-  "DND5E.MaxClassLevelMinimumWarn": "Class must have at least one level.",
-  "DND5E.Maximum": "Maximum",
-  "DND5E.Method": "Method",
-  "DND5E.Minimum": "Minimum",
-  "DND5E.Modifier": "Modifier",
-  "DND5E.ModuleArtConfigH": "Configure which module-provided art should be used.",
-  "DND5E.ModuleArtConfigL": "Configure Art",
-  "DND5E.ModuleArtConfigN": "Module-provided Art",
-  "DND5E.ModuleArtConfigPortraits": "Portraits",
-  "DND5E.ModuleArtConfigTokens": "Tokens",
-  "DND5E.ModuleArtPriorityDecrease": "Decrease Priority",
-  "DND5E.ModuleArtPriorityHint": "Use the arrows to adjust the priority of the art sources. When a single Actor has art provided from multiple sources, the one with the highest priority will be used.",
-  "DND5E.ModuleArtPriorityIncrease": "Increase Priority",
   "DND5E.Movement": "Movement",
   "DND5E.Multiple": "Multiple",
   "DND5E.Multiplier": "Multiplier",
   "DND5E.MythicActionLabel": "Mythic Action",
+  "DND5E.Name": "Character Name",
+  "DND5E.NameUnidentified": "Unidentified Name",
+  "DND5E.NoCharges": "No Charges",
+  "DND5E.None": "None",
+  "DND5E.NoneActionLabel": "None",
+  "DND5E.Normal": "Normal",
+  "DND5E.NoSpellLevels": "This character has no spellcaster levels, but you may add spells manually.",
+  "DND5E.Notes": "Notes",
+  "DND5E.NotProficient": "Not Proficient",
   "DND5E.NPC": {
     "ActionCostCounted": {
       "other": "Costs {number} Actions"
@@ -3316,26 +3327,19 @@
     "8": "eight",
     "9": "nine"
   },
-  "DND5E.Name": "Character Name",
-  "DND5E.NameUnidentified": "Unidentified Name",
-  "DND5E.NoCharges": "No Charges",
-  "DND5E.NoSpellLevels": "This character has no spellcaster levels, but you may add spells manually.",
-  "DND5E.None": "None",
-  "DND5E.NoneActionLabel": "None",
-  "DND5E.Normal": "Normal",
-  "DND5E.NotProficient": "Not Proficient",
-  "DND5E.Notes": "Notes",
   "DND5E.Number": "Number",
+  "DND5E.of": "of",
   "DND5E.ORDINAL": {
-    "one": "{number}st",
-    "two": "{number}nd",
     "few": "{number}rd",
-    "other": "{number}th"
+    "one": "{number}st",
+    "other": "{number}th",
+    "two": "{number}nd"
   },
   "DND5E.OtherFormula": "Other Formula",
   "DND5E.PactMagic": "Pact Magic",
   "DND5E.Passive": "Passive",
   "DND5E.PassivePerception": "Passive Perception",
+  "DND5E.per": "per",
   "DND5E.Period": "Period",
   "DND5E.PersonalityTraits": "Personality Traits",
   "DND5E.Portrait": "Portrait",
@@ -3343,7 +3347,6 @@
   "DND5E.Preparation": "Preparation",
   "DND5E.Prepared": "Prepared",
   "DND5E.Prerequisites": {
-    "Header": "Feature Prerequisites",
     "FIELDS": {
       "prerequisites": {
         "items": {
@@ -3361,6 +3364,7 @@
         }
       }
     },
+    "Header": "Feature Prerequisites",
     "Warning": {
       "InvalidLevel": "must be at least level {level}",
       "Message": "{actor} {requirements} in order to take this {type}.",
@@ -3386,32 +3390,34 @@
   "DND5E.QuantityAbbr": "Qty",
   "DND5E.QuantityFormula": "Quantity Formula",
   "DND5E.QuantityRoll": "Roll Quantities",
+  "DND5E.RacialTraits": "Species Traits",
+  "DND5E.RacialTraitsLegacy": "Racial Traits",
   "DND5E.RANGE": {
     "FIELDS": {
       "range": {
         "label": "Range",
         "long": {
-          "label": "Long Range",
-          "hint": "Far attack range of the weapon, if present on the weapon."
+          "hint": "Far attack range of the weapon, if present on the weapon.",
+          "label": "Long Range"
         },
         "override": {
-          "label": "Override Range",
-          "hint": "Use these range values instead of the item's when using this activity."
+          "hint": "Use these range values instead of the item's when using this activity.",
+          "label": "Override Range"
         },
         "reach": {
           "label": "Reach"
         },
         "special": {
-          "label": "Special Range",
-          "hint": "Description of any special range details."
+          "hint": "Description of any special range details.",
+          "label": "Special Range"
         },
         "units": {
-          "label": "Range Units",
-          "hint": "Units used to measure range."
+          "hint": "Units used to measure range.",
+          "label": "Range Units"
         },
         "value": {
-          "label": "Range Value",
-          "hint": "Value of the range in the specified units, if applicable."
+          "hint": "Value of the range in the specified units, if applicable.",
+          "label": "Range Value"
         }
       }
     },
@@ -3420,6 +3426,20 @@
       "Reach": "reach {reach}"
     }
   },
+  "DND5E.Range": "Range",
+  "DND5E.RangeDistance": "Distance",
+  "DND5E.RangeLong": "Long Range",
+  "DND5E.RangeNormal": "Normal Range",
+  "DND5E.RangeUnits": "Range Type or Units",
+  "DND5E.Rarity": "Rarity",
+  "DND5E.Reaction": "Reaction",
+  "DND5E.ReactionAbbr": "R",
+  "DND5E.ReactionPl": "Reactions",
+  "DND5E.Recharge": "Recharge",
+  "DND5E.RechargeLong": "Recharge after a Long Rest",
+  "DND5E.RechargeShort": "Recharge after a Short or Long Rest",
+  "DND5E.Recovery": "Recovery",
+  "DND5E.RecoveryFormula": "Recovery Formula",
   "DND5E.REGIONBEHAVIORS": {
     "DIFFICULTTERRAIN": {
       "FIELDS": {
@@ -3439,12 +3459,12 @@
       "Type": {
         "All": "All Types",
         "Ice": "Slippery Ice",
+        "Liquid": "Shallow Liquid",
         "Magical": "Magical",
+        "Mud": "Thick Mud",
         "Nonmagical": "Nonmagical",
         "Plants": "Plants or Undergrowth",
         "Rocks": "Rubble or Rocks",
-        "Liquid": "Shallow Liquid",
-        "Mud": "Thick Mud",
         "Sand": "Shifting Sand",
         "Slope": "Steep Slope",
         "Snow": "Deep Snow",
@@ -3465,8 +3485,8 @@
       },
       "FIELDS": {
         "directionMode": {
-          "label": "Direction Mode",
-          "hint": "How the rotation direction is decided when moving to the next position."
+          "hint": "How the rotation direction is decided when moving to the next position.",
+          "label": "Direction Mode"
         },
         "lights": {
           "ids": {
@@ -3474,12 +3494,12 @@
           }
         },
         "positions": {
-          "label": "Positions",
           "element": {
             "angle": {
               "label": "Angle"
             }
-          }
+          },
+          "label": "Positions"
         },
         "regions": {
           "ids": {
@@ -3498,12 +3518,12 @@
         },
         "time": {
           "mode": {
-            "label": "Speed Mode",
-            "hint": "How the rotation speed is determined from the rotation time, either the same regardless of the distance moved (fixed) or dependant on the distance rotated (variable)."
+            "hint": "How the rotation speed is determined from the rotation time, either the same regardless of the distance moved (fixed) or dependant on the distance rotated (variable).",
+            "label": "Speed Mode"
           },
           "value": {
-            "label": "Rotation Time",
-            "hint": "Time in miliseconds to rotate to the next position (in fixed mode) or to rotate 90˚ (in variable mode)."
+            "hint": "Time in miliseconds to rotate to the next position (in fixed mode) or to rotate 90˚ (in variable mode).",
+            "label": "Rotation Time"
           }
         },
         "walls": {
@@ -3511,8 +3531,8 @@
             "label": "Walls"
           },
           "link": {
-            "label": "Link Walls",
-            "hint": "Rotate any wall segments attached to the ones specified."
+            "hint": "Rotate any wall segments attached to the ones specified.",
+            "label": "Link Walls"
           }
         }
       },
@@ -3525,6 +3545,17 @@
       }
     }
   },
+  "DND5E.Remaining": "Remaining",
+  "DND5E.RequiredMaterials": "Required Materials",
+  "DND5E.Requirements": "Requirements",
+  "DND5E.Resistances": "Resistances",
+  "DND5E.ResourceLabel": "Label",
+  "DND5E.ResourceMax": "Resource Maximum",
+  "DND5E.ResourcePrimary": "Resource 1",
+  "DND5E.Resources": "Resources",
+  "DND5E.ResourceSecondary": "Resource 2",
+  "DND5E.ResourceTertiary": "Resource 3",
+  "DND5E.ResourceValue": "Resource Value",
   "DND5E.REST": {
     "Configuration": "Rest Configuration",
     "HitDice": {
@@ -3590,6 +3621,8 @@
       "OnlyByRequest": "Rests can only be performed at the request of the GM."
     }
   },
+  "DND5E.Ritual": "Ritual",
+  "DND5E.RitualAbbr": "R",
   "DND5E.ROLL": {
     "Range": {
       "Label": "Roll Range",
@@ -3599,40 +3632,11 @@
     "Section": "{label} Rolls",
     "Status": "Status"
   },
-  "DND5E.RacialTraits": "Species Traits",
-  "DND5E.RacialTraitsLegacy": "Racial Traits",
-  "DND5E.Range": "Range",
-  "DND5E.RangeDistance": "Distance",
-  "DND5E.RangeLong": "Long Range",
-  "DND5E.RangeNormal": "Normal Range",
-  "DND5E.RangeUnits": "Range Type or Units",
-  "DND5E.Rarity": "Rarity",
-  "DND5E.Reaction": "Reaction",
-  "DND5E.ReactionAbbr": "R",
-  "DND5E.ReactionPl": "Reactions",
-  "DND5E.Recharge": "Recharge",
-  "DND5E.RechargeLong": "Recharge after a Long Rest",
-  "DND5E.RechargeShort": "Recharge after a Short or Long Rest",
-  "DND5E.Recovery": "Recovery",
-  "DND5E.RecoveryFormula": "Recovery Formula",
-  "DND5E.Remaining": "Remaining",
-  "DND5E.RequiredMaterials": "Required Materials",
-  "DND5E.Requirements": "Requirements",
-  "DND5E.Resistances": "Resistances",
-  "DND5E.ResourceLabel": "Label",
-  "DND5E.ResourceMax": "Resource Maximum",
-  "DND5E.ResourcePrimary": "Resource 1",
-  "DND5E.ResourceSecondary": "Resource 2",
-  "DND5E.ResourceTertiary": "Resource 3",
-  "DND5E.ResourceValue": "Resource Value",
-  "DND5E.Resources": "Resources",
-  "DND5E.Ritual": "Ritual",
-  "DND5E.RitualAbbr": "R",
   "DND5E.Roll": "Roll",
   "DND5E.RollConfiguration": {
-    "Title": "Configure Roll",
     "Configuration": "Configuration",
-    "Rolls": "Rolls"
+    "Rolls": "Rolls",
+    "Title": "Configure Roll"
   },
   "DND5E.RollExample": "e.g. 1d4",
   "DND5E.RollMode": "Roll Mode",
@@ -3640,8 +3644,8 @@
   "DND5E.Rule": {
     "Tooltip": "Tooltip",
     "Type": {
-      "Label": "Rule Type",
       "Condition": "Condition",
+      "Label": "Rule Type",
       "Rule": "Rule"
     }
   },
@@ -3650,42 +3654,42 @@
       "damage": {
         "label": "Save Damage",
         "onSave": {
-          "label": "Damage on Save",
-          "hint": "How much damage should be applied on a successful save?",
           "Full": "Full Damage",
           "Half": "Half Damage",
+          "hint": "How much damage should be applied on a successful save?",
+          "label": "Damage on Save",
           "None": "No Damage"
         },
         "parts": {
-          "label": "Damage Parts",
-          "hint": "Individual damage parts to include with the roll."
+          "hint": "Individual damage parts to include with the roll.",
+          "label": "Damage Parts"
         }
       },
       "effects": {
         "onSave": {
-          "label": "Always Apply",
-          "hint": "This effect will always be applied, even if the target succeeds on its saving throw."
+          "hint": "This effect will always be applied, even if the target succeeds on its saving throw.",
+          "label": "Always Apply"
         }
       },
       "save": {
-        "label": "Save Details",
         "ability": {
-          "label": "Challenge Abilities",
-          "hint": "Abilities that may be rolled to attempt to save."
+          "hint": "Abilities that may be rolled to attempt to save.",
+          "label": "Challenge Abilities"
         },
         "dc": {
-          "label": "Difficulty Class",
           "calculation": {
-            "label": "DC Calculation",
-            "hint": "Method or ability used to calculate the difficulty class."
-          },
-          "formula": {
-            "label": "DC Formula",
-            "hint": "Custom formula or flat value for defining the save DC."
+            "hint": "Method or ability used to calculate the difficulty class.",
+            "label": "DC Calculation"
           },
           "CustomFormula": "Custom Formula",
-          "DefaultFormula": "8 + @mod + @prof"
-        }
+          "DefaultFormula": "8 + @mod + @prof",
+          "formula": {
+            "hint": "Custom formula or flat value for defining the save DC.",
+            "label": "DC Formula"
+          },
+          "label": "Difficulty Class"
+        },
+        "label": "Save Details"
       }
     },
     "Hint": "Request a saving throw with the option of rolling damage.",
@@ -3693,271 +3697,6 @@
     "Title": {
       "one": "Save",
       "other": "Saves"
-    }
-  },
-  "DND5E.SKILL": {
-    "SECTIONS": {
-      "Details": "{label} Details",
-      "Bonuses": {
-        "Label": "{label} Bonuses",
-        "Hint": "These bonuses apply to passive scores & checks made with {label}."
-      },
-      "Global": {
-        "Label": "Global Bonuses",
-        "Hint": "These bonuses apply to checks made with any skill."
-      }
-    }
-  },
-  "DND5E.SOURCE": {
-    "FIELDS": {
-      "source": {
-        "label": "Source",
-        "book": {
-          "label": "Book"
-        },
-        "custom": {
-          "label": "Custom Label"
-        },
-        "license": {
-          "label": "License"
-        },
-        "page": {
-          "label": "Page/Section"
-        },
-        "revision": {
-          "label": "Revision"
-        },
-        "rules": {
-          "label": "Rules Version"
-        },
-        "uuid": {
-          "label": "Original Source"
-        }
-      }
-    },
-    "Action": {
-      "Configure": "Configure Source"
-    },
-    "Display": {
-      "Full": "{book} {page}",
-      "Page": "pg. {page}"
-    }
-  },
-  "DND5E.SPELL": {
-    "Embed": {
-      "CastingTimeTrigger": "{castingTime}, which you take {trigger}",
-      "Tag": {
-        "Cantrip": "{school} Cantrip",
-        "CantripLegacy": "{school} cantrip",
-        "Classes": "{levelSchool} ({classes})",
-        "Leveled": "Level {level} {school}",
-        "LeveledLegacy": "{levelOrdinal}-level {school}",
-        "Ritual": "{levelSchool} (ritual)"
-      }
-    }
-  },
-  "DND5E.SPELLCASTING": {
-    "METHODS": {
-      "AtWill": {
-        "label": "At-Will"
-      },
-      "Innate": {
-        "label": "Innate Spellcasting"
-      },
-      "Ritual": {
-        "label": "Ritual Only"
-      },
-      "Spell": {
-        "label": "Spellcasting",
-        "Full": {
-          "label": "Full Caster"
-        },
-        "Half": {
-          "label": "Half Caster"
-        },
-        "Third": {
-          "label": "Third Caster"
-        },
-        "Artificer": {
-          "label": "Artificer"
-        }
-      },
-      "Pact": {
-        "abbr": "Pact",
-        "label": "Pact Magic",
-        "Full": {
-          "label": "Pact Magic"
-        }
-      }
-    },
-    "SLOTS": {
-      "spell0": "Cantrips",
-      "spell1": "1st Level",
-      "spell2": "2nd Level",
-      "spell3": "3rd Level",
-      "spell4": "4th Level",
-      "spell5": "5th Level",
-      "spell6": "6th Level",
-      "spell7": "7th Level",
-      "spell8": "8th Level",
-      "spell9": "9th Level"
-    },
-    "STATES": {
-      "Unprepared": "Not Prepared",
-      "Prepared": "Prepared",
-      "AlwaysPrepared": "Always Prepared"
-    },
-    "Unlabeled": "Unlabeled Spellcasting"
-  },
-  "DND5E.SUMMON": {
-    "FIELDS": {
-      "bonuses": {
-        "ac": {
-          "label": "Bonus Armor Class",
-          "hint": "Bonus to the Armor Class set on the summoned creature added to what is specified in their statblock."
-        },
-        "attackDamage": {
-          "label": "Bonus Attack Damage",
-          "hint": "Additional damage done by the creature's attacks."
-        },
-        "hd": {
-          "label": "Bonus Hit Dice",
-          "hint": "Additional hit dice added to the creature on top of what is derived from the HP formula in their statblock. Can only be used when summoning NPC actors."
-        },
-        "healing": {
-          "label": "Bonus Healing",
-          "hint": "Additional healing provided by healing abilities."
-        },
-        "hp": {
-          "label": "Bonus Hit Points",
-          "hint": "Additional hit points added to the creature on top of what is specified in their statblock."
-        },
-        "saveDamage": {
-          "label": "Bonus Save Damage",
-          "hint": "Additional damage done by the creature's abilities that require saving throws."
-        }
-      },
-      "creatureSizes": {
-        "label": "Creature Sizes",
-        "hint": "Summoned creature and token will be changed to this size. If more than one size is selected, then the player will be able to choose from these sizes when summoning."
-      },
-      "creatureTypes": {
-        "label": "Creature Types",
-        "hint": "Summoned creature will be changed to this type. If more than one type is selected, then the player will be able to choose from these types when summoning."
-      },
-      "match": {
-        "ability": {
-          "label": "Match Ability",
-          "hint": "Specific ability to use when when matching attacks and save DCs."
-        },
-        "attacks": {
-          "label": "Match Attacks",
-          "hint": "Modify to hit values on the summoned creature's attacks to match that of the summoner."
-        },
-        "disposition": {
-          "label": "Match Disposition",
-          "hint": "Modify the summoned creature's disposition to match that of the summoner."
-        },
-        "proficiency": {
-          "label": "Match Proficiency",
-          "hint": "Modify the summoned creature's proficiency to match that of the summoner."
-        },
-        "saves": {
-          "label": "Match Saves",
-          "hint": "Modify saving throw DCs on the summoned creature's abilities to match that of the summoner."
-        }
-      },
-      "profiles": {
-        "element": {
-          "count": {
-            "label": "Count"
-          },
-          "cr": {
-            "label": "Challenge Rating",
-            "abbr": "CR",
-            "hint": "Maximum CR of the summoned creature."
-          },
-          "level": {
-            "label": "Level Limit",
-            "hint": "Range of levels required to use this profile.",
-            "max": {
-              "label": "Maximum Level"
-            },
-            "min": {
-              "label": "Minimum Level"
-            }
-          },
-          "name": {
-            "label": "Display Name",
-            "hint": "Name of the profile displayed in the usage dialog."
-          },
-          "types": {
-            "label": "Creature Types",
-            "hint": "List of creature types from which the summoned creature can be selected."
-          },
-          "uuid": {
-            "label": "Linked Creature"
-          }
-        },
-        "label": "Summons Profiles"
-      },
-      "summon": {
-        "label": "Summoning Details",
-        "identifier": {
-          "label": "Class Identifier",
-          "hint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits."
-        },
-        "mode": {
-          "label": "Mode",
-          "hint": "Sets how the creatures that are to be summoned are specified.",
-          "CR": "By Challenge Rating & Type",
-          "Direct": "By Direct Link"
-        },
-        "prompt": {
-          "label": "Summon Prompt",
-          "hint": "Should the player be prompted to place the summons? Players will still be able to summon from the chat card if prompt is disabled."
-        }
-      },
-      "tempHP": {
-        "label": "Temp HP",
-        "hint": "Grant the summoned creature temp HP, replacing any existing temp HP."
-      }
-    },
-    "Action": {
-      "Place": "Place Summons",
-      "Summon": "Summon",
-      "View": "View Summon"
-    },
-    "CreatureChanges": {
-      "Label": "Creature Changes",
-      "Hint": "Changes that will be made to the creature being summoned. Any @ references used in the following formulas will be based on the summoner's stats. Summoned creatures' stats can be referenced using @summon (e.g. @summon.attributes.hd.max to reference the creature's hit dice count)."
-    },
-    "Hint": "Summon a new creature to the scene.",
-    "ItemChanges": {
-      "Label": "Item Changes",
-      "Hint": "Changes made to items on the summoned creature."
-    },
-    "Profile": {
-      "Label": "Summons Profile",
-      "Action": {
-        "Create": "Create Profile",
-        "Delete": "Delete Profile"
-      },
-      "ChallengeRatingLabel": "Challenge Rating of {cr} or lower",
-      "DropHint": "Drop creature here",
-      "Empty": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile.",
-      "EmptyDrop": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile or drop a creature to summon here."
-    },
-    "SECTIONS": {
-      "Changes": "Changes",
-      "Profiles": "Profiles",
-      "Summoning": "Summoning"
-    },
-    "Title": "Summon",
-    "Warning": {
-      "NoOwnership": "You must have ownership of '{actor}' in order to summon it.",
-      "NoProfile": "Cannot find summoning profile {profileId} on '{item}'.",
-      "Wildcard": "You must have 'Use File Browser' permissions to summon creatures with wildcard artwork."
     }
   },
   "DND5E.SaveBonus": "Saving Throw Bonus",
@@ -3985,9 +3724,9 @@
     "CreateScroll": "Create Scroll",
     "Details": "Scroll Details",
     "Explanation": {
-      "Label": "Explanation",
-      "Hint": "Amount of the rules on using spell scrolls to include in the created scroll.",
       "Complete": "Complete",
+      "Hint": "Amount of the rules on using spell scrolls to include in the created scroll.",
+      "Label": "Explanation",
       "Reference": "Reference"
     },
     "RequiresConcentration": "Requires Concentration",
@@ -3996,13 +3735,13 @@
   },
   "DND5E.SenseBlindsight": "Blindsight",
   "DND5E.SenseDarkvision": "Darkvision",
+  "DND5E.Senses": "Senses",
+  "DND5E.SensesConfig": "Configure Senses",
+  "DND5E.SensesConfigHint": "Configure any special sensory perception abilities that this actor possesses.",
   "DND5E.SenseSpecial": "Special Senses",
   "DND5E.SenseTremorsense": "Tremorsense",
   "DND5E.SenseTruesight": "Truesight",
   "DND5E.SenseUnits": "Units",
-  "DND5E.Senses": "Senses",
-  "DND5E.SensesConfig": "Configure Senses",
-  "DND5E.SensesConfigHint": "Configure any special sensory perception abilities that this actor possesses.",
   "DND5E.Shape": "Shape",
   "DND5E.SheetClass": {
     "Character": "D&D 5e Character Sheet",
@@ -4038,14 +3777,27 @@
   "DND5E.SizeSmallAbbr": "Sm",
   "DND5E.SizeTiny": "Tiny",
   "DND5E.SizeTinyAbbr": "Tn",
+  "DND5E.SKILL": {
+    "SECTIONS": {
+      "Bonuses": {
+        "Hint": "These bonuses apply to passive scores & checks made with {label}.",
+        "Label": "{label} Bonuses"
+      },
+      "Details": "{label} Details",
+      "Global": {
+        "Hint": "These bonuses apply to checks made with any skill.",
+        "Label": "Global Bonuses"
+      }
+    }
+  },
   "DND5E.Skill": "Skill",
   "DND5E.SkillAcr": "Acrobatics",
   "DND5E.SkillAni": "Animal Handling",
   "DND5E.SkillArc": "Arcana",
   "DND5E.SkillAth": "Athletics",
   "DND5E.SkillBonusCheck": "Check Bonus",
-  "DND5E.SkillBonusPassive": "Passive Bonus",
   "DND5E.SkillBonuses": "Skill Bonuses",
+  "DND5E.SkillBonusPassive": "Passive Bonus",
   "DND5E.SkillConfigurationHint": "Configure skill proficiency and bonuses.",
   "DND5E.SkillConfigure": "Configure Skill",
   "DND5E.SkillConfigureTitle": "Configure {skill}",
@@ -4059,47 +3811,153 @@
   "DND5E.SkillModifierHint": "{skill} Modifier",
   "DND5E.SkillNat": "Nature",
   "DND5E.SkillPassiveHint": "Passive {skill}",
+  "DND5E.SkillPassives": "Skill Passives",
   "DND5E.SkillPassiveScore": "Passive {skill} Score",
   "DND5E.SkillPassiveSpecificHint": "Passive {ability} ({skill})",
-  "DND5E.SkillPassives": "Skill Passives",
   "DND5E.SkillPer": "Persuasion",
   "DND5E.SkillPrc": "Perception",
   "DND5E.SkillPrf": "Performance",
   "DND5E.SkillPromptTitle": "{ability} ({skill}) Check",
   "DND5E.SkillRel": "Religion",
   "DND5E.SkillRoll": "Roll {ability} ({skill}) Check",
+  "DND5E.Skills": "Skills",
+  "DND5E.SkillsConfig": "Configure Skills",
   "DND5E.SkillSlt": "Sleight of Hand",
   "DND5E.SkillSte": "Stealth",
   "DND5E.SkillSur": "Survival",
   "DND5E.SkillTitle": "{ability} ({skill})",
-  "DND5E.Skills": "Skills",
-  "DND5E.SkillsConfig": "Configure Skills",
   "DND5E.Skin": "Skin",
   "DND5E.Skip": "Skip",
+  "DND5E.SOURCE": {
+    "Action": {
+      "Configure": "Configure Source"
+    },
+    "Display": {
+      "Full": "{book} {page}",
+      "Page": "pg. {page}"
+    },
+    "FIELDS": {
+      "source": {
+        "book": {
+          "label": "Book"
+        },
+        "custom": {
+          "label": "Custom Label"
+        },
+        "label": "Source",
+        "license": {
+          "label": "License"
+        },
+        "page": {
+          "label": "Page/Section"
+        },
+        "revision": {
+          "label": "Revision"
+        },
+        "rules": {
+          "label": "Rules Version"
+        },
+        "uuid": {
+          "label": "Original Source"
+        }
+      }
+    }
+  },
   "DND5E.Special": "Special",
   "DND5E.SpecialHint": "Special values separated by semi-colons.",
   "DND5E.SpecialTraits": "Special Traits",
   "DND5E.Species": {
-    "Label": "Species",
     "Add": "Add Species",
     "AddLegacy": "Add Race",
     "Features": "Species Features",
     "FeaturesLegacy": "Race Features",
+    "Label": "Species",
     "Name": "Species Name"
   },
   "DND5E.Speed": "Speed",
   "DND5E.SpeedSpecial": "Special Movement",
+  "DND5E.SPELL": {
+    "Embed": {
+      "CastingTimeTrigger": "{castingTime}, which you take {trigger}",
+      "Tag": {
+        "Cantrip": "{school} Cantrip",
+        "CantripLegacy": "{school} cantrip",
+        "Classes": "{levelSchool} ({classes})",
+        "Leveled": "Level {level} {school}",
+        "LeveledLegacy": "{levelOrdinal}-level {school}",
+        "Ritual": "{levelSchool} (ritual)"
+      }
+    }
+  },
+  "DND5E.spell": "spell",
   "DND5E.SpellAbility": "Spellcasting Ability",
   "DND5E.SpellAbilitySet": "Set as Primary Spellcasting Ability",
   "DND5E.SpellAdd": "Add Spell",
   "DND5E.SpellAttackBonus": "Spell Attack Bonus",
+  "DND5E.Spellbook": "Spellbook",
   "DND5E.SpellCantrip": "Cantrip",
   "DND5E.SpellCastConsume": "Consume Spell Slot?",
+  "DND5E.SpellcasterLevel": "Spellcaster Level",
+  "DND5E.SPELLCASTING": {
+    "METHODS": {
+      "AtWill": {
+        "label": "At-Will"
+      },
+      "Innate": {
+        "label": "Innate Spellcasting"
+      },
+      "Pact": {
+        "abbr": "Pact",
+        "Full": {
+          "label": "Pact Magic"
+        },
+        "label": "Pact Magic"
+      },
+      "Ritual": {
+        "label": "Ritual Only"
+      },
+      "Spell": {
+        "Artificer": {
+          "label": "Artificer"
+        },
+        "Full": {
+          "label": "Full Caster"
+        },
+        "Half": {
+          "label": "Half Caster"
+        },
+        "label": "Spellcasting",
+        "Third": {
+          "label": "Third Caster"
+        }
+      }
+    },
+    "SLOTS": {
+      "spell0": "Cantrips",
+      "spell1": "1st Level",
+      "spell2": "2nd Level",
+      "spell3": "3rd Level",
+      "spell4": "4th Level",
+      "spell5": "5th Level",
+      "spell6": "6th Level",
+      "spell7": "7th Level",
+      "spell8": "8th Level",
+      "spell9": "9th Level"
+    },
+    "STATES": {
+      "AlwaysPrepared": "Always Prepared",
+      "Prepared": "Prepared",
+      "Unprepared": "Not Prepared"
+    },
+    "Unlabeled": "Unlabeled Spellcasting"
+  },
+  "DND5E.Spellcasting": "Spellcasting",
+  "DND5E.SpellcastingClass": "{class} Spellcasting",
+  "DND5E.SpellCastingHeader": "Spell Casting",
   "DND5E.SpellCastNoSlots": "You have no available {level} spell slots with which to cast {name}",
   "DND5E.SpellCastNoSlotsLeft": "You have no available spell slots with which to cast {name}!",
   "DND5E.SpellCastTime": "Casting Time",
   "DND5E.SpellCastUpcast": "Cast at Level",
-  "DND5E.SpellCastingHeader": "Spell Casting",
   "DND5E.SpellComponent": "Spell Component",
   "DND5E.SpellComponents": "Spell Components",
   "DND5E.SpellComponentsMaterial": "{components} ({materials})",
@@ -4127,8 +3985,8 @@
   "DND5E.SpellLevel8": "8th Level",
   "DND5E.SpellLevel9": "9th Level",
   "DND5E.SpellLevelPact": "Pact Slot [Level {level}] ({n} Slots)",
-  "DND5E.SpellLevelSpell": "{level} ({n} Slots)",
   "DND5E.SpellLevels": "Spell Levels",
+  "DND5E.SpellLevelSpell": "{level} ({n} Slots)",
   "DND5E.SpellMaterials": "Spellcasting Materials",
   "DND5E.SpellMaterialsConsumed": "Consume Materials",
   "DND5E.SpellMaterialsCost": "Material Cost",
@@ -4137,16 +3995,16 @@
   "DND5E.SpellName": "Spell Name",
   "DND5E.SpellNone": "None",
   "DND5E.SpellPrepAlways": "Always Prepared",
+  "DND5E.SpellPreparation": {
+    "Formula": "Preparation Formula",
+    "Label": "Spell Preparation",
+    "Method": "Spellcasting Method"
+  },
+  "DND5E.SpellPrepared": "Prepared",
   "DND5E.SpellPrepAtWill": "At-Will",
   "DND5E.SpellPrepInnate": "Innate Spellcasting",
   "DND5E.SpellPrepPrepared": "Prepared",
   "DND5E.SpellPrepRitual": "Ritual Only",
-  "DND5E.SpellPreparation": {
-    "Label": "Spell Preparation",
-    "Formula": "Preparation Formula",
-    "Method": "Spellcasting Method"
-  },
-  "DND5E.SpellPrepared": "Prepared",
   "DND5E.SpellProgArt": "Artificer",
   "DND5E.SpellProgAvailable": "Available slots",
   "DND5E.SpellProgFull": "Full Caster",
@@ -4154,8 +4012,8 @@
   "DND5E.SpellProgLeveled": "Leveled Magic",
   "DND5E.SpellProgOverride": "Override slots",
   "DND5E.SpellProgPact": "Pact Magic",
-  "DND5E.SpellProgThird": "Third Caster",
   "DND5E.SpellProgression": "Spell Progression",
+  "DND5E.SpellProgThird": "Third Caster",
   "DND5E.SpellSchool": "Spell School",
   "DND5E.SpellScroll": "Spell Scroll",
   "DND5E.SpellSlotExpended": "Expended Spell Slot",
@@ -4163,26 +4021,21 @@
   "DND5E.SpellSlotN.one": "{n}st spell slot",
   "DND5E.SpellSlotN.other": "{n}th spell slot",
   "DND5E.SpellSlotN.two": "{n}nd spell slot",
-  "DND5E.SpellSlotTemporary": "Temporary Spell Slot",
   "DND5E.SpellSlotsConfig": "Configure Spell Slots",
   "DND5E.SpellSlotsN.few": "{n}rd Level Slots",
   "DND5E.SpellSlotsN.one": "{n}st Level Slots",
   "DND5E.SpellSlotsN.other": "{n}th Level Slots",
   "DND5E.SpellSlotsN.two": "{n}nd Level Slots",
   "DND5E.SpellSlotsPact": "Pact Slots",
+  "DND5E.SpellSlotTemporary": "Temporary Spell Slot",
   "DND5E.SpellSourceClass": "Source Class",
+  "DND5E.SpellsSearch": "Search spells",
   "DND5E.SpellTag": "Spell Tag",
   "DND5E.SpellTarget": "Spell Target",
   "DND5E.SpellUnprepared": "Unprepared",
   "DND5E.SpellUsage": "Spell Usage",
-  "DND5E.Spellbook": "Spellbook",
-  "DND5E.SpellcasterLevel": "Spellcaster Level",
-  "DND5E.Spellcasting": "Spellcasting",
-  "DND5E.SpellcastingClass": "{class} Spellcasting",
-  "DND5E.SpellsSearch": "Search spells",
   "DND5E.Spent": "Spent",
   "DND5E.StartingEquipment": {
-    "Title": "Starting Equipment",
     "Action": {
       "AddEntry": "Add Entry",
       "Configure": "Configure Starting Equipment",
@@ -4205,13 +4058,14 @@
     "Prefixes": "abcdefghijklmnopqrstuvwxyz",
     "RequireProficiency": "Require Proficiency",
     "SpecificItem": "Specific Item",
+    "Title": "Starting Equipment",
     "Warning": {
       "Depth": "Only three levels of depth allowed in starting equipment.",
       "ItemTypeInvalid": "{type} items cannot be added to starting equipment."
     },
     "Wealth": {
-      "Label": "Starting Wealth",
-      "Hint": "Formula in GP that can be used in place of starting equipment."
+      "Hint": "Formula in GP that can be used in place of starting equipment.",
+      "Label": "Starting Wealth"
     }
   },
   "DND5E.SubclassAdd": "Add Subclass",
@@ -4222,6 +4076,157 @@
   "DND5E.SubclassName": "Subclass Name",
   "DND5E.Subtype": "Subtype",
   "DND5E.Summary": "Summary",
+  "DND5E.SUMMON": {
+    "Action": {
+      "Place": "Place Summons",
+      "Summon": "Summon",
+      "View": "View Summon"
+    },
+    "CreatureChanges": {
+      "Hint": "Changes that will be made to the creature being summoned. Any @ references used in the following formulas will be based on the summoner's stats. Summoned creatures' stats can be referenced using @summon (e.g. @summon.attributes.hd.max to reference the creature's hit dice count).",
+      "Label": "Creature Changes"
+    },
+    "FIELDS": {
+      "bonuses": {
+        "ac": {
+          "hint": "Bonus to the Armor Class set on the summoned creature added to what is specified in their statblock.",
+          "label": "Bonus Armor Class"
+        },
+        "attackDamage": {
+          "hint": "Additional damage done by the creature's attacks.",
+          "label": "Bonus Attack Damage"
+        },
+        "hd": {
+          "hint": "Additional hit dice added to the creature on top of what is derived from the HP formula in their statblock. Can only be used when summoning NPC actors.",
+          "label": "Bonus Hit Dice"
+        },
+        "healing": {
+          "hint": "Additional healing provided by healing abilities.",
+          "label": "Bonus Healing"
+        },
+        "hp": {
+          "hint": "Additional hit points added to the creature on top of what is specified in their statblock.",
+          "label": "Bonus Hit Points"
+        },
+        "saveDamage": {
+          "hint": "Additional damage done by the creature's abilities that require saving throws.",
+          "label": "Bonus Save Damage"
+        }
+      },
+      "creatureSizes": {
+        "hint": "Summoned creature and token will be changed to this size. If more than one size is selected, then the player will be able to choose from these sizes when summoning.",
+        "label": "Creature Sizes"
+      },
+      "creatureTypes": {
+        "hint": "Summoned creature will be changed to this type. If more than one type is selected, then the player will be able to choose from these types when summoning.",
+        "label": "Creature Types"
+      },
+      "match": {
+        "ability": {
+          "hint": "Specific ability to use when when matching attacks and save DCs.",
+          "label": "Match Ability"
+        },
+        "attacks": {
+          "hint": "Modify to hit values on the summoned creature's attacks to match that of the summoner.",
+          "label": "Match Attacks"
+        },
+        "disposition": {
+          "hint": "Modify the summoned creature's disposition to match that of the summoner.",
+          "label": "Match Disposition"
+        },
+        "proficiency": {
+          "hint": "Modify the summoned creature's proficiency to match that of the summoner.",
+          "label": "Match Proficiency"
+        },
+        "saves": {
+          "hint": "Modify saving throw DCs on the summoned creature's abilities to match that of the summoner.",
+          "label": "Match Saves"
+        }
+      },
+      "profiles": {
+        "element": {
+          "count": {
+            "label": "Count"
+          },
+          "cr": {
+            "abbr": "CR",
+            "hint": "Maximum CR of the summoned creature.",
+            "label": "Challenge Rating"
+          },
+          "level": {
+            "hint": "Range of levels required to use this profile.",
+            "label": "Level Limit",
+            "max": {
+              "label": "Maximum Level"
+            },
+            "min": {
+              "label": "Minimum Level"
+            }
+          },
+          "name": {
+            "hint": "Name of the profile displayed in the usage dialog.",
+            "label": "Display Name"
+          },
+          "types": {
+            "hint": "List of creature types from which the summoned creature can be selected.",
+            "label": "Creature Types"
+          },
+          "uuid": {
+            "label": "Linked Creature"
+          }
+        },
+        "label": "Summons Profiles"
+      },
+      "summon": {
+        "identifier": {
+          "hint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits.",
+          "label": "Class Identifier"
+        },
+        "label": "Summoning Details",
+        "mode": {
+          "CR": "By Challenge Rating & Type",
+          "Direct": "By Direct Link",
+          "hint": "Sets how the creatures that are to be summoned are specified.",
+          "label": "Mode"
+        },
+        "prompt": {
+          "hint": "Should the player be prompted to place the summons? Players will still be able to summon from the chat card if prompt is disabled.",
+          "label": "Summon Prompt"
+        }
+      },
+      "tempHP": {
+        "hint": "Grant the summoned creature temp HP, replacing any existing temp HP.",
+        "label": "Temp HP"
+      }
+    },
+    "Hint": "Summon a new creature to the scene.",
+    "ItemChanges": {
+      "Hint": "Changes made to items on the summoned creature.",
+      "Label": "Item Changes"
+    },
+    "Profile": {
+      "Action": {
+        "Create": "Create Profile",
+        "Delete": "Delete Profile"
+      },
+      "ChallengeRatingLabel": "Challenge Rating of {cr} or lower",
+      "DropHint": "Drop creature here",
+      "Empty": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile.",
+      "EmptyDrop": "Click the <i class=\"fas fa-plus\"></i> button above to create a profile or drop a creature to summon here.",
+      "Label": "Summons Profile"
+    },
+    "SECTIONS": {
+      "Changes": "Changes",
+      "Profiles": "Profiles",
+      "Summoning": "Summoning"
+    },
+    "Title": "Summon",
+    "Warning": {
+      "NoOwnership": "You must have ownership of '{actor}' in order to summon it.",
+      "NoProfile": "Cannot find summoning profile {profileId} on '{item}'.",
+      "Wildcard": "You must have 'Use File Browser' permissions to summon creatures with wildcard artwork."
+    }
+  },
   "DND5E.Summoning": {
     "Label": "Summoning"
   },
@@ -4237,63 +4242,63 @@
     },
     "FIELDS": {
       "target": {
-        "label": "Targeting",
         "affects": {
-          "label": "Affected Targets",
           "choice": {
-            "label": "Choose Targets",
-            "hint": "When targeting an area, can the user choose who it affects?"
+            "hint": "When targeting an area, can the user choose who it affects?",
+            "label": "Choose Targets"
           },
           "count": {
-            "label": "Target Count",
-            "hint": "Number of individual targets that can be affected."
+            "hint": "Number of individual targets that can be affected.",
+            "label": "Target Count"
           },
+          "label": "Affected Targets",
           "special": {
-            "label": "Special Targeting",
-            "hint": "Description of any special targeting details."
+            "hint": "Description of any special targeting details.",
+            "label": "Special Targeting"
           },
           "type": {
-            "label": "Target Type",
-            "hint": "Type of targets that can be affected (e.g. creatures, objects, spaces)."
+            "hint": "Type of targets that can be affected (e.g. creatures, objects, spaces).",
+            "label": "Target Type"
           }
         },
+        "label": "Targeting",
         "override": {
-          "label": "Override Target",
-          "hint": "Use these target values instead of the item's when using this activity."
+          "hint": "Use these target values instead of the item's when using this activity.",
+          "label": "Override Target"
         },
         "prompt": {
-          "label": "Measured Template Prompt",
-          "hint": "Should the player be prompted to place a measured template? Players will still be able to place templates from the chat card if prompt is disabled."
+          "hint": "Should the player be prompted to place a measured template? Players will still be able to place templates from the chat card if prompt is disabled.",
+          "label": "Measured Template Prompt"
         },
         "template": {
-          "label": "Area of Effect",
           "contiguous": {
-            "label": "Contiguous Areas",
-            "hint": "Must all created areas be connected to one another?"
+            "hint": "Must all created areas be connected to one another?",
+            "label": "Contiguous Areas"
           },
           "count": {
-            "label": "Area Count",
-            "hint": "Number of distinct areas that can be targeted."
+            "hint": "Number of distinct areas that can be targeted.",
+            "label": "Area Count"
           },
           "height": {
-            "label": "Area Height",
-            "hint": "Height of a cylinder affected if applicable."
+            "hint": "Height of a cylinder affected if applicable.",
+            "label": "Area Height"
           },
+          "label": "Area of Effect",
           "size": {
-            "label": "Area Size",
-            "hint": "Size of the area of effect on its primary axis."
+            "hint": "Size of the area of effect on its primary axis.",
+            "label": "Area Size"
           },
           "type": {
-            "label": "Area Type",
-            "hint": "Type of area of effect targeted."
+            "hint": "Type of area of effect targeted.",
+            "label": "Area Type"
           },
           "units": {
-            "label": "Area Units",
-            "hint": "Units used to measure the area of effect sizes."
+            "hint": "Units used to measure the area of effect sizes.",
+            "label": "Area Units"
           },
           "width": {
-            "label": "Area Width",
-            "hint": "Width of a line affected if applicable."
+            "hint": "Width of a line affected if applicable.",
+            "label": "Area Width"
           }
         }
       }
@@ -4301,210 +4306,300 @@
     "Formatted": "{count} {type}",
     "Type": {
       "Ally": {
-        "Label": "Ally",
         "Counted": {
           "any": "any allies",
           "each": "each ally",
           "every": "every ally",
           "one": "{number} ally",
           "other": "{number} allies"
-        }
+        },
+        "Label": "Ally"
       },
       "Any": {
         "Label": "Any"
       },
       "Circle": {
-        "Label": "Circle",
         "Counted": {
           "one": "{number} circle",
-          "other": "{number} circles",
           "oneSized": "{sizes} Circle",
+          "other": "{number} circles",
           "otherSized": "{number} {sizes} Circles"
-        }
+        },
+        "Label": "Circle"
       },
       "Cone": {
-        "Label": "Cone",
         "Counted": {
           "one": "{number} cone",
-          "other": "{number} cones",
           "oneSized": "{sizes} Cone",
+          "other": "{number} cones",
           "otherSized": "{number} {sizes} Cones"
-        }
+        },
+        "Label": "Cone"
       },
       "Creature": {
-        "Label": "Creature",
         "Counted": {
           "any": "any creatures",
           "each": "each creature",
           "every": "every creature",
           "one": "{number} creature",
           "other": "{number} creatures"
-        }
+        },
+        "Label": "Creature"
       },
       "CreatureOrObject": {
-        "Label": "Creature or Object",
         "Counted": {
           "any": "any creatures or objects",
           "each": "each creature or object",
           "every": "every creature or object",
           "one": "{number} creature or object",
           "other": "{number} creatures or objects"
-        }
+        },
+        "Label": "Creature or Object"
       },
       "Cube": {
-        "Label": "Cube",
         "Counted": {
           "one": "{number} cube",
-          "other": "{number} cubes",
           "oneSized": "{sizes} Cube",
+          "other": "{number} cubes",
           "otherSized": "{number} {sizes} Cubes"
-        }
+        },
+        "Label": "Cube"
       },
       "Cylinder": {
-        "Label": "Cylinder",
         "Counted": {
           "one": "{number} cylinder",
-          "other": "{number} cylinders",
           "oneSized": "{sizes} Cylinder",
+          "other": "{number} cylinders",
           "otherSized": "{number} {sizes} Cylinders"
-        }
+        },
+        "Label": "Cylinder"
       },
       "Emanation": {
-        "Label": "Emanation",
         "Counted": {
           "one": "{number} emanation",
-          "other": "{number} emanations",
           "oneSized": "{sizes} Emanation",
+          "other": "{number} emanations",
           "otherSized": "{number} {sizes} Emanations"
-        }
+        },
+        "Label": "Emanation"
       },
       "Enemy": {
-        "Label": "Enemy",
         "Counted": {
           "any": "any enemies",
           "each": "each enemy",
           "every": "every enemy",
           "one": "{number} enemy",
           "other": "{number} enemies"
-        }
+        },
+        "Label": "Enemy"
       },
       "Line": {
-        "Label": "Line",
         "Counted": {
           "one": "{number} line",
-          "other": "{number} lines",
           "oneSized": "{sizes} Line",
+          "other": "{number} lines",
           "otherSized": "{number} {sizes} Lines"
-        }
+        },
+        "Label": "Line"
       },
       "Object": {
-        "Label": "Object",
         "Counted": {
           "any": "any objects",
           "each": "each object",
           "every": "every object",
           "one": "{number} object",
           "other": "{number} objects"
-        }
+        },
+        "Label": "Object"
       },
       "Radius": {
-        "Label": "Radius",
         "Counted": {
           "one": "{number} radius",
-          "other": "{number} radii",
           "oneSized": "{sizes} Radius",
+          "other": "{number} radii",
           "otherSized": "{number} {sizes} Radii"
-        }
+        },
+        "Label": "Radius"
       },
       "Self": {
         "Label": "Self"
       },
       "Space": {
-        "Label": "Space",
         "Counted": {
           "any": "any spaces",
           "each": "each space",
           "every": "every space",
           "one": "{number} Space",
           "other": "{number} Spaces"
-        }
-      },
-      "Sphere": {
-        "Label": "Sphere",
-        "Counted": {
-          "one": "{number} sphere",
-          "other": "{number} spheres",
-          "oneSized": "{sizes} Sphere",
-          "otherSized": "{number} {sizes} Spheres"
-        }
+        },
+        "Label": "Space"
       },
       "Special": {
-        "Label": "{special}",
         "Counted": {
           "any": "any {special}",
           "each": "each {special}",
           "every": "every {special}",
           "one": "{number} {special}",
           "other": "{number} {special}"
-        }
+        },
+        "Label": "{special}"
+      },
+      "Sphere": {
+        "Counted": {
+          "one": "{number} sphere",
+          "oneSized": "{sizes} Sphere",
+          "other": "{number} spheres",
+          "otherSized": "{number} {sizes} Spheres"
+        },
+        "Label": "Sphere"
       },
       "Square": {
-        "Label": "Square",
         "Counted": {
           "one": "{number} square",
-          "other": "{number} squares",
           "oneSized": "{sizes} Square",
+          "other": "{number} squares",
           "otherSized": "{number} {sizes} Squares"
-        }
+        },
+        "Label": "Square"
       },
       "Target": {
-        "Label": "Target",
         "Counted": {
           "any": "any targets",
           "each": "each target",
           "every": "every target",
           "one": "{number} target",
           "other": "{number} targets"
-        }
+        },
+        "Label": "Target"
       },
       "Wall": {
-        "Label": "Wall",
         "Counted": {
           "one": "{number} wall",
-          "other": "{number} walls",
           "oneSized": "{sizes} Wall",
+          "other": "{number} walls",
           "otherSized": "{number} {sizes} Walls"
-        }
+        },
+        "Label": "Wall"
       },
       "WillingCreature": {
-        "Label": "Willing Creature",
         "Counted": {
           "any": "any willing creatures",
           "each": "each willing creature",
           "every": "every willing creature",
           "one": "{number} willing creature",
           "other": "{number} willing creatures"
-        }
+        },
+        "Label": "Willing Creature"
       }
     },
     "Warning": {
       "PlaceTemplate": "Failed to place measured template."
     }
   },
+  "DND5E.Target": "Target",
+  "DND5E.TargetPl": "Targets",
+  "DND5E.TargetType": "Target Type",
+  "DND5E.TargetTypeArea": "Area",
+  "DND5E.TargetTypeIndividual": "Individual",
+  "DND5E.TargetUnits": "Area of Effect Units",
+  "DND5E.TargetValue": "Target Length or Count",
+  "DND5E.TargetWidth": "Line Width",
+  "DND5E.Temp": "Temp",
+  "DND5E.TemplatePrompt": "Template Prompt",
+  "DND5E.TemplatePromptTooltip": "If unchecked, the prompt for placing a Measured Template will be suppressed.",
+  "DND5E.Threshold": "Threshold",
+  "DND5E.TimeDay": "Days",
+  "DND5E.TimeDayAbbr": "d",
+  "DND5E.TimeDisp": "Until Dispelled",
+  "DND5E.TimeDispTrig": "Until Dispelled or Triggered",
+  "DND5E.TimeHour": "Hours",
+  "DND5E.TimeHourAbbr": "h",
+  "DND5E.TimeInst": "Instantaneous",
+  "DND5E.TimeMinute": "Minutes",
+  "DND5E.TimeMinuteAbbr": "m",
+  "DND5E.TimeMonth": "Months",
+  "DND5E.TimePerm": "Permanent",
+  "DND5E.TimeRound": "Rounds",
+  "DND5E.TimeTurn": "Turns",
+  "DND5E.TimeYear": "Years",
+  "DND5E.title": "Dungeon & Dragons Fifth Edition",
   "DND5E.TMP": "TMP",
+  "DND5E.ToggleDescription": "Toggle Description",
+  "DND5E.ToHit": "To Hit",
+  "DND5E.Tokens": {
+    "NoneSelected": "No Tokens Selected",
+    "NoneTargeted": "No Tokens Targeted",
+    "Selected": "Selected",
+    "Targeted": "Targeted"
+  },
   "DND5E.TOOL": {
     "SECTIONS": {
-      "Details": "{label} Details",
       "Bonuses": {
-        "Label": "{label} Bonuses",
-        "Hint": "These bonuses apply to checks made with {label}."
+        "Hint": "These bonuses apply to checks made with {label}.",
+        "Label": "{label} Bonuses"
       },
+      "Details": "{label} Details",
       "Global": {
-        "Label": "Global Bonuses",
-        "Hint": "These bonuses apply to checks made with any tool."
+        "Hint": "These bonuses apply to checks made with any tool.",
+        "Label": "Global Bonuses"
       }
     }
   },
+  "DND5E.ToolArtisans": "Artisan's Tools",
+  "DND5E.ToolBonuses": "Tool Bonuses",
+  "DND5E.ToolCheck": "Tool Check",
+  "DND5E.ToolConfigure": "Configure Tool Proficiency",
+  "DND5E.ToolDisguiseKit": "Disguise Kit",
+  "DND5E.ToolForgeryKit": "Forgery Kit",
+  "DND5E.ToolGamingSet": "Gaming Set",
+  "DND5E.ToolHerbalismKit": "Herbalism Kit",
+  "DND5E.ToolMusicalInstrument": "Musical Instrument",
+  "DND5E.ToolNavigators": "Navigator's Tools",
+  "DND5E.ToolPoisonersKit": "Poisoner's Kit",
+  "DND5E.ToolPromptTitle": "{tool} Check",
+  "DND5E.ToolThieves": "Thieves' Tools",
+  "DND5E.ToolVehicle": "Vehicles",
+  "DND5E.TraitAll": "All {category}",
+  "DND5E.TraitArmorLegacyPlural.one": "Armor Proficiency",
+  "DND5E.TraitArmorLegacyPlural.other": "Armor Proficiencies",
+  "DND5E.TraitArmorLegacyProf": "Armor Proficiencies",
+  "DND5E.TraitArmorPlural.one": "Armor Training",
+  "DND5E.TraitArmorPlural.other": "Armor Training",
+  "DND5E.TraitArmorProf": "Armor Training",
+  "DND5E.TraitCIPlural.one": "Condition Immunity",
+  "DND5E.TraitCIPlural.other": "Condition Immunities",
+  "DND5E.TraitConfig": "Configure {trait}",
+  "DND5E.TraitConfigChooseAnyCounted": "any {count} {type}",
+  "DND5E.TraitConfigChooseAnyUncounted": "any {type}",
+  "DND5E.TraitConfigChooseList": "{count} from {list}",
+  "DND5E.TraitConfigChooseOther": "{count} other {type}",
+  "DND5E.TraitConfigChooseWrapper": "Choose {choices}",
+  "DND5E.TraitDIPlural.one": "Damage Immunity",
+  "DND5E.TraitDIPlural.other": "Damage Immunities",
+  "DND5E.TraitDMPlural.one": "Damage Modification",
+  "DND5E.TraitDMPlural.other": "Damage Modifications",
+  "DND5E.TraitDRPlural.one": "Damage Resistance",
+  "DND5E.TraitDRPlural.other": "Damage Resistances",
+  "DND5E.TraitDVPlural.one": "Damage Vulnerability",
+  "DND5E.TraitDVPlural.other": "Damage Vulnerabilities",
+  "DND5E.TraitGenericPlural.one": "Trait",
+  "DND5E.TraitGenericPlural.other": "Traits",
+  "DND5E.TraitLanguagesPlural.one": "Language",
+  "DND5E.TraitLanguagesPlural.other": "Languages",
+  "DND5E.Traits": "Traits",
+  "DND5E.TraitSave": "Update",
+  "DND5E.TraitSavesPlural.one": "Saving Throw Proficiency",
+  "DND5E.TraitSavesPlural.other": "Saving Throw Proficiencies",
+  "DND5E.TraitsChosen": "Chosen Traits",
+  "DND5E.TraitSelectorSpecial": "Special (Split with Semi-Colon)",
+  "DND5E.TraitSkillsPlural.one": "Skill Proficiency",
+  "DND5E.TraitSkillsPlural.other": "Skill Proficiencies",
+  "DND5E.TraitToolPlural.one": "Tool Proficiency",
+  "DND5E.TraitToolPlural.other": "Tool Proficiencies",
+  "DND5E.TraitToolProf": "Tool Proficiencies",
+  "DND5E.TraitWeaponPlural.one": "Weapon Proficiency",
+  "DND5E.TraitWeaponPlural.other": "Weapon Proficiencies",
+  "DND5E.TraitWeaponProf": "Weapon Proficiencies",
   "DND5E.TRANSFORM": {
     "Action": {
       "Restore": "Restore Transformation",
@@ -4517,13 +4612,13 @@
       "profiles": {
         "element": {
           "cr": {
-            "label": "Challenge Rating",
             "abbr": "CR",
-            "hint": "Maximum CR of the source creature."
+            "hint": "Maximum CR of the source creature.",
+            "label": "Challenge Rating"
           },
           "level": {
-            "label": "Level Limit",
             "hint": "Range of levels required to use this profile.",
+            "label": "Level Limit",
             "max": {
               "label": "Maximum Level"
             },
@@ -4554,20 +4649,20 @@
         "label": "Transform Profiles"
       },
       "transform": {
-        "label": "Transformation Details",
         "customize": {
-          "label": "Customize",
-          "hint": "Use custom transformation settings rather than the defaults provided by the selected preset."
+          "hint": "Use custom transformation settings rather than the defaults provided by the selected preset.",
+          "label": "Customize"
         },
         "identifier": {
-          "label": "Class Identifier",
-          "hint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits."
+          "hint": "Identifier used to determine whether the character level or a specific class level should be used for profile level limits.",
+          "label": "Class Identifier"
         },
+        "label": "Transformation Details",
         "mode": {
-          "label": "Mode",
-          "hint": "Sets how the transformation source creatures are selected.",
           "CR": "By Challenge Rating",
-          "Direct": "By Direct Link"
+          "Direct": "By Direct Link",
+          "hint": "Sets how the transformation source creatures are selected.",
+          "label": "Mode"
         },
         "preset": {
           "label": "Preset"
@@ -4769,95 +4864,6 @@
       "Water": "Water"
     }
   },
-  "DND5E.Target": "Target",
-  "DND5E.TargetPl": "Targets",
-  "DND5E.TargetType": "Target Type",
-  "DND5E.TargetTypeArea": "Area",
-  "DND5E.TargetTypeIndividual": "Individual",
-  "DND5E.TargetUnits": "Area of Effect Units",
-  "DND5E.TargetValue": "Target Length or Count",
-  "DND5E.TargetWidth": "Line Width",
-  "DND5E.Temp": "Temp",
-  "DND5E.TemplatePrompt": "Template Prompt",
-  "DND5E.TemplatePromptTooltip": "If unchecked, the prompt for placing a Measured Template will be suppressed.",
-  "DND5E.Threshold": "Threshold",
-  "DND5E.TimeDay": "Days",
-  "DND5E.TimeDayAbbr": "d",
-  "DND5E.TimeDisp": "Until Dispelled",
-  "DND5E.TimeDispTrig": "Until Dispelled or Triggered",
-  "DND5E.TimeHour": "Hours",
-  "DND5E.TimeHourAbbr": "h",
-  "DND5E.TimeInst": "Instantaneous",
-  "DND5E.TimeMinute": "Minutes",
-  "DND5E.TimeMinuteAbbr": "m",
-  "DND5E.TimeMonth": "Months",
-  "DND5E.TimePerm": "Permanent",
-  "DND5E.TimeRound": "Rounds",
-  "DND5E.TimeTurn": "Turns",
-  "DND5E.TimeYear": "Years",
-  "DND5E.ToHit": "To Hit",
-  "DND5E.ToggleDescription": "Toggle Description",
-  "DND5E.Tokens": {
-    "NoneSelected": "No Tokens Selected",
-    "NoneTargeted": "No Tokens Targeted",
-    "Selected": "Selected",
-    "Targeted": "Targeted"
-  },
-  "DND5E.ToolArtisans": "Artisan's Tools",
-  "DND5E.ToolBonuses": "Tool Bonuses",
-  "DND5E.ToolCheck": "Tool Check",
-  "DND5E.ToolConfigure": "Configure Tool Proficiency",
-  "DND5E.ToolDisguiseKit": "Disguise Kit",
-  "DND5E.ToolForgeryKit": "Forgery Kit",
-  "DND5E.ToolGamingSet": "Gaming Set",
-  "DND5E.ToolHerbalismKit": "Herbalism Kit",
-  "DND5E.ToolMusicalInstrument": "Musical Instrument",
-  "DND5E.ToolNavigators": "Navigator's Tools",
-  "DND5E.ToolPoisonersKit": "Poisoner's Kit",
-  "DND5E.ToolPromptTitle": "{tool} Check",
-  "DND5E.ToolThieves": "Thieves' Tools",
-  "DND5E.ToolVehicle": "Vehicles",
-  "DND5E.TraitAll": "All {category}",
-  "DND5E.TraitArmorLegacyPlural.one": "Armor Proficiency",
-  "DND5E.TraitArmorLegacyPlural.other": "Armor Proficiencies",
-  "DND5E.TraitArmorLegacyProf": "Armor Proficiencies",
-  "DND5E.TraitArmorPlural.one": "Armor Training",
-  "DND5E.TraitArmorPlural.other": "Armor Training",
-  "DND5E.TraitArmorProf": "Armor Training",
-  "DND5E.TraitCIPlural.one": "Condition Immunity",
-  "DND5E.TraitCIPlural.other": "Condition Immunities",
-  "DND5E.TraitConfig": "Configure {trait}",
-  "DND5E.TraitConfigChooseAnyCounted": "any {count} {type}",
-  "DND5E.TraitConfigChooseAnyUncounted": "any {type}",
-  "DND5E.TraitConfigChooseList": "{count} from {list}",
-  "DND5E.TraitConfigChooseOther": "{count} other {type}",
-  "DND5E.TraitConfigChooseWrapper": "Choose {choices}",
-  "DND5E.TraitDIPlural.one": "Damage Immunity",
-  "DND5E.TraitDIPlural.other": "Damage Immunities",
-  "DND5E.TraitDMPlural.one": "Damage Modification",
-  "DND5E.TraitDMPlural.other": "Damage Modifications",
-  "DND5E.TraitDRPlural.one": "Damage Resistance",
-  "DND5E.TraitDRPlural.other": "Damage Resistances",
-  "DND5E.TraitDVPlural.one": "Damage Vulnerability",
-  "DND5E.TraitDVPlural.other": "Damage Vulnerabilities",
-  "DND5E.TraitGenericPlural.one": "Trait",
-  "DND5E.TraitGenericPlural.other": "Traits",
-  "DND5E.TraitLanguagesPlural.one": "Language",
-  "DND5E.TraitLanguagesPlural.other": "Languages",
-  "DND5E.TraitSave": "Update",
-  "DND5E.TraitSavesPlural.one": "Saving Throw Proficiency",
-  "DND5E.TraitSavesPlural.other": "Saving Throw Proficiencies",
-  "DND5E.TraitSelectorSpecial": "Special (Split with Semi-Colon)",
-  "DND5E.TraitSkillsPlural.one": "Skill Proficiency",
-  "DND5E.TraitSkillsPlural.other": "Skill Proficiencies",
-  "DND5E.TraitToolPlural.one": "Tool Proficiency",
-  "DND5E.TraitToolPlural.other": "Tool Proficiencies",
-  "DND5E.TraitToolProf": "Tool Proficiencies",
-  "DND5E.TraitWeaponPlural.one": "Weapon Proficiency",
-  "DND5E.TraitWeaponPlural.other": "Weapon Proficiencies",
-  "DND5E.TraitWeaponProf": "Weapon Proficiencies",
-  "DND5E.Traits": "Traits",
-  "DND5E.TraitsChosen": "Chosen Traits",
   "DND5E.Treasure": {
     "Categories": {
       "Any": "Any",
@@ -4875,6 +4881,13 @@
   },
   "DND5E.Trigger": "Trigger",
   "DND5E.Type": "Type",
+  "DND5E.Uncrewed": "Uncrewed",
+  "DND5E.Unequipped": "Not Equipped",
+  "DND5E.Unidentified.DefaultName": "Unidentified {name}",
+  "DND5E.Unidentified.Notice": "You must identify this item to learn its details.",
+  "DND5E.Unidentified.Title": "Unidentified",
+  "DND5E.Unidentified.Value": "???",
+  "DND5E.Unit": "Unit",
   "DND5E.UNITS": {
     "DISTANCE": {
       "Foot": {
@@ -4913,24 +4926,24 @@
         "Label": "Month"
       },
       "Round": {
-        "Label": "Round",
         "Counted": {
           "narrow": "{number}r",
           "one": "{number} round",
           "other": "{number} rounds"
-        }
+        },
+        "Label": "Round"
       },
       "Second": {
         "Label": "Second"
       },
       "Turn": {
-        "Label": "Turn",
         "Abbreviation": "t",
         "Counted": {
           "narrow": "{number}t",
           "one": "{number} turn",
           "other": "{number} turns"
-        }
+        },
+        "Label": "Turn"
       },
       "Week": {
         "Label": "Week"
@@ -4941,8 +4954,8 @@
     },
     "TRAVEL": {
       "Kilometer": {
-        "AbbreviationHour": "km/h",
         "AbbreviationDay": "km/d",
+        "AbbreviationHour": "km/h",
         "Label": "Kilometers"
       },
       "Label": "Travel Unit",
@@ -4953,11 +4966,13 @@
       }
     },
     "VOLUME": {
-      "Label": "Volume Units",
       "CubicFoot": {
-        "Label": "Cubic Feet",
         "Abbreviation": "ft³",
         "Counted": {
+          "long": {
+            "one": "{number} cubic foot",
+            "other": "{number} cubic feet"
+          },
           "narrow": {
             "one": "{number}ft³",
             "other": "{number}ft³"
@@ -4965,28 +4980,29 @@
           "short": {
             "one": "{number} cu ft",
             "other": "{number} cu ft"
-          },
-          "long": {
-            "one": "{number} cubic foot",
-            "other": "{number} cubic feet"
           }
-        }
+        },
+        "Label": "Cubic Feet"
       },
+      "Label": "Volume Units",
       "Liter": {
-        "Label": "Liters",
-        "Abbreviation": "L"
+        "Abbreviation": "L",
+        "Label": "Liters"
       }
     },
     "WEIGHT": {
-      "Label": "Weight Units",
       "Kilogram": {
-        "Label": "Kilogram",
-        "Abbreviation": "kg"
+        "Abbreviation": "kg",
+        "Label": "Kilogram"
       },
+      "Label": "Weight Units",
       "Megagram": {
-        "Label": "Tonnes",
         "Abbreviation": "t",
         "Counted": {
+          "long": {
+            "one": "{number} tonne",
+            "other": "{number} tonnes"
+          },
           "narrow": {
             "one": "{number}t",
             "other": "{number}t"
@@ -4994,21 +5010,21 @@
           "short": {
             "one": "{number} t",
             "other": "{number} t"
-          },
-          "long": {
-            "one": "{number} tonne",
-            "other": "{number} tonnes"
           }
-        }
+        },
+        "Label": "Tonnes"
       },
       "Pound": {
-        "Label": "Pounds",
-        "Abbreviation": "lb"
+        "Abbreviation": "lb",
+        "Label": "Pounds"
       },
       "Ton": {
-        "Label": "Tons",
         "Abbreviation": "tn",
         "Counted": {
+          "long": {
+            "one": "{number} ton",
+            "other": "{number} tons"
+          },
           "narrow": {
             "one": "{number}tn",
             "other": "{number}tn"
@@ -5016,15 +5032,14 @@
           "short": {
             "one": "{number} tn",
             "other": "{number} tn"
-          },
-          "long": {
-            "one": "{number} ton",
-            "other": "{number} tons"
           }
-        }
+        },
+        "Label": "Tons"
       }
     }
   },
+  "DND5E.Unknown": "Unknown",
+  "DND5E.Unlimited": "Unlimited",
   "DND5E.USAGE": {
     "SECTION": {
       "Consumption": "Consumption",
@@ -5032,35 +5047,38 @@
       "Scaling": "Scaling"
     }
   },
+  "DND5E.Usage": "Usage",
+  "DND5E.Use": "Use",
+  "DND5E.UseItem": "Use {item}",
   "DND5E.USES": {
     "FIELDS": {
       "uses": {
         "label": "Uses",
         "max": {
-          "label": "Maximum Uses",
-          "hint": "Formula for the maximum number of uses."
+          "hint": "Formula for the maximum number of uses.",
+          "label": "Maximum Uses"
         },
         "recovery": {
-          "label": "Use Recovery",
-          "hint": "Recovery profiles for this activity's uses.",
           "FIELDS": {
+            "formula": {
+              "hint": "Formula used to determine how many uses are recovered.",
+              "label": "Recovery Formula"
+            },
             "period": {
-              "label": "Recovery Period",
-              "hint": "Time when this recovery will occur."
+              "hint": "Time when this recovery will occur.",
+              "label": "Recovery Period"
             },
             "type": {
-              "label": "Recovery Type",
-              "hint": "How uses are recovered."
-            },
-            "formula": {
-              "label": "Recovery Formula",
-              "hint": "Formula used to determine how many uses are recovered."
+              "hint": "How uses are recovered.",
+              "label": "Recovery Type"
             }
-          }
+          },
+          "hint": "Recovery profiles for this activity's uses.",
+          "label": "Use Recovery"
         },
         "spent": {
-          "label": "Spent Uses",
-          "hint": "Number of uses that have been spent."
+          "hint": "Number of uses that have been spent.",
+          "label": "Spent Uses"
         }
       }
     },
@@ -5085,23 +5103,23 @@
           "Label": "Initiative"
         },
         "LongRest": {
-          "Label": "Long Rest",
-          "Abbreviation": "LR"
+          "Abbreviation": "LR",
+          "Label": "Long Rest"
         },
         "ShortRest": {
-          "Label": "Short Rest",
-          "Abbreviation": "SR"
+          "Abbreviation": "SR",
+          "Label": "Short Rest"
         },
         "Turn": {
           "Label": "Each Turn"
         },
         "TurnEnd": {
-          "Label": "End of Turn",
-          "Abbreviation": "Turn End"
+          "Abbreviation": "Turn End",
+          "Label": "End of Turn"
         },
         "TurnStart": {
-          "Label": "Start of Turn",
-          "Abbreviation": "Turn Start"
+          "Abbreviation": "Turn Start",
+          "Label": "Start of Turn"
         }
       },
       "Recharge": {
@@ -5117,43 +5135,6 @@
       }
     }
   },
-  "DND5E.UTILITY": {
-    "FIELDS": {
-      "roll": {
-        "label": "Roll",
-        "formula": {
-          "label": "Roll Formula",
-          "hint": "Formula for an arbitrary roll."
-        },
-        "name": {
-          "label": "Roll Label",
-          "hint": "Display name for the rolling button."
-        },
-        "prompt": {
-          "label": "Roll Prompt",
-          "hint": "Display the roll configuration dialog when rolling."
-        },
-        "visible": {
-          "label": "Visible to All",
-          "hint": "Display the rolling button in chat for all players."
-        }
-      }
-    },
-    "Hint": "Make an arbitrary roll or indicate some other action was performed not represented by other activity types.",
-    "Title": "Use"
-  },
-  "DND5E.Uncrewed": "Uncrewed",
-  "DND5E.Unequipped": "Not Equipped",
-  "DND5E.Unidentified.DefaultName": "Unidentified {name}",
-  "DND5E.Unidentified.Notice": "You must identify this item to learn its details.",
-  "DND5E.Unidentified.Title": "Unidentified",
-  "DND5E.Unidentified.Value": "???",
-  "DND5E.Unit": "Unit",
-  "DND5E.Unknown": "Unknown",
-  "DND5E.Unlimited": "Unlimited",
-  "DND5E.Usage": "Usage",
-  "DND5E.Use": "Use",
-  "DND5E.UseItem": "Use {item}",
   "DND5E.Uses": "Uses",
   "DND5E.UsesAvailable": "Available Uses",
   "DND5E.UsesMax": "Maximum Uses",
@@ -5162,6 +5143,32 @@
     "Charges": "Charges",
     "ChargesAbbreviation": "Charges"
   },
+  "DND5E.UTILITY": {
+    "FIELDS": {
+      "roll": {
+        "formula": {
+          "hint": "Formula for an arbitrary roll.",
+          "label": "Roll Formula"
+        },
+        "label": "Roll",
+        "name": {
+          "hint": "Display name for the rolling button.",
+          "label": "Roll Label"
+        },
+        "prompt": {
+          "hint": "Display the roll configuration dialog when rolling.",
+          "label": "Roll Prompt"
+        },
+        "visible": {
+          "hint": "Display the rolling button in chat for all players.",
+          "label": "Visible to All"
+        }
+      }
+    },
+    "Hint": "Make an arbitrary roll or indicate some other action was performed not represented by other activity types.",
+    "Title": "Use"
+  },
+  "DND5E.Value": "Value",
   "DND5E.VEHICLE": {
     "Action": {
       "Create": {
@@ -5182,10 +5189,10 @@
     },
     "Actions": {
       "Ordinal": {
-        "one": "{n}st Action",
-        "two": "{n}nd Action",
         "few": "{n}rd Action",
-        "other": "{n}th Action"
+        "one": "{n}st Action",
+        "other": "{n}th Action",
+        "two": "{n}nd Action"
       }
     },
     "Activation": {
@@ -5217,13 +5224,13 @@
             "full": {
               "label": "Full Crew Complement"
             },
+            "label": "Thresholds",
             "mid": {
               "label": "Partial Crew Complement"
             },
             "min": {
               "label": "Minimum Crew Complement"
-            },
-            "label": "Thresholds"
+            }
           }
         },
         "capacity": {
@@ -5268,20 +5275,20 @@
     "MOUNTABLE": {
       "FIELDS": {
         "cover": {
-          "label": "Cover",
-          "hint": "Cover provided to crew operating this equipment."
+          "hint": "Cover provided to crew operating this equipment.",
+          "label": "Cover"
         },
         "crew": {
           "label": "Crew"
         },
         "hp": {
-          "label": "Hit Points",
           "conditions": {
             "label": "Health Conditions"
           },
           "dt": {
             "label": "Damage Threshold"
           },
+          "label": "Hit Points",
           "max": {
             "label": "Max HP"
           },
@@ -5324,12 +5331,15 @@
       }
     }
   },
-  "DND5E.Value": "Value",
   "DND5E.Vehicle": "Vehicle",
   "DND5E.Versatile": "Versatile",
   "DND5E.VersatileDamage": "Versatile Damage",
   "DND5E.VsDC": "vs DC.",
   "DND5E.Vulnerabilities": "Vulnerabilities",
+  "DND5E.WarnBadACFormula": "The provided AC formula \"{formula}\" could not be evaluated.",
+  "DND5E.WarnCantAddMultipleAdvancements": "It is not currently possible to add multiple items with advancements to an actor at the same time. Please add them individually.",
+  "DND5E.WarnMultipleArmor": "More than one suit of armor equipped, AC calculation may be incorrect.",
+  "DND5E.WarnMultipleShields": "More than one shield equipped, AC calculation may be incorrect.",
   "DND5E.WEAPON": {
     "FIELDS": {
       "ammunition": {
@@ -5346,15 +5356,15 @@
         "hint": "Intrinsic damage dice from the weapon. Ability modifier and additional damage parts will be provided automatically when attacking."
       },
       "mastery": {
-        "label": "Mastery",
-        "hint": "Special weapon ability unlocked for characters who have Weapon Mastery or a related feature."
+        "hint": "Special weapon ability unlocked for characters who have Weapon Mastery or a related feature.",
+        "label": "Mastery"
       }
     },
     "Mastery": {
-      "Label": "Weapon Mastery",
-      "Flavor": "Mastery",
       "Cleave": "Cleave",
+      "Flavor": "Mastery",
       "Graze": "Graze",
+      "Label": "Weapon Mastery",
       "Nick": "Nick",
       "Push": "Push",
       "Sap": "Sap",
@@ -5363,10 +5373,6 @@
       "Vex": "Vex"
     }
   },
-  "DND5E.WarnBadACFormula": "The provided AC formula \"{formula}\" could not be evaluated.",
-  "DND5E.WarnCantAddMultipleAdvancements": "It is not currently possible to add multiple items with advancements to an actor at the same time. Please add them individually.",
-  "DND5E.WarnMultipleArmor": "More than one suit of armor equipped, AC calculation may be incorrect.",
-  "DND5E.WarnMultipleShields": "More than one shield equipped, AC calculation may be incorrect.",
   "DND5E.WeaponCategory": "{category} Weapon",
   "DND5E.WeaponImprov": "Improvised",
   "DND5E.WeaponMartialM": "Martial Melee",
@@ -5380,12 +5386,6 @@
   "DND5E.Weight": "Weight",
   "DND5E.WhisperedTo": "Whispered to",
   "DND5E.Wiki": "Wiki",
-  "DND5E.available": "available",
-  "DND5E.description": "A system for playing the fifth edition of the worlds most popular roleplaying game in the Foundry Virtual Tabletop environment.",
-  "DND5E.of": "of",
-  "DND5E.per": "per",
-  "DND5E.spell": "spell",
-  "DND5E.title": "Dungeon & Dragons Fifth Edition",
   "DOCUMENT.DND5E": {
     "Activity": "Activity",
     "Advancement": "Advancement",
@@ -5399,24 +5399,24 @@
     "AttackLong": "{formula} to hit",
     "AttackShort": "{formula}",
     "AwardEach": "{award} each",
-    "CheckShort": "{check}",
     "CheckLong": "{check} check",
+    "CheckShort": "{check}",
     "CheckUsing": "{check} using {tool}",
-    "DamageExtended": "<em>Hit:</em> {damage} damage",
     "DamageDouble": "{first} plus {second}",
-    "DamageShort": "{formula} {type}",
+    "DamageExtended": "<em>Hit:</em> {damage} damage",
     "DamageLong": "{average} ({formula}) {type}",
+    "DamageShort": "{formula} {type}",
     "DC": "DC {dc} {check}",
-    "DCPassiveShort": "DC {dc} passive {check}",
     "DCPassiveLong": "passive {check} score of {dc} or higher",
+    "DCPassiveShort": "DC {dc} passive {check}",
     "ItemActivity": "{item} ({activity})",
     "NoActorWarning": "No selected or assigned actor could be found to execute this roll.",
-    "PassiveShort": "passive {check}",
     "PassiveLong": "passive {check} score",
+    "PassiveShort": "passive {check}",
     "RequestRoll": "Request Roll",
     "RollRequest": "Roll Request",
-    "SaveShort": "{save}",
     "SaveLong": "{save} saving throw",
+    "SaveShort": "{save}",
     "SpecificCheck": "{ability} ({type})",
     "Warning": {
       "NoActivityOnItem": "{item} on {actor} does not have an Activity with name {activity}.",
@@ -5456,35 +5456,43 @@
   },
   "JOURNALENTRYPAGE.DND5E": {
     "Class": {
+      "EquipmentDescription": "You start with the following equipment, in addition to the equipment granted by your background:",
+      "EquipmentHeader": "Equipment",
+      "Features": {
+        "DescriptionLegacy": "As a {lowercaseName}, you gain the following class features, which are summarized in the {name} table.",
+        "DescriptionModern": "As a {name}, you gain the following class features when you reach the specified {name} levels. These features are listed in the {name} Features table.",
+        "Header": "Class Features",
+        "Name": "Level {level}: {name}"
+      },
       "FIELDS": {
         "description": {
           "additionalEquipment": {
-            "label": "Additional Equipment Description",
-            "hint": "Additional descriptive text displayed beneath the starting equipment section."
+            "hint": "Additional descriptive text displayed beneath the starting equipment section.",
+            "label": "Additional Equipment Description"
           },
           "additionalHitPoints": {
-            "label": "Additional Hit Points Description",
-            "hint": "Additional descriptive text displayed beneath the auto-generated hit points section."
+            "hint": "Additional descriptive text displayed beneath the auto-generated hit points section.",
+            "label": "Additional Hit Points Description"
           },
           "additionalTraits": {
-            "label": "Additional Proficiencies Description",
-            "hint": "Additional descriptive text displayed beneath list of proficiencies granted by this class."
+            "hint": "Additional descriptive text displayed beneath list of proficiencies granted by this class.",
+            "label": "Additional Proficiencies Description"
           },
           "subclass": {
-            "label": "Subclass Introduction",
-            "hint": "Introduction that will be displayed before this class's subclasses."
+            "hint": "Introduction that will be displayed before this class's subclasses.",
+            "label": "Subclass Introduction"
           },
           "value": {
-            "label": "Introduction",
-            "hint": "Primary description of the class that will appear first."
+            "hint": "Primary description of the class that will appear first.",
+            "label": "Introduction"
           }
         },
         "item": {
           "label": "Selected Class"
         },
         "style": {
-          "label": "Style",
-          "hint": "Force the page style to use modern or legacy formatting, rather than what is specified by the class."
+          "hint": "Force the page style to use modern or legacy formatting, rather than what is specified by the class.",
+          "label": "Style"
         },
         "subclassHeader": {
           "label": "Subclass Header"
@@ -5492,14 +5500,6 @@
         "subclassItems": {
           "label": "Subclasses"
         }
-      },
-      "EquipmentHeader": "Equipment",
-      "EquipmentDescription": "You start with the following equipment, in addition to the equipment granted by your background:",
-      "Features": {
-        "DescriptionLegacy": "As a {lowercaseName}, you gain the following class features, which are summarized in the {name} table.",
-        "DescriptionModern": "As a {name}, you gain the following class features when you reach the specified {name} levels. These features are listed in the {name} Features table.",
-        "Header": "Class Features",
-        "Name": "Level {level}: {name}"
       },
       "HitPoints": {
         "Header": "Hit Points",
@@ -5529,13 +5529,12 @@
       }
     },
     "EditDescription": "Edit",
-    "TableTOC": "Table: {caption}",
     "SpellList": {
       "DropHint": "Drop spells or folders of spells here to add to the list",
       "Grouping": {
-        "Label": "Grouping Mode",
-        "Hint": "Controls how the spells will be grouped by default in the spell list.",
         "Alphabetical": "By First Letter",
+        "Hint": "Controls how the spells will be grouped by default in the spell list.",
+        "Label": "Grouping Mode",
         "Level": "By Level",
         "None": "No Grouping",
         "School": "By School"
@@ -5546,31 +5545,32 @@
         "Other": "Uncategorized"
       },
       "UnlinkedSpells": {
-        "Label": "Unlinked Spells",
         "Add": "Add Unlinked Spell",
         "Configuration": "Spell Configuration",
-        "Edit": "Edit Unlinked Spell"
+        "Edit": "Edit Unlinked Spell",
+        "Label": "Unlinked Spells"
       }
     },
     "Subclass": {
       "FIELDS": {
         "description": {
           "value": {
-            "label": "Introduction",
-            "hint": "Description of the subclass that will appear before any listed features."
+            "hint": "Description of the subclass that will appear before any listed features.",
+            "label": "Introduction"
           }
         },
         "item": {
           "label": "Selected Subclass"
         },
         "style": {
-          "label": "Style",
-          "hint": "Force the page style to use modern or legacy formatting, rather than what is specified by the subclass."
+          "hint": "Force the page style to use modern or legacy formatting, rather than what is specified by the subclass.",
+          "label": "Style"
         }
       },
       "ItemHint": "Drop a subclass here",
       "NoValidSubclass": "No valid subclass selected, press the edit button to add a subclass."
-    }
+    },
+    "TableTOC": "Table: {caption}"
   },
   "KEYBINDINGS.DND5E.DragCopy": "Force Copy when Dragging Document",
   "KEYBINDINGS.DND5E.DragMove": "Force Move when Dragging Document",
@@ -5597,58 +5597,58 @@
   "SETTINGS.DND5E": {
     "AUTOMATION": {
       "Movement": {
-        "Name": "Movement Automation",
-        "Hint": "Configure the amount of movement automation used by the system: Full automation including token blocking, partial automation of difficult terrain only, or off entirely.",
         "Full": "Full",
+        "Hint": "Configure the amount of movement automation used by the system: Full automation including token blocking, partial automation of difficult terrain only, or off entirely.",
+        "Name": "Movement Automation",
         "NoBlocking": "Partial",
         "None": "None"
       }
     },
     "BLOODIED": {
-      "Name": "Bloodied Status",
-      "Hint": "Configure whether the bloodied status is tracked automatically and its visibility.",
       "All": "Display for Allies & Enemies",
-      "Player": "Only Display for Allies",
-      "None": "Never Display"
+      "Hint": "Configure whether the bloodied status is tracked automatically and its visibility.",
+      "Name": "Bloodied Status",
+      "None": "Never Display",
+      "Player": "Only Display for Allies"
     },
     "COLLAPSETRAYS": {
-      "Name": "Collapse Trays in Chat",
-      "Hint": "Automatically collapse damage, hit, and effect trays that appear in chat cards.",
       "Always": "Collapse All",
-      "Older": "Collapse Older Trays",
+      "Hint": "Automatically collapse damage, hit, and effect trays that appear in chat cards.",
+      "Manual": "Never Collapse",
+      "Name": "Collapse Trays in Chat",
       "Never": "Collapse After Use",
-      "Manual": "Never Collapse"
+      "Older": "Collapse Older Trays"
     },
     "COMBAT": {
-      "Hint": "Various configuration options that affect combat.",
-      "Label": "Configure Combat",
-      "Name": "Combat",
       "DexTiebreaker": {
-        "Name": "Dexterity Tiebreaker",
-        "Hint": "Append the raw Dexterity ability score to break ties in Initiative."
+        "Hint": "Append the raw Dexterity ability score to break ties in Initiative.",
+        "Name": "Dexterity Tiebreaker"
       },
+      "Hint": "Various configuration options that affect combat.",
       "InitiativeScore": {
-        "Name": "Initiative Score",
-        "Hint": "Use a creature's initiative score (10 + bonus) rather than rolling for initiative.",
         "All": "Use Score for Everyone",
+        "Hint": "Use a creature's initiative score (10 + bonus) rather than rolling for initiative.",
+        "Name": "Initiative Score",
         "None": "Always Roll for Initiative",
         "NPCs": "Use Score for GM NPCs"
-      }
+      },
+      "Label": "Configure Combat",
+      "Name": "Combat"
     },
     "CRITICAL": {
-      "Name": "Critical Damage",
       "MaxDice": {
-        "Name": "Maximize Dice",
-        "Hint": "Make critical hits more deadly by maximizing the values of base damage dice."
+        "Hint": "Make critical hits more deadly by maximizing the values of base damage dice.",
+        "Name": "Maximize Dice"
       },
       "MultiplyModifiers": {
-        "Name": "Multiply Modifiers",
-        "Hint": "Make critical hits more deadly by multiplying non-dice modifiers in addition to rolled dice."
-      }
+        "Hint": "Make critical hits more deadly by multiplying non-dice modifiers in addition to rolled dice.",
+        "Name": "Multiply Modifiers"
+      },
+      "Name": "Critical Damage"
     },
     "DEFAULTSKILLS": {
-      "Name": "Default Skills",
-      "Hint": "The default skills that appear on NPC sheets regardless of level of proficiency."
+      "Hint": "The default skills that appear on NPC sheets regardless of level of proficiency.",
+      "Name": "Default Skills"
     },
     "General": "General",
     "LOYALTY": {
@@ -5657,38 +5657,34 @@
     },
     "METRIC": {
       "LengthUnits": {
-        "Name": "Use Metric Length Units",
-        "Hint": "Defaults to using meters instead of feet for movement and senses."
+        "Hint": "Defaults to using meters instead of feet for movement and senses.",
+        "Name": "Use Metric Length Units"
       },
       "VolumeUnits": {
-        "Name": "Use Metric Volume Units",
-        "Hint": "Defaults to using liters instead of cubic feet for container capacity."
+        "Hint": "Defaults to using liters instead of cubic feet for container capacity.",
+        "Name": "Use Metric Volume Units"
       },
       "WeightUnits": {
-        "Name": "Use Metric Weight Units",
-        "Hint": "Replaces all reference to lbs with kgs and updates the encumbrance calculations to use metric weight units."
+        "Hint": "Replaces all reference to lbs with kgs and updates the encumbrance calculations to use metric weight units.",
+        "Name": "Use Metric Weight Units"
       }
     },
     "NPCS": {
-      "Name": "NPCs",
       "AutoRecharge": {
-        "Name": "Recharge Abilities",
         "Hint": "Roll to recharge NPC abilities automatically at the start of the NPC's turn.",
+        "Name": "Recharge Abilities",
         "No": "Do not recharge automatically",
         "Silent": "Recharge without creating chat card",
         "Yes": "Recharge and display chat card"
       },
       "AutoRollNPCHP": {
-        "Name": "Hit Points",
         "Hint": "Configure whether to roll for NPC max HP whenever a new token is created.",
+        "Name": "Hit Points",
         "No": "Do not roll",
         "Silent": "Roll without creating chat card",
         "Yes": "Roll and create chat card"
-      }
-    },
-    "THEME": {
-      "Name": "Theme",
-      "Hint": "Theme that will apply to the UI and all sheets by default. Automatic will be determined by your browser or operating system settings."
+      },
+      "Name": "NPCs"
     },
     "PERMISSIONS": {
       "AllowRests": {
@@ -5705,15 +5701,16 @@
       }
     },
     "RULESVERSION": {
-      "Name": "Rules Version",
       "Hint": "Change handling of various rules between the 2024 and 2014 rule sets.",
       "Legacy": "Legacy Rules (2014)",
-      "Modern": "Modern Rules (2024)"
+      "Modern": "Modern Rules (2024)",
+      "Name": "Rules Version"
+    },
+    "THEME": {
+      "Hint": "Theme that will apply to the UI and all sheets by default. Automatic will be determined by your browser or operating system settings.",
+      "Name": "Theme"
     },
     "VARIANT": {
-      "Hint": "Enable and configure rules variations offered by the system.",
-      "Label": "Configure Variant Rules",
-      "Name": "Variant Rules",
       "AllowFeats": {
         "Hint": "Allow players to choose a feat rather than taking an ability score improvement during class advancement when using the Legacy rules.",
         "Name": "Allow Feats"
@@ -5729,10 +5726,12 @@
         "Normal": "Normal (max carrying capacity)",
         "Variant": "Variant (encumbered & heavily encumbered)"
       },
+      "Hint": "Enable and configure rules variations offered by the system.",
       "HonorScore": {
         "Hint": "Enable the use of the optional Honor ability score.",
         "Name": "Honor Ability Score"
       },
+      "Label": "Configure Variant Rules",
       "LevelingMode": {
         "Hint": "Determine how the players gain new levels.",
         "Name": "Leveling Mode",
@@ -5740,6 +5739,7 @@
         "XP": "Experience Points",
         "XPBoons": "Experience Points with Epic Boons"
       },
+      "Name": "Variant Rules",
       "ProficiencyModifier": {
         "Bonus": "PHB: Bonus (+2, +3, +4, +5, +6)",
         "Dice": "DMG: Dice (1d4, 1d6, 1d8, 1d10, 1d12)",
@@ -5759,14 +5759,11 @@
       }
     },
     "VISIBILITY": {
-      "Hint": "Various configuration options that affect player visibility of certain information that the DM may wish to keep secret.",
-      "Label": "Configure Visibility",
-      "Name": "Visibility",
       "Attack": {
-        "Name": "Attack Result Visibility",
-        "Hint": "Control visibility of attack roll results in chat cards for players.",
         "All": "Show results & target ACs",
         "HideAC": "Show only results",
+        "Hint": "Control visibility of attack roll results in chat cards for players.",
+        "Name": "Attack Result Visibility",
         "None": "Hide all"
       },
       "Challenge": {
@@ -5776,17 +5773,20 @@
         "None": "Hide all",
         "Player": "Show only from other players"
       },
+      "Hint": "Various configuration options that affect player visibility of certain information that the DM may wish to keep secret.",
       "ItemDescriptions": {
         "Hint": "Hide the descriptions of NPC items from players when posted to chat by the DM. Will only hide the descriptions for items without a Chat Description set.",
         "Name": "Conceal NPC Descriptions"
-      }
+      },
+      "Label": "Configure Visibility",
+      "Name": "Visibility"
     }
   },
   "SHEETS.DND5E": {
     "THEME": {
-      "Label": "Theme",
       "Automatic": "Automatic",
       "Dark": "Dark Mode",
+      "Label": "Theme",
       "Light": "Light Mode"
     }
   },
