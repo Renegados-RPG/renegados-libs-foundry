@@ -1,0 +1,69 @@
+name: Create Module Files For GitHub Release
+
+env:
+  project_url: "https://github.com/Renegados-RPG/renegados-libs"
+  latest_manifest_url: "https://github.com/Renegados-RPG/renegados-libs/releases/latest/download/module.json"
+  release_module_url: "https://github.com/Renegados-RPG/renegados-libs/releases/download/${{github.ref_name}}/module.zip"
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Install Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Install dependencies
+        run: |
+          bun install
+
+      - name: Extract Version From Tag
+        id: get_version
+        uses: battila7/get-version-action@v2
+
+      - name: Bump package.json version
+        run: |
+          bun x npm version ${{steps.get_version.outputs.version-without-v}} --no-git-tag-version
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git commit -am "chore: bump version to ${{steps.get_version.outputs.version-without-v}} [skip ci]" || echo "No changes to commit"
+          git push origin HEAD:main || git push origin HEAD:master || echo "Failed to push version bump"
+
+      - name: Modify Module Manifest With Release-Specific Values
+        id: sub_manifest_link_version
+        uses: cschleiden/replace-tokens@v1
+        with:
+          files: "module.json"
+        env:
+          VERSION: ${{steps.get_version.outputs.version-without-v}}
+          URL: ${{ env.project_url }}
+          MANIFEST: ${{ env.latest_manifest_url }}
+          DOWNLOAD: ${{ env.release_module_url }}
+
+      - name: Create Module Archive
+        run: |
+          bun run pack
+
+      - name: Create or Update Release
+        id: create_version_release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          name: Release ${{ github.ref_name }}
+          draft: false
+          prerelease: false
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: "./module.json, ./dist/module.zip"
+          generateReleaseNotes: true
+          tag: ${{ github.ref_name }}

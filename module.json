@@ -1,7 +1,10 @@
 {
   "id": "renegados-libs",
   "title": "Renegados Bibliotecas",
-  "version": "1.0.0",
+  "version": "#{VERSION}#",
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
   "compatibility": {
     "minimum": "13",
     "verified": "13"
@@ -16,6 +19,10 @@
   "flags": {
     "canUpload": false
   },
+  "esmodules": [
+    "scripts/register.js",
+    "scripts/xp-renegados.js"
+  ],
   "languages": [
     {
       "lang": "pt-BR",

@@ -3,6 +3,9 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
+  "scripts": {
+    "pack": "mkdir -p dist && rm -f dist/module.zip && zip -r dist/module.zip module.json README.md scripts/ lang/ assets/"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },
