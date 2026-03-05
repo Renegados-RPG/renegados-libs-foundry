@@ -15,7 +15,7 @@ export const conversionInfo = {
 
 export function imperialToMetric(type) {
   return (value) => {
-    if (!game.settings.get("renegados-compendium", "convert")) return value;
+    if (!game.settings.get("renegados-libs", "convert")) return value;
 
     switch (type) {
       case "range":
