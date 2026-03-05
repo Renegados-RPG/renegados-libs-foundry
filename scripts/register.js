@@ -69,14 +69,14 @@ Hooks.on("ready", () => {
 });
 
 function autoRegisterBabel() {
-  if (typeof Babele !== "undefined") {
-    Babele.get().register({
+  if (game.babele) {
+    game.babele.register({
       module: MODULE_ID,
       lang: "pt-BR",
       dir: "lang/pt-BR",
     });
 
-    Babele.get().registerConverters({
+    game.babele.registerConverters({
       items: fromDefaultMapping("Item", "items"),
       range: imperialToMetric("range"),
       weight: imperialToMetric("weight"),
