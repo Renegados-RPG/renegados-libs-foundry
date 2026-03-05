@@ -8,7 +8,7 @@ import {
   source,
 } from "./converters.js";
 
-const MODULE_ID = "renegados-compendium";
+const MODULE_ID = "renegados-libs";
 
 // No need to change the code below this line, but it’s your module so do it if you want!
 
@@ -73,7 +73,7 @@ function autoRegisterBabel() {
     Babele.get().register({
       module: MODULE_ID,
       lang: "pt-BR",
-      dir: "lang/pt-BR/compendium",
+      dir: "lang/pt-BR",
     });
 
     Babele.get().registerConverters({
