@@ -52,21 +52,6 @@
         "compatibility": {}
       },
       {
-        "id": "dae",
-        "type": "module",
-        "compatibility": {}
-      },
-      {
-        "id": "midi-qol",
-        "type": "module",
-        "compatibility": {}
-      },
-      {
-        "id": "times-up",
-        "type": "module",
-        "compatibility": {}
-      },
-      {
         "id": "lib-wrapper",
         "type": "module",
         "compatibility": {}
