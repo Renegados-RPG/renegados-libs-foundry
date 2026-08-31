@@ -60,6 +60,11 @@
         "id": "babele",
         "type": "module",
         "compatibility": {}
+      },
+      {
+        "id": "sc-more-activities",
+        "type": "module",
+        "compatibility": {}
       }
     ]
   },
