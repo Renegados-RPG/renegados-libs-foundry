@@ -17,3 +17,26 @@ Hooks.once("ready", () => {
     }
   }
 });
+
+Hooks.on("renderHitPointsFlow", (app, html) => {
+  const root = html?.[0] ?? html;
+
+  // Força e trava o checkbox "Usar a Média"
+  const checkbox = root.querySelector('input[type="checkbox"]');
+  if (checkbox) {
+    checkbox.checked = true;
+    checkbox.dispatchEvent(new Event("change", { bubbles: true }));
+    checkbox.disabled = true;
+  }
+
+  // Esconde a área de OPTIONS
+  const optionsSection = root.querySelector(".form-group") 
+                      || [...root.querySelectorAll("div")].find(el => 
+                           (el.textContent || "").includes("Usar a Média") ||
+                           (el.textContent || "").includes("OPTIONS")
+                         );
+
+  if (optionsSection) {
+    optionsSection.style.display = "none";
+  }
+});
