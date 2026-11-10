@@ -1,19 +1,14 @@
 Hooks.once("init", () => {
   CONFIG.DND5E.CHARACTER_EXP_LEVELS = [
-    0, 300, 750, 1350, 2100, 3000, 4050, 5250, 6600, 8100,
-    9750, 11550, 13500, 15600, 17850, 20250, 22800, 25500,
-    28350, 31350
+    0, 300, 750, 1350, 2100, 3000, 4050, 5250, 6600, 8100, 9750, 11550, 13500,
+    15600, 17850, 20250, 22800, 25500, 28350, 31350,
   ];
 });
 
 Hooks.once("ready", () => {
-  // Força os personagens a recalcularem o XP com a nova tabela
   for (const actor of game.actors) {
-    if (actor.type === "character") {
-      actor.prepareData();
-      if (actor.sheet?.rendered) {
-        actor.sheet.render(true);
-      }
+    if (actor.sheet?.rendered) {
+      actor.sheet.render(true);
     }
   }
 });
